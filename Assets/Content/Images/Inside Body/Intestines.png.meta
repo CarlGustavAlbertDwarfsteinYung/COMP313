@@ -1,0 +1,4411 @@
+fileFormatVersion: 2
+guid: fd47ce07b9782524a8a4c8dc8d451287
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4357433852117136561
+    second: Intestines_0
+  - first:
+      213: 4127324201769953289
+    second: Intestines_1
+  - first:
+      213: -7134006205854065174
+    second: Intestines_2
+  - first:
+      213: 1440758112597781025
+    second: Intestines_3
+  - first:
+      213: -3339472210383808808
+    second: Intestines_4
+  - first:
+      213: -35353540408639081
+    second: Intestines_5
+  - first:
+      213: -7115487784913614170
+    second: Intestines_6
+  - first:
+      213: -3828744192928536892
+    second: Intestines_7
+  - first:
+      213: -661000126051121484
+    second: Intestines_8
+  - first:
+      213: 1550711342559597809
+    second: Intestines_9
+  - first:
+      213: -8750737463852054481
+    second: Intestines_10
+  - first:
+      213: 2959001034376707960
+    second: Intestines_11
+  - first:
+      213: -7616592435386812126
+    second: Intestines_12
+  - first:
+      213: 505731819928172392
+    second: Intestines_13
+  - first:
+      213: -6799684650062180315
+    second: Intestines_14
+  - first:
+      213: -6358117239319237617
+    second: Intestines_15
+  - first:
+      213: -5611605900986571185
+    second: Intestines_16
+  - first:
+      213: 686839402356402592
+    second: Intestines_17
+  - first:
+      213: -7661933195950886119
+    second: Intestines_18
+  - first:
+      213: -7732498851696807819
+    second: Intestines_19
+  - first:
+      213: 3571894817160966842
+    second: Intestines_20
+  - first:
+      213: 4744633653659762012
+    second: Intestines_21
+  - first:
+      213: 3170623298238000097
+    second: Intestines_22
+  - first:
+      213: -4204286067633119921
+    second: Intestines_23
+  - first:
+      213: 3976629480161363108
+    second: Intestines_24
+  - first:
+      213: 980028338299163798
+    second: Intestines_25
+  - first:
+      213: -203706787596271556
+    second: Intestines_26
+  - first:
+      213: 6768518840606973157
+    second: Intestines_27
+  - first:
+      213: -2470749887079769289
+    second: Intestines_28
+  - first:
+      213: -2440251596887226258
+    second: Intestines_29
+  - first:
+      213: 1118824665652505981
+    second: Intestines_30
+  - first:
+      213: -6598584183316484928
+    second: Intestines_31
+  - first:
+      213: 1442814839368149099
+    second: Intestines_32
+  - first:
+      213: -3991878147054981210
+    second: Intestines_33
+  - first:
+      213: -7675248595511997952
+    second: Intestines_34
+  - first:
+      213: 1440439336659737866
+    second: Intestines_35
+  - first:
+      213: 3442274201722436577
+    second: Intestines_36
+  - first:
+      213: 3330954593650840300
+    second: Intestines_37
+  - first:
+      213: -1035623246715069738
+    second: Intestines_38
+  - first:
+      213: 2452733438877756315
+    second: Intestines_39
+  - first:
+      213: -2017027576489644896
+    second: Intestines_40
+  - first:
+      213: -6400532677368522631
+    second: Intestines_41
+  - first:
+      213: -3185502754902000960
+    second: Intestines_42
+  - first:
+      213: -5768075104436163663
+    second: Intestines_43
+  - first:
+      213: -5673340535830976581
+    second: Intestines_44
+  - first:
+      213: -4442816697172793238
+    second: Intestines_45
+  - first:
+      213: -5359951096312524506
+    second: Intestines_46
+  - first:
+      213: -6191459951297566282
+    second: Intestines_47
+  - first:
+      213: -593542168681393760
+    second: Intestines_48
+  - first:
+      213: -5184092731629546099
+    second: Intestines_49
+  - first:
+      213: 7487035954994892869
+    second: Intestines_50
+  - first:
+      213: 6629733245129254091
+    second: Intestines_51
+  - first:
+      213: -851364386562558849
+    second: Intestines_52
+  - first:
+      213: 4691608801296210549
+    second: Intestines_53
+  - first:
+      213: -8533103820858162699
+    second: Intestines_54
+  - first:
+      213: 5282532398438399141
+    second: Intestines_55
+  - first:
+      213: 6793575100796160827
+    second: Intestines_56
+  - first:
+      213: 2695394028879042868
+    second: Intestines_57
+  - first:
+      213: -7667245653330086093
+    second: Intestines_58
+  - first:
+      213: -1439165682480336214
+    second: Intestines_59
+  - first:
+      213: 6586877691833410193
+    second: Intestines_60
+  - first:
+      213: 929524554102187952
+    second: Intestines_61
+  - first:
+      213: -4888707033851725268
+    second: Intestines_62
+  - first:
+      213: -293639031164855756
+    second: Intestines_63
+  - first:
+      213: -1639571871385798032
+    second: Intestines_64
+  - first:
+      213: -423833206958883074
+    second: Intestines_65
+  - first:
+      213: -91471008034371471
+    second: Intestines_66
+  - first:
+      213: -6840602329247999944
+    second: Intestines_67
+  - first:
+      213: 2575221037387989471
+    second: Intestines_68
+  - first:
+      213: -1573077598089337665
+    second: Intestines_69
+  - first:
+      213: -6270738527833675337
+    second: Intestines_70
+  - first:
+      213: -4298978438542586620
+    second: Intestines_71
+  - first:
+      213: 9080431380376942719
+    second: Intestines_72
+  - first:
+      213: 4683005797296955372
+    second: Intestines_73
+  - first:
+      213: 277399817866875262
+    second: Intestines_74
+  - first:
+      213: -3889694933426832196
+    second: Intestines_75
+  - first:
+      213: -3503560892174171623
+    second: Intestines_76
+  - first:
+      213: 1936224501927589084
+    second: Intestines_77
+  - first:
+      213: 52844333212450264
+    second: Intestines_78
+  - first:
+      213: -63116350625114627
+    second: Intestines_79
+  - first:
+      213: -8753611941987351367
+    second: Intestines_80
+  - first:
+      213: 8930030348662513034
+    second: Intestines_81
+  - first:
+      213: 8064266245115428971
+    second: Intestines_82
+  - first:
+      213: -2435624887935515039
+    second: Intestines_83
+  - first:
+      213: 4529702003586118311
+    second: Intestines_84
+  - first:
+      213: -1227234056822190265
+    second: Intestines_85
+  - first:
+      213: -6936491577842254220
+    second: Intestines_86
+  - first:
+      213: 7883492575121238312
+    second: Intestines_87
+  - first:
+      213: 2192541136873910333
+    second: Intestines_88
+  - first:
+      213: 8482100477795608626
+    second: Intestines_89
+  - first:
+      213: -3028160475108262611
+    second: Intestines_90
+  - first:
+      213: 260036409893153121
+    second: Intestines_91
+  - first:
+      213: -5759513105405148362
+    second: Intestines_92
+  - first:
+      213: -9213136160636193842
+    second: Intestines_93
+  - first:
+      213: 384859669536005836
+    second: Intestines_94
+  - first:
+      213: 3989844959171518066
+    second: Intestines_95
+  - first:
+      213: 5193947490965677558
+    second: Intestines_96
+  - first:
+      213: 7876814742544109100
+    second: Intestines_97
+  - first:
+      213: -4852119809869278627
+    second: Intestines_98
+  - first:
+      213: 1938864390867585602
+    second: Intestines_99
+  - first:
+      213: 8587450418704440916
+    second: Intestines_100
+  - first:
+      213: -5018147286966032494
+    second: Intestines_101
+  - first:
+      213: 2195716862548049476
+    second: Intestines_102
+  - first:
+      213: 8948906199556166038
+    second: Intestines_103
+  - first:
+      213: 4967852317596415525
+    second: Intestines_104
+  - first:
+      213: -7313340435879497196
+    second: Intestines_105
+  - first:
+      213: -4300190825365197065
+    second: Intestines_106
+  - first:
+      213: 2417472935058348489
+    second: Intestines_107
+  - first:
+      213: 6480311473308749816
+    second: Intestines_108
+  - first:
+      213: -4064251479049842857
+    second: Intestines_109
+  - first:
+      213: 1194711960980273395
+    second: Intestines_110
+  - first:
+      213: 831645455139550153
+    second: Intestines_111
+  - first:
+      213: 4133693266960917823
+    second: Intestines_112
+  - first:
+      213: 6321824911975363197
+    second: Intestines_113
+  - first:
+      213: 4181802090147495860
+    second: Intestines_114
+  - first:
+      213: 2066422433618510317
+    second: Intestines_115
+  - first:
+      213: -378154004478896029
+    second: Intestines_116
+  - first:
+      213: -6993864215884711609
+    second: Intestines_117
+  - first:
+      213: -2751609121938835068
+    second: Intestines_118
+  - first:
+      213: 1677542240313438232
+    second: Intestines_119
+  - first:
+      213: 1226965529618797338
+    second: Intestines_120
+  - first:
+      213: 808504616136003354
+    second: Intestines_121
+  - first:
+      213: 1125879917991828820
+    second: Intestines_122
+  - first:
+      213: -1568968201948875415
+    second: Intestines_123
+  - first:
+      213: 7398639798138604428
+    second: Intestines_124
+  - first:
+      213: 126317013644502739
+    second: Intestines_125
+  - first:
+      213: -1754543534571107647
+    second: Intestines_126
+  - first:
+      213: -7564236173110326202
+    second: Intestines_127
+  - first:
+      213: -785132512428153112
+    second: Intestines_128
+  - first:
+      213: 6320561216732397066
+    second: Intestines_129
+  - first:
+      213: 3488774961956750036
+    second: Intestines_130
+  - first:
+      213: -2253892293268018737
+    second: Intestines_131
+  - first:
+      213: 6297220135963921574
+    second: Intestines_132
+  - first:
+      213: -691775571833098147
+    second: Intestines_133
+  - first:
+      213: -6725531594953814670
+    second: Intestines_134
+  - first:
+      213: 3148531740586621559
+    second: Intestines_135
+  - first:
+      213: 1537984352154245578
+    second: Intestines_136
+  - first:
+      213: -4699602504456950039
+    second: Intestines_137
+  - first:
+      213: -2485039688905700034
+    second: Intestines_138
+  - first:
+      213: 7425825042533346275
+    second: Intestines_139
+  - first:
+      213: -5085517916608376912
+    second: Intestines_140
+  - first:
+      213: 8063074376250219520
+    second: Intestines_141
+  - first:
+      213: 8005451643816448922
+    second: Intestines_142
+  - first:
+      213: 8273432665876607180
+    second: Intestines_143
+  - first:
+      213: -4521644616492523237
+    second: Intestines_144
+  - first:
+      213: -6479545784990410582
+    second: Intestines_145
+  - first:
+      213: -8618426466328335438
+    second: Intestines_146
+  - first:
+      213: -3934499131635951930
+    second: Intestines_147
+  - first:
+      213: 2163348867873859995
+    second: Intestines_148
+  - first:
+      213: -2406006046673911268
+    second: Intestines_149
+  - first:
+      213: -6547429311065007083
+    second: Intestines_150
+  - first:
+      213: -7302196264689461467
+    second: Intestines_151
+  - first:
+      213: 1452791248072741546
+    second: Intestines_152
+  - first:
+      213: 2811619066848123451
+    second: Intestines_153
+  - first:
+      213: -2199777787379213226
+    second: Intestines_154
+  - first:
+      213: 4237400790478002449
+    second: Intestines_155
+  - first:
+      213: 5024924032251233011
+    second: Intestines_156
+  - first:
+      213: 2041161022463588095
+    second: Intestines_157
+  - first:
+      213: 1610239755517705547
+    second: Intestines_158
+  - first:
+      213: 7754256873629820372
+    second: Intestines_159
+  - first:
+      213: 349834049555696062
+    second: Intestines_160
+  - first:
+      213: 2889334839477209714
+    second: Intestines_161
+  - first:
+      213: -7524338211982651802
+    second: Intestines_162
+  - first:
+      213: 6218151565540261218
+    second: Intestines_163
+  - first:
+      213: -3528833598657473987
+    second: Intestines_164
+  - first:
+      213: 6567257849620761175
+    second: Intestines_165
+  - first:
+      213: -2610850255655355748
+    second: Intestines_166
+  - first:
+      213: 55509317447278895
+    second: Intestines_167
+  - first:
+      213: 1951168112410962636
+    second: Intestines_168
+  - first:
+      213: 6980401856404285752
+    second: Intestines_169
+  - first:
+      213: -3089486930034205744
+    second: Intestines_170
+  - first:
+      213: 6403652685880284822
+    second: Intestines_171
+  - first:
+      213: 8781431672695197719
+    second: Intestines_172
+  - first:
+      213: -4138934461236350511
+    second: Intestines_173
+  - first:
+      213: -2294544187271968199
+    second: Intestines_174
+  - first:
+      213: -4240602158079347998
+    second: Intestines_175
+  - first:
+      213: -6483049314879922600
+    second: Intestines_176
+  - first:
+      213: 2471323906565527273
+    second: Intestines_177
+  - first:
+      213: -7964721708945022401
+    second: Intestines_178
+  - first:
+      213: 6684595692092890977
+    second: Intestines_179
+  - first:
+      213: 3609743595133157900
+    second: Intestines_180
+  - first:
+      213: 4710809182361420350
+    second: Intestines_181
+  - first:
+      213: 5573637071294946323
+    second: Intestines_182
+  - first:
+      213: -930162179993238930
+    second: Intestines_183
+  - first:
+      213: -5099538252048429881
+    second: Intestines_184
+  - first:
+      213: 1249506759856416061
+    second: Intestines_185
+  - first:
+      213: -3805291035140014482
+    second: Intestines_186
+  - first:
+      213: -8100309794732409240
+    second: Intestines_187
+  - first:
+      213: -5717865281087031049
+    second: Intestines_188
+  - first:
+      213: -4696665617101580424
+    second: Intestines_189
+  - first:
+      213: -6475505174516175239
+    second: Intestines_190
+  - first:
+      213: 995830413295347897
+    second: Intestines_191
+  - first:
+      213: 6754424775404963109
+    second: Intestines_192
+  - first:
+      213: -7644335849577748076
+    second: Intestines_193
+  - first:
+      213: -1547384117892424589
+    second: Intestines_194
+  - first:
+      213: 1485708285002168955
+    second: Intestines_195
+  - first:
+      213: -9062871918188801322
+    second: Intestines_196
+  - first:
+      213: -4852985022748696888
+    second: Intestines_197
+  - first:
+      213: 5240149751647782017
+    second: Intestines_198
+  - first:
+      213: 44548790506853892
+    second: Intestines_199
+  - first:
+      213: 4174966489217628311
+    second: Intestines_200
+  - first:
+      213: 7175608677701779651
+    second: Intestines_201
+  - first:
+      213: 4557491436556202444
+    second: Intestines_202
+  - first:
+      213: -5767555344232709408
+    second: Intestines_203
+  - first:
+      213: -1398787368835437817
+    second: Intestines_204
+  - first:
+      213: -6110805110284068474
+    second: Intestines_205
+  - first:
+      213: -4501606789233080783
+    second: Intestines_206
+  - first:
+      213: -3708940044397927268
+    second: Intestines_207
+  - first:
+      213: -2911023807299395945
+    second: Intestines_208
+  - first:
+      213: 3647128900269590535
+    second: Intestines_209
+  - first:
+      213: -4158065815123788138
+    second: Intestines_210
+  - first:
+      213: 8028882109294224683
+    second: Intestines_211
+  - first:
+      213: -3486345569927497867
+    second: Intestines_212
+  - first:
+      213: -6984843634517116841
+    second: Intestines_213
+  - first:
+      213: -176107820235169865
+    second: Intestines_214
+  - first:
+      213: -2908792833835727509
+    second: Intestines_215
+  - first:
+      213: -2356693870946500885
+    second: Intestines_216
+  - first:
+      213: 3630884910238291958
+    second: Intestines_217
+  - first:
+      213: 6763326687193076030
+    second: Intestines_218
+  - first:
+      213: -5149516822086267075
+    second: Intestines_219
+  - first:
+      213: 5363340212345203025
+    second: Intestines_220
+  - first:
+      213: -4213403356370707157
+    second: Intestines_221
+  - first:
+      213: -3190532483665621824
+    second: Intestines_222
+  - first:
+      213: -636720472933179659
+    second: Intestines_223
+  - first:
+      213: 8059776301922285834
+    second: Intestines_224
+  - first:
+      213: -8441653447455528113
+    second: Intestines_225
+  - first:
+      213: -2759786876505747398
+    second: Intestines_226
+  - first:
+      213: -4578311174607298397
+    second: Intestines_227
+  - first:
+      213: -6843179753940540493
+    second: Intestines_228
+  - first:
+      213: -1598623561248826794
+    second: Intestines_229
+  - first:
+      213: 6049712515153034317
+    second: Intestines_230
+  - first:
+      213: 4590976514414053544
+    second: Intestines_231
+  - first:
+      213: -7077088829431510827
+    second: Intestines_232
+  - first:
+      213: -7623639583465308447
+    second: Intestines_233
+  - first:
+      213: 5967266800722376223
+    second: Intestines_234
+  - first:
+      213: -8091215027327708426
+    second: Intestines_235
+  - first:
+      213: 1629722746867088867
+    second: Intestines_236
+  - first:
+      213: -1885605191900403051
+    second: Intestines_237
+  - first:
+      213: -4860303141369209675
+    second: Intestines_238
+  - first:
+      213: 6472681988728911834
+    second: Intestines_239
+  - first:
+      213: -8202526893047162469
+    second: Intestines_240
+  - first:
+      213: -6921553939976918538
+    second: Intestines_241
+  - first:
+      213: -40085374648770418
+    second: Intestines_242
+  - first:
+      213: 7175567858718580390
+    second: Intestines_243
+  - first:
+      213: -6583355409975926923
+    second: Intestines_244
+  - first:
+      213: -3945828651109449077
+    second: Intestines_245
+  - first:
+      213: 2615808722772264227
+    second: Intestines_246
+  - first:
+      213: -5654171902456186799
+    second: Intestines_247
+  - first:
+      213: 3185232794639448585
+    second: Intestines_248
+  - first:
+      213: 2715385980718470969
+    second: Intestines_249
+  - first:
+      213: 73953080050959237
+    second: Intestines_250
+  - first:
+      213: -3344442951866170887
+    second: Intestines_251
+  - first:
+      213: -6141375118155499069
+    second: Intestines_252
+  - first:
+      213: -4656611121201645020
+    second: Intestines_253
+  - first:
+      213: -5397495543888163728
+    second: Intestines_254
+  - first:
+      213: 6730888762696211935
+    second: Intestines_255
+  - first:
+      213: 3120426838354226561
+    second: Intestines_256
+  - first:
+      213: 170815218654832810
+    second: Intestines_257
+  - first:
+      213: 4565148948774192154
+    second: Intestines_258
+  - first:
+      213: 757152460785000469
+    second: Intestines_259
+  - first:
+      213: -4776732725224129299
+    second: Intestines_260
+  - first:
+      213: -6188288280301565626
+    second: Intestines_261
+  - first:
+      213: -6092901960669326102
+    second: Intestines_262
+  - first:
+      213: -1232145956834328222
+    second: Intestines_263
+  - first:
+      213: -2923167925530260071
+    second: Intestines_264
+  - first:
+      213: -2568637064887552577
+    second: Intestines_265
+  - first:
+      213: 2247917039219608401
+    second: Intestines_266
+  - first:
+      213: 8196344237960373011
+    second: Intestines_267
+  - first:
+      213: 2261036663615939652
+    second: Intestines_268
+  - first:
+      213: -7434248896992939491
+    second: Intestines_269
+  - first:
+      213: -6849448198853560120
+    second: Intestines_270
+  - first:
+      213: 6089430893000129858
+    second: Intestines_271
+  - first:
+      213: -1674247966849919785
+    second: Intestines_272
+  - first:
+      213: 2716877230069801403
+    second: Intestines_273
+  - first:
+      213: 2794297180846712525
+    second: Intestines_274
+  - first:
+      213: -5967875184108244943
+    second: Intestines_275
+  - first:
+      213: -5275869629153624524
+    second: Intestines_276
+  - first:
+      213: -8073180732417810448
+    second: Intestines_277
+  - first:
+      213: 2803621552167727708
+    second: Intestines_278
+  - first:
+      213: 4716273183092896338
+    second: Intestines_279
+  - first:
+      213: -8999979715086057187
+    second: Intestines_280
+  - first:
+      213: 7291145471178174092
+    second: Intestines_281
+  - first:
+      213: 2181636551247522254
+    second: Intestines_282
+  - first:
+      213: 5637387364772455544
+    second: Intestines_283
+  - first:
+      213: 6733954445167253852
+    second: Intestines_284
+  - first:
+      213: 2050516679084666499
+    second: Intestines_285
+  - first:
+      213: -3444296846121164340
+    second: Intestines_286
+  - first:
+      213: -5435060174857289936
+    second: Intestines_287
+  - first:
+      213: 9179428933681086428
+    second: Intestines_288
+  - first:
+      213: -5722052089278216043
+    second: Intestines_289
+  - first:
+      213: 3658927452884106221
+    second: Intestines_290
+  - first:
+      213: -103764038795885463
+    second: Intestines_291
+  - first:
+      213: 4195157196436271370
+    second: Intestines_292
+  - first:
+      213: 6276397002762910862
+    second: Intestines_293
+  - first:
+      213: -447958493816063548
+    second: Intestines_294
+  - first:
+      213: -7067237565227193814
+    second: Intestines_295
+  - first:
+      213: -4881499112403722934
+    second: Intestines_296
+  - first:
+      213: 4622086984352031909
+    second: Intestines_297
+  - first:
+      213: 243742024308572767
+    second: Intestines_298
+  - first:
+      213: 7993134149912109600
+    second: Intestines_299
+  - first:
+      213: -6694822179561045996
+    second: Intestines_300
+  - first:
+      213: -2968554119096361064
+    second: Intestines_301
+  - first:
+      213: -8939680165063695937
+    second: Intestines_302
+  - first:
+      213: 5973472847357984702
+    second: Intestines_303
+  - first:
+      213: 6245751417489071629
+    second: Intestines_304
+  - first:
+      213: 7449391892964814848
+    second: Intestines_305
+  - first:
+      213: -1353815962416628052
+    second: Intestines_306
+  - first:
+      213: 6797144034512757477
+    second: Intestines_307
+  - first:
+      213: 8563071847682934539
+    second: Intestines_308
+  - first:
+      213: 6501179932684836528
+    second: Intestines_309
+  - first:
+      213: -5149800490767256485
+    second: Intestines_310
+  - first:
+      213: -8288502070756229878
+    second: Intestines_311
+  - first:
+      213: -2806794654485412972
+    second: Intestines_312
+  - first:
+      213: -1750955701718861535
+    second: Intestines_313
+  - first:
+      213: 6954821556967584389
+    second: Intestines_314
+  - first:
+      213: -8209443391280165066
+    second: Intestines_315
+  - first:
+      213: 5220823991443571920
+    second: Intestines_316
+  - first:
+      213: 5142065316862850566
+    second: Intestines_317
+  - first:
+      213: -9219388408047656587
+    second: Intestines_318
+  - first:
+      213: 3895832573599901648
+    second: Intestines_319
+  - first:
+      213: -4011837478015026432
+    second: Intestines_320
+  - first:
+      213: -4342498622900098021
+    second: Intestines_321
+  - first:
+      213: 3165635857409958442
+    second: Intestines_322
+  - first:
+      213: -2686515325223495501
+    second: Intestines_323
+  - first:
+      213: 3067737686579435094
+    second: Intestines_324
+  - first:
+      213: 1723609415699830498
+    second: Intestines_325
+  - first:
+      213: 1362296852115593712
+    second: Intestines_326
+  - first:
+      213: 1537993406625419929
+    second: Intestines_327
+  - first:
+      213: -8087669524280042852
+    second: Intestines_328
+  - first:
+      213: 2848844603240163527
+    second: Intestines_329
+  - first:
+      213: 3969711536773656380
+    second: Intestines_330
+  - first:
+      213: -6030293777807427954
+    second: Intestines_331
+  - first:
+      213: 6386383580513278759
+    second: Intestines_332
+  - first:
+      213: 308999368408578527
+    second: Intestines_333
+  - first:
+      213: 4924272534161001875
+    second: Intestines_334
+  - first:
+      213: 4405453942121995332
+    second: Intestines_335
+  - first:
+      213: 4401947886789045932
+    second: Intestines_336
+  - first:
+      213: 1490043300228186358
+    second: Intestines_337
+  - first:
+      213: -1873616090611835717
+    second: Intestines_338
+  - first:
+      213: 5341500293048169618
+    second: Intestines_339
+  - first:
+      213: 2880904097518382184
+    second: Intestines_340
+  - first:
+      213: 4443045036208070034
+    second: Intestines_341
+  - first:
+      213: 7667560153920133958
+    second: Intestines_342
+  - first:
+      213: 6038148630124721188
+    second: Intestines_343
+  - first:
+      213: 1345877823744020243
+    second: Intestines_344
+  - first:
+      213: 1449542142151010565
+    second: Intestines_345
+  - first:
+      213: -6259936818833179783
+    second: Intestines_346
+  - first:
+      213: 3368171593115759490
+    second: Intestines_347
+  - first:
+      213: 7094059243945513936
+    second: Intestines_348
+  - first:
+      213: -7568361070561509235
+    second: Intestines_349
+  - first:
+      213: -8989849009819247025
+    second: Intestines_350
+  - first:
+      213: 7822526393829379515
+    second: Intestines_351
+  - first:
+      213: 2863839088777566451
+    second: Intestines_352
+  - first:
+      213: -1940010434323250870
+    second: Intestines_353
+  - first:
+      213: -6719534541260766821
+    second: Intestines_354
+  - first:
+      213: -794567443124188510
+    second: Intestines_355
+  - first:
+      213: -2327640454015819646
+    second: Intestines_356
+  - first:
+      213: -548766510414700143
+    second: Intestines_357
+  - first:
+      213: 6939004678773465399
+    second: Intestines_358
+  - first:
+      213: -1834880678658629988
+    second: Intestines_359
+  - first:
+      213: -519766763307163788
+    second: Intestines_360
+  - first:
+      213: -2058266378329552781
+    second: Intestines_361
+  - first:
+      213: -8942053745807110823
+    second: Intestines_362
+  - first:
+      213: -5151603435823945394
+    second: Intestines_363
+  - first:
+      213: 79493329760063639
+    second: Intestines_364
+  - first:
+      213: -5870213558219710747
+    second: Intestines_365
+  - first:
+      213: -2586199786604617070
+    second: Intestines_366
+  - first:
+      213: 5075009389163556402
+    second: Intestines_367
+  - first:
+      213: -4094114949824446194
+    second: Intestines_368
+  - first:
+      213: 3491518276469509105
+    second: Intestines_369
+  - first:
+      213: -7914812195298212000
+    second: Intestines_370
+  - first:
+      213: -682109282217746113
+    second: Intestines_371
+  - first:
+      213: -2618998171269877267
+    second: Intestines_372
+  - first:
+      213: -1281031991376834130
+    second: Intestines_373
+  - first:
+      213: -3135183770531117771
+    second: Intestines_374
+  - first:
+      213: -749581288142040072
+    second: Intestines_375
+  - first:
+      213: -1763443639243700597
+    second: Intestines_376
+  - first:
+      213: 3389631306765678817
+    second: Intestines_377
+  - first:
+      213: 582500926202751094
+    second: Intestines_378
+  - first:
+      213: -3754778280900743162
+    second: Intestines_379
+  - first:
+      213: -7072555901353959055
+    second: Intestines_380
+  - first:
+      213: -8310784388053264534
+    second: Intestines_381
+  - first:
+      213: 1378452477225660820
+    second: Intestines_382
+  - first:
+      213: 6792320717736544677
+    second: Intestines_383
+  - first:
+      213: 530375952305619134
+    second: Intestines_384
+  - first:
+      213: -4985087142872598584
+    second: Intestines_385
+  - first:
+      213: -3418693566138534256
+    second: Intestines_386
+  - first:
+      213: -5007896502367691040
+    second: Intestines_387
+  - first:
+      213: 6602813808723546003
+    second: Intestines_388
+  - first:
+      213: 1884740011581755633
+    second: Intestines_389
+  - first:
+      213: -696916039784373634
+    second: Intestines_390
+  - first:
+      213: 1851335231074807235
+    second: Intestines_391
+  - first:
+      213: 421303324157371767
+    second: Intestines_392
+  - first:
+      213: -4254572532406117100
+    second: Intestines_393
+  - first:
+      213: 4712109646926143742
+    second: Intestines_394
+  - first:
+      213: 2721034791920008017
+    second: Intestines_395
+  - first:
+      213: -4175480438572842680
+    second: Intestines_396
+  - first:
+      213: -2439296285303023920
+    second: Intestines_397
+  - first:
+      213: -8052584226984153005
+    second: Intestines_398
+  - first:
+      213: 5418063269767556633
+    second: Intestines_399
+  - first:
+      213: 1161271539879759287
+    second: Intestines_400
+  - first:
+      213: -1729808580261634410
+    second: Intestines_401
+  - first:
+      213: -1487546443094009997
+    second: Intestines_402
+  - first:
+      213: 2333832266846561021
+    second: Intestines_403
+  - first:
+      213: -1603695028694399096
+    second: Intestines_404
+  - first:
+      213: -3430481844160004100
+    second: Intestines_405
+  - first:
+      213: 1666945243665457604
+    second: Intestines_406
+  - first:
+      213: -6427590956880987128
+    second: Intestines_407
+  - first:
+      213: 200999291759567778
+    second: Intestines_408
+  - first:
+      213: -4036767954707291561
+    second: Intestines_409
+  - first:
+      213: -4283211803480065055
+    second: Intestines_410
+  - first:
+      213: -7118640587284972056
+    second: Intestines_411
+  - first:
+      213: -2137081276626067934
+    second: Intestines_412
+  - first:
+      213: 3957231962761473229
+    second: Intestines_413
+  - first:
+      213: 4517337150196291280
+    second: Intestines_414
+  - first:
+      213: 2079590296426309087
+    second: Intestines_415
+  - first:
+      213: -9064221676953331460
+    second: Intestines_416
+  - first:
+      213: 6078133864806533374
+    second: Intestines_417
+  - first:
+      213: 5433168406654763232
+    second: Intestines_418
+  - first:
+      213: 4899620942282467065
+    second: Intestines_419
+  - first:
+      213: -4719940290643600820
+    second: Intestines_420
+  - first:
+      213: -7034290628845577935
+    second: Intestines_421
+  - first:
+      213: -2651539809572677039
+    second: Intestines_422
+  - first:
+      213: -1037347812994807152
+    second: Intestines_423
+  - first:
+      213: -115400401711515355
+    second: Intestines_424
+  - first:
+      213: -7406333429811784014
+    second: Intestines_425
+  - first:
+      213: 948262137416822583
+    second: Intestines_426
+  - first:
+      213: -5779928033028758438
+    second: Intestines_427
+  - first:
+      213: -6047692861217473091
+    second: Intestines_428
+  - first:
+      213: -843554155528424738
+    second: Intestines_429
+  - first:
+      213: -486556543231795328
+    second: Intestines_430
+  - first:
+      213: -1224749649003837369
+    second: Intestines_431
+  - first:
+      213: -2051112868549536459
+    second: Intestines_432
+  - first:
+      213: 2000146329136358220
+    second: Intestines_433
+  - first:
+      213: 3018096914737255810
+    second: Intestines_434
+  - first:
+      213: 8741066476633228299
+    second: Intestines_435
+  - first:
+      213: 2389214461048639242
+    second: Intestines_436
+  - first:
+      213: -20201437318404952
+    second: Intestines_437
+  - first:
+      213: 495615887681136937
+    second: Intestines_438
+  - first:
+      213: 6309860726603970885
+    second: Intestines_439
+  - first:
+      213: -3962865061923069471
+    second: Intestines_440
+  - first:
+      213: -2727853613404790239
+    second: Intestines_441
+  - first:
+      213: 6515847566358330916
+    second: Intestines_442
+  - first:
+      213: -1646320648992455673
+    second: Intestines_443
+  - first:
+      213: -6669868942910312990
+    second: Intestines_444
+  - first:
+      213: -6954775191991864936
+    second: Intestines_445
+  - first:
+      213: -213954772916156922
+    second: Intestines_446
+  - first:
+      213: 2330097257816610729
+    second: Intestines_447
+  - first:
+      213: 301124821529859926
+    second: Intestines_448
+  - first:
+      213: 7926008170591773897
+    second: Intestines_449
+  - first:
+      213: -5798153287855596275
+    second: Intestines_450
+  - first:
+      213: 6454486979430897499
+    second: Intestines_451
+  - first:
+      213: -8235570240068561609
+    second: Intestines_452
+  - first:
+      213: -473215823042663293
+    second: Intestines_453
+  - first:
+      213: -6598223885310222793
+    second: Intestines_454
+  - first:
+      213: -2012195687851602863
+    second: Intestines_455
+  - first:
+      213: -7273911206142065354
+    second: Intestines_456
+  - first:
+      213: -559607725348340493
+    second: Intestines_457
+  - first:
+      213: -3902119122134479284
+    second: Intestines_458
+  - first:
+      213: -6924882882671441372
+    second: Intestines_459
+  - first:
+      213: 3782456640557995044
+    second: Intestines_460
+  - first:
+      213: -2616812888940509898
+    second: Intestines_461
+  - first:
+      213: 2703081803743341725
+    second: Intestines_462
+  - first:
+      213: -2118167197388743344
+    second: Intestines_463
+  - first:
+      213: -3981979752596583302
+    second: Intestines_464
+  - first:
+      213: -3869198641707133203
+    second: Intestines_465
+  - first:
+      213: -2024581448359926208
+    second: Intestines_466
+  - first:
+      213: -3620063147608649941
+    second: Intestines_467
+  - first:
+      213: -2963177728169673935
+    second: Intestines_468
+  - first:
+      213: -2851407608729206503
+    second: Intestines_469
+  - first:
+      213: 8581392409104226263
+    second: Intestines_470
+  - first:
+      213: 8348704630836160456
+    second: Intestines_471
+  - first:
+      213: -6689090324298178311
+    second: Intestines_472
+  - first:
+      213: 2932331257138381017
+    second: Intestines_473
+  - first:
+      213: 6921238575515960558
+    second: Intestines_474
+  - first:
+      213: 969805196223319466
+    second: Intestines_475
+  - first:
+      213: -1092851580510858598
+    second: Intestines_476
+  - first:
+      213: 1434480845630288711
+    second: Intestines_477
+  - first:
+      213: -4559777106846376876
+    second: Intestines_478
+  - first:
+      213: -192800000172016113
+    second: Intestines_479
+  - first:
+      213: -3211574107313403276
+    second: Intestines_480
+  - first:
+      213: -1801361633323917668
+    second: Intestines_481
+  - first:
+      213: -8511034547890544497
+    second: Intestines_482
+  - first:
+      213: 3037515583914106974
+    second: Intestines_483
+  - first:
+      213: -2681168910935754852
+    second: Intestines_484
+  - first:
+      213: -2623594492713389541
+    second: Intestines_485
+  - first:
+      213: 6896724075301686845
+    second: Intestines_486
+  - first:
+      213: 1169907228389910173
+    second: Intestines_487
+  - first:
+      213: 573573655937816612
+    second: Intestines_488
+  - first:
+      213: -2679770875072226825
+    second: Intestines_489
+  - first:
+      213: 3133917908347164022
+    second: Intestines_490
+  - first:
+      213: -7285159131067599843
+    second: Intestines_491
+  - first:
+      213: 4762370131710821024
+    second: Intestines_492
+  - first:
+      213: 5310250931840413946
+    second: Intestines_493
+  - first:
+      213: 3247106851058193750
+    second: Intestines_494
+  - first:
+      213: -1327501870398615580
+    second: Intestines_495
+  - first:
+      213: 7604980465016118500
+    second: Intestines_496
+  - first:
+      213: -356290231571819678
+    second: Intestines_497
+  - first:
+      213: -7966988107670509522
+    second: Intestines_498
+  - first:
+      213: 8811166080692496208
+    second: Intestines_499
+  - first:
+      213: -3832176574350854417
+    second: Intestines_500
+  - first:
+      213: -2673814737496972802
+    second: Intestines_501
+  - first:
+      213: -7617551492984892663
+    second: Intestines_502
+  - first:
+      213: -536514329299636992
+    second: Intestines_503
+  - first:
+      213: 293743560646017180
+    second: Intestines_504
+  - first:
+      213: 1116359257466619583
+    second: Intestines_505
+  - first:
+      213: -2530926360535917452
+    second: Intestines_506
+  - first:
+      213: -4476392436542513799
+    second: Intestines_507
+  - first:
+      213: 5583316891859581150
+    second: Intestines_508
+  - first:
+      213: 3835186458358641716
+    second: Intestines_509
+  - first:
+      213: 4242677751821554971
+    second: Intestines_510
+  - first:
+      213: 8764561170526573559
+    second: Intestines_511
+  - first:
+      213: 3796163245189462827
+    second: Intestines_512
+  - first:
+      213: 1032708386093735252
+    second: Intestines_513
+  - first:
+      213: -7289010984797572960
+    second: Intestines_514
+  - first:
+      213: -938070152677291254
+    second: Intestines_515
+  - first:
+      213: 5871991968941808567
+    second: Intestines_516
+  - first:
+      213: 8523931242254942923
+    second: Intestines_517
+  - first:
+      213: 1431134021033574575
+    second: Intestines_518
+  - first:
+      213: 6743958565799849047
+    second: Intestines_519
+  - first:
+      213: -2205185846965303945
+    second: Intestines_520
+  - first:
+      213: -3625395685151897522
+    second: Intestines_521
+  - first:
+      213: -1240480941629066147
+    second: Intestines_522
+  - first:
+      213: 2912980196614739807
+    second: Intestines_523
+  - first:
+      213: 1656333202655260146
+    second: Intestines_524
+  - first:
+      213: 6220681470570386902
+    second: Intestines_525
+  - first:
+      213: -832660665411823256
+    second: Intestines_526
+  - first:
+      213: 2486578927315451594
+    second: Intestines_527
+  - first:
+      213: 2886662842856672804
+    second: Intestines_528
+  - first:
+      213: -3810703588722706455
+    second: Intestines_529
+  - first:
+      213: -2192105759235620207
+    second: Intestines_530
+  - first:
+      213: -9188481279022545708
+    second: Intestines_531
+  - first:
+      213: 1236943306325563570
+    second: Intestines_532
+  - first:
+      213: -354196801019168146
+    second: Intestines_533
+  - first:
+      213: -5795588484096470615
+    second: Intestines_534
+  - first:
+      213: 5500390559403433894
+    second: Intestines_535
+  - first:
+      213: 2479716408400653125
+    second: Intestines_536
+  - first:
+      213: -2325661603732891408
+    second: Intestines_537
+  - first:
+      213: 1090942271636995517
+    second: Intestines_538
+  - first:
+      213: 7822617624298568071
+    second: Intestines_539
+  - first:
+      213: -8665158201563619393
+    second: Intestines_540
+  - first:
+      213: 2024906076609527241
+    second: Intestines_541
+  - first:
+      213: 1646736941311031086
+    second: Intestines_542
+  - first:
+      213: 6230266504943613007
+    second: Intestines_543
+  - first:
+      213: -3099683570102850821
+    second: Intestines_544
+  - first:
+      213: 3520898218612492821
+    second: Intestines_545
+  - first:
+      213: -6441607862069972196
+    second: Intestines_546
+  - first:
+      213: 3348309446858822966
+    second: Intestines_547
+  - first:
+      213: 4516338858663860411
+    second: Intestines_548
+  - first:
+      213: 8202199711146109211
+    second: Intestines_549
+  - first:
+      213: -7545565895270253383
+    second: Intestines_550
+  - first:
+      213: -5421732665521322957
+    second: Intestines_551
+  - first:
+      213: 5065281953580233765
+    second: Intestines_552
+  - first:
+      213: 1352735716543645251
+    second: Intestines_553
+  - first:
+      213: -2565495635250632257
+    second: Intestines_554
+  - first:
+      213: -1950000746068935192
+    second: Intestines_555
+  - first:
+      213: -793137011392760427
+    second: Intestines_556
+  - first:
+      213: 1235737470476103017
+    second: Intestines_557
+  - first:
+      213: -7087964675265037173
+    second: Intestines_558
+  - first:
+      213: 4344817399054953632
+    second: Intestines_559
+  - first:
+      213: -7065918793283952435
+    second: Intestines_560
+  - first:
+      213: 4343261896253411254
+    second: Intestines_561
+  - first:
+      213: 379326166157875315
+    second: Intestines_562
+  - first:
+      213: -9005901129244686509
+    second: Intestines_563
+  - first:
+      213: 582990940403614218
+    second: Intestines_564
+  - first:
+      213: 7806098352394157233
+    second: Intestines_565
+  - first:
+      213: -9190097244164745945
+    second: Intestines_566
+  - first:
+      213: -8167211109504058441
+    second: Intestines_567
+  - first:
+      213: 4383021209619849126
+    second: Intestines_568
+  - first:
+      213: 6045946611600356785
+    second: Intestines_569
+  - first:
+      213: -5283742710810927604
+    second: Intestines_570
+  - first:
+      213: -1000706342099060068
+    second: Intestines_571
+  - first:
+      213: -5586131705829228012
+    second: Intestines_572
+  - first:
+      213: 6091636906262828836
+    second: Intestines_573
+  - first:
+      213: -9201571577384567425
+    second: Intestines_574
+  - first:
+      213: 5193445490870546451
+    second: Intestines_575
+  - first:
+      213: 5460797559251364974
+    second: Intestines_576
+  - first:
+      213: 293027989700754231
+    second: Intestines_577
+  - first:
+      213: -7868919534945771495
+    second: Intestines_578
+  - first:
+      213: 8882519225617033419
+    second: Intestines_579
+  - first:
+      213: -553701653622377591
+    second: Intestines_580
+  - first:
+      213: -8629589788743024449
+    second: Intestines_581
+  - first:
+      213: 8447957587359276093
+    second: Intestines_582
+  - first:
+      213: -1651751009773039556
+    second: Intestines_583
+  - first:
+      213: 8107996390117909804
+    second: Intestines_584
+  - first:
+      213: 788056105507886592
+    second: Intestines_585
+  - first:
+      213: 5470454821669299948
+    second: Intestines_586
+  - first:
+      213: 3637709534894511487
+    second: Intestines_587
+  - first:
+      213: 3914001406293482217
+    second: Intestines_588
+  - first:
+      213: 3950416444265602995
+    second: Intestines_589
+  - first:
+      213: -8109210472856099449
+    second: Intestines_590
+  - first:
+      213: 3208600806915847997
+    second: Intestines_591
+  - first:
+      213: 1993837209213777886
+    second: Intestines_592
+  - first:
+      213: 6163367748472130112
+    second: Intestines_593
+  - first:
+      213: 2459724286393791227
+    second: Intestines_594
+  - first:
+      213: -9152767478661339137
+    second: Intestines_595
+  - first:
+      213: -5175563079455758197
+    second: Intestines_596
+  - first:
+      213: -8947007319037010725
+    second: Intestines_597
+  - first:
+      213: 9152771643123646213
+    second: Intestines_598
+  - first:
+      213: 1679885611109973353
+    second: Intestines_599
+  - first:
+      213: -7361611992806132736
+    second: Intestines_600
+  - first:
+      213: 1302736817764183177
+    second: Intestines_601
+  - first:
+      213: 7045726348017557993
+    second: Intestines_602
+  - first:
+      213: 3146824189608303579
+    second: Intestines_603
+  - first:
+      213: 8807082885832230231
+    second: Intestines_604
+  - first:
+      213: -2954597999142287168
+    second: Intestines_605
+  - first:
+      213: -893254380978166112
+    second: Intestines_606
+  - first:
+      213: -6901211754611206644
+    second: Intestines_607
+  - first:
+      213: -6508652520403512055
+    second: Intestines_608
+  - first:
+      213: -4663841771849313
+    second: Intestines_609
+  - first:
+      213: 4708004038797070609
+    second: Intestines_610
+  - first:
+      213: 8600564510300418164
+    second: Intestines_611
+  - first:
+      213: -3857505439085058723
+    second: Intestines_612
+  - first:
+      213: -6811954940341892811
+    second: Intestines_613
+  - first:
+      213: -6743895118517626620
+    second: Intestines_614
+  - first:
+      213: 2521670093208039490
+    second: Intestines_615
+  - first:
+      213: 5797587809041208510
+    second: Intestines_616
+  - first:
+      213: -2283967392125946466
+    second: Intestines_617
+  - first:
+      213: 2316362065074925698
+    second: Intestines_618
+  - first:
+      213: -4597041811698542267
+    second: Intestines_619
+  - first:
+      213: 6275826641838519571
+    second: Intestines_620
+  - first:
+      213: 1382631906173760243
+    second: Intestines_621
+  - first:
+      213: -3239764794685226137
+    second: Intestines_622
+  - first:
+      213: 7876653731019883375
+    second: Intestines_623
+  - first:
+      213: -3974140055093488595
+    second: Intestines_624
+  - first:
+      213: -3987637789916823590
+    second: Intestines_625
+  - first:
+      213: -5033027239662688793
+    second: Intestines_626
+  - first:
+      213: -4734745178585639914
+    second: Intestines_627
+  - first:
+      213: 3298733131486618944
+    second: Intestines_628
+  - first:
+      213: 4114345071898019271
+    second: Intestines_629
+  - first:
+      213: 206668923424755390
+    second: Intestines_630
+  - first:
+      213: 1264652450436575989
+    second: Intestines_631
+  - first:
+      213: 4486198636125857325
+    second: Intestines_632
+  - first:
+      213: 1128998449318210173
+    second: Intestines_633
+  - first:
+      213: 46487073769363933
+    second: Intestines_634
+  - first:
+      213: -2839040237082444232
+    second: Intestines_635
+  - first:
+      213: -8815741013226964797
+    second: Intestines_636
+  - first:
+      213: -5302267483472625342
+    second: Intestines_637
+  - first:
+      213: -577163987606278385
+    second: Intestines_638
+  - first:
+      213: 8982658335468799977
+    second: Intestines_639
+  - first:
+      213: 1420460958765301853
+    second: Intestines_640
+  - first:
+      213: 569141376066065316
+    second: Intestines_641
+  - first:
+      213: 4966749865444845030
+    second: Intestines_642
+  - first:
+      213: -6349027092317189142
+    second: Intestines_643
+  - first:
+      213: -1213465277020094545
+    second: Intestines_644
+  - first:
+      213: 8248475113310663195
+    second: Intestines_645
+  - first:
+      213: -1884098472755757638
+    second: Intestines_646
+  - first:
+      213: -3673068448909630232
+    second: Intestines_647
+  - first:
+      213: -6597701343160942578
+    second: Intestines_648
+  - first:
+      213: 4154303657602124620
+    second: Intestines_649
+  - first:
+      213: -4322402152307996215
+    second: Intestines_650
+  - first:
+      213: -82167152201213992
+    second: Intestines_651
+  - first:
+      213: 3046518925780470174
+    second: Intestines_652
+  - first:
+      213: 3384461125135387360
+    second: Intestines_653
+  - first:
+      213: -6896613524534514165
+    second: Intestines_654
+  - first:
+      213: -5526026212202430013
+    second: Intestines_655
+  - first:
+      213: -2041485856761710617
+    second: Intestines_656
+  - first:
+      213: 4368532424854259967
+    second: Intestines_657
+  - first:
+      213: -7240052929579138013
+    second: Intestines_658
+  - first:
+      213: 5100625793592861597
+    second: Intestines_659
+  - first:
+      213: -1737722565277123952
+    second: Intestines_660
+  - first:
+      213: 2864101514879039039
+    second: Intestines_661
+  - first:
+      213: 8104827961089194877
+    second: Intestines_662
+  - first:
+      213: -4110654454611848036
+    second: Intestines_663
+  - first:
+      213: -7967105789670458527
+    second: Intestines_664
+  - first:
+      213: -4611125737899898732
+    second: Intestines_665
+  - first:
+      213: 6056009506050343480
+    second: Intestines_666
+  - first:
+      213: -8836245941442183213
+    second: Intestines_667
+  - first:
+      213: -6658579514467672368
+    second: Intestines_668
+  - first:
+      213: -140392177161416986
+    second: Intestines_669
+  - first:
+      213: -4287372216144869326
+    second: Intestines_670
+  - first:
+      213: 3488326084625474254
+    second: Intestines_671
+  - first:
+      213: 7200203513118113813
+    second: Intestines_672
+  - first:
+      213: -5779109222681688490
+    second: Intestines_673
+  - first:
+      213: -1565764416094844882
+    second: Intestines_674
+  - first:
+      213: -5204046868239753256
+    second: Intestines_675
+  - first:
+      213: -2565225619249531121
+    second: Intestines_676
+  - first:
+      213: -1755443934937044771
+    second: Intestines_677
+  - first:
+      213: 8914971271939771310
+    second: Intestines_678
+  - first:
+      213: 4682619739520892126
+    second: Intestines_679
+  - first:
+      213: 6671318244844286822
+    second: Intestines_680
+  - first:
+      213: -5672949569583438351
+    second: Intestines_681
+  - first:
+      213: 6630413831441063958
+    second: Intestines_682
+  - first:
+      213: 8643877459097196682
+    second: Intestines_683
+  - first:
+      213: -6432590342872193477
+    second: Intestines_684
+  - first:
+      213: 9135910119910752035
+    second: Intestines_685
+  - first:
+      213: -6329740013582158486
+    second: Intestines_686
+  - first:
+      213: 3442696856537506514
+    second: Intestines_687
+  - first:
+      213: -5628272607417200857
+    second: Intestines_688
+  - first:
+      213: 2820410945924672294
+    second: Intestines_689
+  - first:
+      213: -2404123562793796794
+    second: Intestines_690
+  - first:
+      213: -4201821466808634520
+    second: Intestines_691
+  - first:
+      213: 786226904452637685
+    second: Intestines_692
+  - first:
+      213: 6710746182403262000
+    second: Intestines_693
+  - first:
+      213: 5410877412548568978
+    second: Intestines_694
+  - first:
+      213: -746894401460173203
+    second: Intestines_695
+  - first:
+      213: -7609095046561389486
+    second: Intestines_696
+  - first:
+      213: -2943800188660642843
+    second: Intestines_697
+  - first:
+      213: -2239546490339844281
+    second: Intestines_698
+  - first:
+      213: 8984445467992549359
+    second: Intestines_699
+  - first:
+      213: 1932568570527804785
+    second: Intestines_700
+  - first:
+      213: -2639202918022123210
+    second: Intestines_701
+  - first:
+      213: 3995778895371349463
+    second: Intestines_702
+  - first:
+      213: 1451359869719575151
+    second: Intestines_703
+  - first:
+      213: 8737114666255678517
+    second: Intestines_704
+  - first:
+      213: -6410349515317863685
+    second: Intestines_705
+  - first:
+      213: 3570532293930035838
+    second: Intestines_706
+  - first:
+      213: -7613733673465061134
+    second: Intestines_707
+  - first:
+      213: 7767978535387241846
+    second: Intestines_708
+  - first:
+      213: -203156186786812501
+    second: Intestines_709
+  - first:
+      213: 8032779599359928835
+    second: Intestines_710
+  - first:
+      213: 597236287949125988
+    second: Intestines_711
+  - first:
+      213: 2570399416255961214
+    second: Intestines_712
+  - first:
+      213: -8340690000875743246
+    second: Intestines_713
+  - first:
+      213: 2175489802339357037
+    second: Intestines_714
+  - first:
+      213: -1708121149764877855
+    second: Intestines_715
+  - first:
+      213: 8338662870118653139
+    second: Intestines_716
+  - first:
+      213: 6072586371864891750
+    second: Intestines_717
+  - first:
+      213: 1146711954383706634
+    second: Intestines_718
+  - first:
+      213: 8368779664710596396
+    second: Intestines_719
+  - first:
+      213: 772678262651845317
+    second: Intestines_720
+  - first:
+      213: -1426991306087814466
+    second: Intestines_721
+  - first:
+      213: 5879748272003914641
+    second: Intestines_722
+  - first:
+      213: -1245416619382783559
+    second: Intestines_723
+  - first:
+      213: 6287509499353605100
+    second: Intestines_724
+  - first:
+      213: -2780884397281331692
+    second: Intestines_725
+  - first:
+      213: -5836291891120020318
+    second: Intestines_726
+  - first:
+      213: -1455912310535589254
+    second: Intestines_727
+  - first:
+      213: 1842841479519390719
+    second: Intestines_728
+  - first:
+      213: -6390734834145593302
+    second: Intestines_729
+  - first:
+      213: 913685715941814995
+    second: Intestines_730
+  - first:
+      213: -6297926514689901016
+    second: Intestines_731
+  - first:
+      213: -360917486795703670
+    second: Intestines_732
+  - first:
+      213: -8801872508018114599
+    second: Intestines_733
+  - first:
+      213: -3521037690975747299
+    second: Intestines_734
+  - first:
+      213: 6626211419776940823
+    second: Intestines_735
+  - first:
+      213: 876285102304181194
+    second: Intestines_736
+  - first:
+      213: 3907418766205776469
+    second: Intestines_737
+  - first:
+      213: -7059140512308075159
+    second: Intestines_738
+  - first:
+      213: 1790251994538036658
+    second: Intestines_739
+  - first:
+      213: -2241632180903195080
+    second: Intestines_740
+  - first:
+      213: -8491218150773473058
+    second: Intestines_741
+  - first:
+      213: 5539368243921875181
+    second: Intestines_742
+  - first:
+      213: -4005864412456032057
+    second: Intestines_743
+  - first:
+      213: 8157232658598560581
+    second: Intestines_744
+  - first:
+      213: -8729834443665617365
+    second: Intestines_745
+  - first:
+      213: -8636593412350046548
+    second: Intestines_746
+  - first:
+      213: 1569577480548029364
+    second: Intestines_747
+  - first:
+      213: 5540631027221316416
+    second: Intestines_748
+  - first:
+      213: 4917176550209810625
+    second: Intestines_749
+  - first:
+      213: -7470268124461556251
+    second: Intestines_750
+  - first:
+      213: 1111396777043189645
+    second: Intestines_751
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Intestines_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b434b77007b87c30800000000000000
+      internalID: 4357433852117136561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908ee577e73374930800000000000000
+      internalID: 4127324201769953289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedd2a2472beefc90800000000000000
+      internalID: -7134006205854065174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a27a4bed99ef310800000000000000
+      internalID: 1440758112597781025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6d8cac7bfc7a1d0800000000000000
+      internalID: -3339472210383808808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791046e6426628ff0800000000000000
+      internalID: -35353540408639081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aac7902f85b04d90800000000000000
+      internalID: -7115487784913614170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6a7ac21719ddac0800000000000000
+      internalID: -3828744192928536892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b60c3233e7a3d6f0800000000000000
+      internalID: -661000126051121484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f41f6200cb358510800000000000000
+      internalID: 1550711342559597809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f284568d3a22f8680800000000000000
+      internalID: -8750737463852054481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f790863cb701920800000000000000
+      internalID: 2959001034376707960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22977d1d88d6c4690800000000000000
+      internalID: -7616592435386812126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8673e662968b40700800000000000000
+      internalID: 505731819928172392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5201e5846daa2a1a0800000000000000
+      internalID: -6799684650062180315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ce61ebe0e63c7a0800000000000000
+      internalID: -6358117239319237617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913f29a5a585ba590800000000000000
+      internalID: -7661933195950886119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab230f7596be19130800000000000000
+      internalID: 3571894817160966842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b686339b378e50410800000000000000
+      internalID: 1442814839368149099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da5962e42ab0a1f0800000000000000
+      internalID: -1035623246715069738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acea291b141204e0800000000000000
+      internalID: -2017027576489644896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cab9073f12dac3d0800000000000000
+      internalID: -3185502754902000960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb768ff57de3441b0800000000000000
+      internalID: -5673340535830976581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62193da40e0ad95b0800000000000000
+      internalID: -5359951096312524506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d784da8053c7f0800000000000000
+      internalID: -593542168681393760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85598880276e08b0800000000000000
+      internalID: -5184092731629546099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5405c06788b47e760800000000000000
+      internalID: 7487035954994892869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4e687b24b810c50800000000000000
+      internalID: 6629733245129254091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f743584e9985f24f0800000000000000
+      internalID: -851364386562558849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a5b5af851fb1140800000000000000
+      internalID: 4691608801296210549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f188360943549980800000000000000
+      internalID: -8533103820858162699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acb9637a335f4940800000000000000
+      internalID: 5282532398438399141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_56
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3bc4ed6f80a74e50800000000000000
+      internalID: 6793575100796160827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_57
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4395b05a696f76520800000000000000
+      internalID: 2695394028879042868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_58
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3373a9b73b8789590800000000000000
+      internalID: -7667245653330086093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_59
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2b3d2df6e070ce0800000000000000
+      internalID: -1439165682480336214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192eca8ac5a496b50800000000000000
+      internalID: 6586877691833410193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_61
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a34938a556ec00800000000000000
+      internalID: 929524554102187952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a705caad2d72cb0800000000000000
+      internalID: -4888707033851725268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_63
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a9a3f5bd8ccebf0800000000000000
+      internalID: -293639031164855756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b40a30415ce48680800000000000000
+      internalID: -8753611941987351367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6047427c670aef60800000000000000
+      internalID: 8064266245115428971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2302e09fbbcde30800000000000000
+      internalID: 4529702003586118311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e393b39a1acbf90800000000000000
+      internalID: -6936491577842254220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_88
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30fcc22c887d6e10800000000000000
+      internalID: 2192541136873910333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_90
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2d3b4e7710d9f5d0800000000000000
+      internalID: -3028160475108262611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6338e1988591210b0800000000000000
+      internalID: -5759513105405148362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_94
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce511394db475500800000000000000
+      internalID: 384859669536005836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f56a0d69bb941840800000000000000
+      internalID: 5193947490965677558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_97
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ec6e27641105d60800000000000000
+      internalID: 7876814742544109100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d521b159dbec9acb0800000000000000
+      internalID: -4852119809869278627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a015514ea38ea10800000000000000
+      internalID: 1938864390867585602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_100
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e582558a0cc2770800000000000000
+      internalID: 8587450418704440916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297acc931a5fb5ab0800000000000000
+      internalID: -5018147286966032494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ef2836ad0c87e10800000000000000
+      internalID: 2195716862548049476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69116d076c6e03c70800000000000000
+      internalID: 8948906199556166038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_104
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5267feeac5b51f440800000000000000
+      internalID: 4967852317596415525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_105
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412f6ed0f9bc18a90800000000000000
+      internalID: -7313340435879497196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_106
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fea6bb4a37a254c0800000000000000
+      internalID: -4300190825365197065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_107
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9164c73d69c8120800000000000000
+      internalID: 2417472935058348489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffc47863f0bee950800000000000000
+      internalID: 6480311473308749816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_109
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fc06920d0e897c0800000000000000
+      internalID: -4064251479049842857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_110
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8b32bd238749010800000000000000
+      internalID: 1194711960980273395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_111
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c339ac92299a8b00800000000000000
+      internalID: 831645455139550153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e62c17c326aa15f0800000000000000
+      internalID: -785132512428153112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_130
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d285b4f75e9a6030800000000000000
+      internalID: 3488774961956750036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_132
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac019c7958346750800000000000000
+      internalID: 6297220135963921574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_134
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d8c15d5ac1aa2a0800000000000000
+      internalID: -6725531594953814670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_136
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac95344ae94085510800000000000000
+      internalID: 1537984352154245578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_138
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d470ab19d538dd0800000000000000
+      internalID: -2485039688905700034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf4ca9266c9c69b0800000000000000
+      internalID: -5085517916608376912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_142
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a931f38fad3191f60800000000000000
+      internalID: 8005451643816448922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11e7619d24ef31c0800000000000000
+      internalID: -4521644616492523237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_145
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa854cb40770416a0800000000000000
+      internalID: -6479545784990410582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_146
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbacaf8ac2356880800000000000000
+      internalID: -8618426466328335438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_147
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c691c9b2e9d569c0800000000000000
+      internalID: -3934499131635951930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_148
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b996dda5552c50e10800000000000000
+      internalID: 2163348867873859995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_149
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c124f848f362c9ed0800000000000000
+      internalID: -2406006046673911268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c5df93bbbd225a0800000000000000
+      internalID: -6547429311065007083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_151
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527100b9f2369aa90800000000000000
+      internalID: -7302196264689461467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_152
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa21c2261f9592410800000000000000
+      internalID: 1452791248072741546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_153
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a923b05a0e40720800000000000000
+      internalID: 2811619066848123451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_154
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c977ed1c1d871e0800000000000000
+      internalID: -2199777787379213226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_155
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119966771954eca30800000000000000
+      internalID: 4237400790478002449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_156
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f288adb8cd1cb540800000000000000
+      internalID: 5024924032251233011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_157
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff6b059a229a35c10800000000000000
+      internalID: 2041161022463588095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_158
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d38d6b688b85610800000000000000
+      internalID: 1610239755517705547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_159
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d526d1fa87ac9b60800000000000000
+      internalID: 7754256873629820372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e1e3d2ff49706a0800000000000000
+      internalID: -6483049314879922600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_178
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f326d7bfdcf977190800000000000000
+      internalID: -7964721708945022401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_180
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02472eaca2681230800000000000000
+      internalID: 3609743595133157900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_182
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cdb7dc269895d40800000000000000
+      internalID: 5573637071294946323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_184
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc03207afcca39b0800000000000000
+      internalID: -5099538252048429881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_186
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e308ff6f3e03bc0800000000000000
+      internalID: -3805291035140014482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_188
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8b44742df06a0b0800000000000000
+      internalID: -5717865281087031049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intestines_190
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e62cb3a526226a0800000000000000
+      internalID: -6475505174516175239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 274c279d4fb69de4396daf3175ae572b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
