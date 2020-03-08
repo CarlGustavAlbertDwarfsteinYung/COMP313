@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f1e5933458d9d4782a8c05b2292f98, type: 3}
+  m_Name: Basophil
+  m_EditorClassIdentifier: 
+  cellSprite: {fileID: -2605977081463725289, guid: c0d8c98aa26f9ad43a594bb8e4f4c5de,
+    type: 3}
+  cellName: Basophil
+  cellDescription: Monocytes are a type of leukocyte, or white blood cell. They are
+    the largest type of leukocyte and can differentiate into macrophages and myeloid
+    lineage dendritic cells. As a part of the vertebrate innate immune system monocytes
+    also influence the process of adaptive immunity.
+  cellFireRate: 27.9
+  cellDamage: 0

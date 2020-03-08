@@ -43,14 +43,14 @@ public class TowerController : MonoBehaviour
     private bool CanFire => HasSprite && _enemies.Count > 0;
 
     /// <summary>
-    /// How many bullet per second can we fire
-    /// </summary>
-    public float fireRate = 1;
-
-    /// <summary>
     /// A reference to the attack cell prefab
     /// </summary>
     public AttackCell attackCellPrefab;
+
+    /// <summary>
+    /// What kind of white cell does this tower posses
+    /// </summary>
+    public WhiteCellObject towerDescriptor;
 
     private void Awake()
     {
@@ -94,6 +94,7 @@ public class TowerController : MonoBehaviour
                 var newAttackCell = Instantiate(attackCellPrefab, Vector3.zero, Quaternion.identity, _attackCellSpawnPoint);
 
                 newAttackCell.transform.localPosition = Vector3.zero;
+                newAttackCell.cellDamage = towerDescriptor.cellDamage;
 
                 // Rotate the attack cell to aim at an enemy
                 Vector3 vectorToTarget = _enemies[0].transform.position - transform.position;
@@ -101,7 +102,7 @@ public class TowerController : MonoBehaviour
                 Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
                 newAttackCell.transform.rotation = q;
 
-                yield return new WaitForSeconds(1f / fireRate);
+                yield return new WaitForSeconds(1f / towerDescriptor.cellFireRate);
             }
             else
             {
@@ -112,11 +113,11 @@ public class TowerController : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (GameController.selectedSprite != null && !HasSprite)
+        if (GameController.SelectedWhiteCell != null && !HasSprite)
         {
-            /*_cellRenderer.sprite = Sprite.Create(GameController.selectedSprite.texture, GameController.selectedSprite.textureRect,
-                GameController.selectedSprite.pivot);*/
-            _cellRenderer.sprite = GameController.selectedSprite;
+            /*_cellRenderer.sprite = Sprite.Create(GameController.SelectedWhiteCell.texture, GameController.SelectedWhiteCell.textureRect,
+                GameController.SelectedWhiteCell.pivot);*/
+            _cellRenderer.sprite = GameController.SelectedWhiteCell.cellSprite;
         }
 
         _rangeRenderer.color = halfTransparent;
@@ -124,7 +125,7 @@ public class TowerController : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (GameController.selectedSprite != null && !HasSprite)
+        if (GameController.SelectedWhiteCell != null && !HasSprite)
         {
             _cellRenderer.sprite = null;
         }
@@ -134,9 +135,10 @@ public class TowerController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (GameController.selectedSprite != null && !HasSprite)
+        if (GameController.SelectedWhiteCell != null && !HasSprite)
         {
-            _cellRenderer.sprite = GameController.selectedSprite;
+            _cellRenderer.sprite = GameController.SelectedWhiteCell.cellSprite;
+            towerDescriptor = GameController.SelectedWhiteCell;
             HasSprite = true;
         }
     }

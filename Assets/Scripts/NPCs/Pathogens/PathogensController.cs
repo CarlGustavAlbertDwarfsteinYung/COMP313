@@ -12,6 +12,11 @@ public class PathogensController : MonoBehaviour
         public EnemyNPC enemyType;
         public int enemyPerWave;
         public float spawnRate;
+
+        /// <summary>
+        /// Time until the next wave get's triggered
+        /// </summary>
+        public float timeToNextWave = 25f;
     }
 
     private int _currentWave = 0;
@@ -19,13 +24,7 @@ public class PathogensController : MonoBehaviour
 
     public Transform spawnZone;
     public List<Wave> waves = new List<Wave>();
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -41,14 +40,14 @@ public class PathogensController : MonoBehaviour
     public void SpawnWave(int wave)
     {
         if (wave >= waves.Count)
-        {
             return;
-        }
+
         GameController.WaveSpawned();
-        StartCoroutine(SpawnWaveEnumarator(wave));
+        StartCoroutine(SpawnWaveEnumerator(wave));
+        StartCoroutine(CountdownToNextWave(wave));
     }
 
-    private IEnumerator SpawnWaveEnumarator(int wave)
+    private IEnumerator SpawnWaveEnumerator(int wave)
     {
         var waveToSpawn = waves[wave];
 
@@ -57,6 +56,13 @@ public class PathogensController : MonoBehaviour
             waveToSpawn.enemyType.Spawn(transform, spawnZone, this);
             yield return new WaitForSeconds(waveToSpawn.spawnRate);
         }
+    }
+
+    private IEnumerator CountdownToNextWave(int wave)
+    {
+        yield return new WaitForSeconds(waves[wave].timeToNextWave);
+
+        PlayNextWave();
     }
 
     public void RegisterHit()

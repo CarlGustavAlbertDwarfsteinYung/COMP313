@@ -28,11 +28,6 @@ public class UIController : MonoBehaviour
         
     }
 
-    public void SelectSprite(Button button)
-    {
-        GameController.selectedSprite = button.spriteState.selectedSprite;
-    }
-
     public void TogglePause()
     {
         Time.timeScale = Time.timeScale == 1f ? 0f : 1f;
