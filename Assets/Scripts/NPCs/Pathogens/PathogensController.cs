@@ -29,10 +29,13 @@ public class PathogensController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(0))
-        {
+        if (Input.GetKeyUp(KeyCode.U))
             SpawnWave(_currentWave++);
-        }
+    }
+
+    public void PlayNextWave()
+    {
+        SpawnWave(_currentWave++);
     }
 
     public void SpawnWave(int wave)

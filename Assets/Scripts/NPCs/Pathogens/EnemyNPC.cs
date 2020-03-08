@@ -18,6 +18,12 @@ public class EnemyNPC : MonoBehaviour
     public float enemySpeed = 1f;
 
     /// <summary>
+    /// The current enemy life
+    /// </summary>
+    [SerializeField]
+    private float _currentLife = 100f;
+
+    /// <summary>
     /// Callback called when the Enemy gets first spawned
     /// </summary>
     public UnityEvent onEnemySpawned;
@@ -63,7 +69,7 @@ public class EnemyNPC : MonoBehaviour
             if (_currentWayPoint == waypointsContainer.childCount - 1)
             {
                 onEnemyAttackHearth.Invoke();
-                Destroy(gameObject, 2f);
+                KillEnemy();
                 ++_currentWayPoint;
                 controller.RegisterHit();
                 return;
@@ -88,5 +94,22 @@ public class EnemyNPC : MonoBehaviour
 
         // Execute the spawning callback
         enemyNpcComponent.onEnemySpawned?.Invoke();
+    }
+
+    public void ReceiveHit(float damageAmount)
+    {
+        _currentLife -= damageAmount;
+        onEnemyDamaged?.Invoke();
+
+        if (_currentLife <= 0)
+            KillEnemy();
+    }
+    
+    private void KillEnemy()
+    {
+        Debug.Log("Enemy killed");
+        GetComponent<Collider2D>().enabled = false;
+        onEnemyDestroyed?.Invoke();
+        Destroy(gameObject, 2f);
     }
 }

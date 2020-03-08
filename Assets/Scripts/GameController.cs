@@ -23,6 +23,8 @@ public class GameController : MonoBehaviour
 
     private static GameController instance;
 
+    public static Sprite selectedSprite { get; set; }
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
