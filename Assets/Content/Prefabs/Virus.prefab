@@ -4805,7 +4805,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   waypointsContainer: {fileID: 0}
-  enemySpeed: 5
   _currentLife: 100
   onEnemySpawned:
     m_PersistentCalls:
@@ -4863,6 +4862,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+  pathogenObject: {fileID: 0}
 --- !u!95 &2059100507
 Animator:
   serializedVersion: 3
@@ -4890,7 +4890,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032814065228926023}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

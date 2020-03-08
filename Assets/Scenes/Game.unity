@@ -4207,6 +4207,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421625060}
     m_Modifications:
+    - target: {fileID: 2984084743789197674, guid: 2dc0296c24494844cb246eb9dd77dd82,
+        type: 3}
+      propertyPath: waves.Array.data[1].enemyType
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae,
+        type: 2}
     - target: {fileID: 2984084744081723243, guid: 2dc0296c24494844cb246eb9dd77dd82,
         type: 3}
       propertyPath: m_Name

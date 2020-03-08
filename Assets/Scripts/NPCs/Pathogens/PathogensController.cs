@@ -9,7 +9,7 @@ public class PathogensController : MonoBehaviour
     [Serializable]
     public class Wave
     {
-        public EnemyNPC enemyType;
+        public PathogenObject enemyType;
         public int enemyPerWave;
         public float spawnRate;
 
@@ -24,6 +24,11 @@ public class PathogensController : MonoBehaviour
 
     public Transform spawnZone;
     public List<Wave> waves = new List<Wave>();
+
+    /// <summary>
+    /// The prefab for the pathogen
+    /// </summary>
+    public EnemyNPC pathogenPrefab;
     
     // Update is called once per frame
     void Update()
@@ -53,9 +58,27 @@ public class PathogensController : MonoBehaviour
 
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
-            waveToSpawn.enemyType.Spawn(transform, spawnZone, this);
+            SpawnEnemy(transform, spawnZone, this, waveToSpawn.enemyType);
             yield return new WaitForSeconds(waveToSpawn.spawnRate);
         }
+    }
+
+    /// <summary>
+    /// Spawn an enemy NPC type
+    /// </summary>
+    /// <param name="parent">The parent GameObject where this gameObject should be spawned</param>
+    /// <param name="spawnPoint">Where in the World this gameObject should spawn</param>
+    /// <param name="pathogensController">The PathogensController used to control the NPC</param>
+    /// <param name="pathogenObject">The data of the pathogen we are spawining</param>
+    public void SpawnEnemy(Transform parent, Transform spawnPoint, PathogensController pathogensController, PathogenObject pathogenObject)
+    {
+        var newEnemy = Instantiate(pathogenPrefab, spawnPoint.position, spawnPoint.rotation, parent);
+
+        newEnemy.controller = pathogensController;
+        newEnemy.pathogenObject = pathogenObject;
+
+        // Execute the spawning callback
+        newEnemy.onEnemySpawned?.Invoke();
     }
 
     private IEnumerator CountdownToNextWave(int wave)

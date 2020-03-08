@@ -135,31 +135,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnZone: {fileID: 2984084743871572103}
   waves:
-  - enemyType: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
-      type: 3}
+  - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
     enemyPerWave: 5
     spawnRate: 0.5
     timeToNextWave: 5
-  - enemyType: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
-      type: 3}
+  - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
     enemyPerWave: 10
     spawnRate: 0.4
     timeToNextWave: 25
-  - enemyType: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
-      type: 3}
+  - enemyType: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae, type: 2}
     enemyPerWave: 20
     spawnRate: 0.3
     timeToNextWave: 25
-  - enemyType: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
-      type: 3}
+  - enemyType: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae, type: 2}
     enemyPerWave: 5
     spawnRate: 0.2
     timeToNextWave: 25
-  - enemyType: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
-      type: 3}
+  - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
     enemyPerWave: 30
     spawnRate: 0.1
     timeToNextWave: 25
+  pathogenPrefab: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
+    type: 3}
 --- !u!1 &2984084743871572100
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +198,7 @@ GameObject:
   - component: {fileID: 2984084744081723245}
   - component: {fileID: 2984084744081723242}
   m_Layer: 0
-  m_Name: Level1
+  m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,7 +211,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2984084744081723243}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

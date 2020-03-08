@@ -14,9 +14,7 @@ public class EnemyNPC : MonoBehaviour
 
     private Transform[] _waypoints;
     public Transform waypointsContainer;
-
-    public float enemySpeed = 1f;
-
+    
     /// <summary>
     /// The current enemy life
     /// </summary>
@@ -43,6 +41,21 @@ public class EnemyNPC : MonoBehaviour
     /// </summary>
     public UnityEvent onEnemyAttackHearth;
 
+    /// <summary>
+    /// What kind of pathogen does this element contain
+    /// </summary>
+    public PathogenObject pathogenObject;
+
+    /// <summary>
+    /// The sprite of the pathogen to spawn
+    /// </summary>
+    private SpriteRenderer _pathogenSprite;
+
+    private void Awake()
+    {
+        _pathogenSprite = transform.Find("Sprite").GetComponent<SpriteRenderer>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +63,11 @@ public class EnemyNPC : MonoBehaviour
 
         // Get all the waypoints
         _nextWayPoint = waypointsContainer.GetChild(_currentWayPoint).position;
+
+        _pathogenSprite.sprite = pathogenObject.pathogenSprite;
+
+        // Set the right amount of hit points on the pathogen
+        _currentLife = pathogenObject.pathogenLife;
     }
 
     // Update is called once per frame
@@ -60,7 +78,7 @@ public class EnemyNPC : MonoBehaviour
             return;
 
         // Smoothly move the camera towards that target position
-        transform.position = Vector3.MoveTowards(transform.position, _nextWayPoint, enemySpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _nextWayPoint, pathogenObject.pathogenSpeed * Time.deltaTime);
 
         // Check if arrived at destination
         if (_nextWayPoint == transform.position && _currentWayPoint < waypointsContainer.childCount)
@@ -78,24 +96,7 @@ public class EnemyNPC : MonoBehaviour
             _nextWayPoint = waypointsContainer.GetChild(++_currentWayPoint).position;
         }
     }
-
-    /// <summary>
-    /// Spawn an enemy NPC type
-    /// </summary>
-    /// <param name="parent">The parent GameObject where this gameObject should be spawned</param>
-    /// <param name="spawnPoint">Where in the World this gameObject should spawn</param>
-    /// <param name="pathogensController">The PathogensController used to control the NPC</param>
-    public void Spawn(Transform parent, Transform spawnPoint, PathogensController pathogensController)
-    {
-        var newEnemy = Instantiate(gameObject, spawnPoint.position, spawnPoint.rotation, parent);
-        var enemyNpcComponent = newEnemy.GetComponent<EnemyNPC>();
-
-        enemyNpcComponent.controller = pathogensController;
-
-        // Execute the spawning callback
-        enemyNpcComponent.onEnemySpawned?.Invoke();
-    }
-
+    
     public void ReceiveHit(float damageAmount)
     {
         _currentLife -= damageAmount;

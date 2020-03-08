@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6632eca7f76512646bce2bb804b8b8e5, type: 3}
+  m_Name: Bacteria
+  m_EditorClassIdentifier: 
+  pathogenSprite: {fileID: 2192450021786810173, guid: ead53c9f1f612654b9de18d0e44e932d,
+    type: 3}
+  pathogenName: Bacteria
+  pathogenDescription: Bacterias are bad
+  pathogenSpeed: 3
+  pathogenLife: 200

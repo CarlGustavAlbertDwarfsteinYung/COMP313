@@ -42,6 +42,11 @@ public class AttackCell : MonoBehaviour
         transform.position += transform.right * (Time.deltaTime * cellSpeed);
     }
 
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Virus"))
