@@ -52,6 +52,11 @@ public class TowerController : MonoBehaviour
     /// </summary>
     public WhiteCellObject towerDescriptor;
 
+    /// <summary>
+    /// Event triggered when a tower is placed
+    /// </summary>
+    public static Action onTowerPlaced = () => { };
+
     private void Awake()
     {
         Physics2D.queriesHitTriggers = false;
@@ -135,11 +140,14 @@ public class TowerController : MonoBehaviour
 
     private void OnMouseUp()
     {
-        if (GameController.SelectedWhiteCell != null && !HasSprite)
+        if (GameController.SelectedWhiteCell != null && !HasSprite && GameController.towerPoints >= GameController.SelectedWhiteCell.cellCost)
         {
             _cellRenderer.sprite = GameController.SelectedWhiteCell.cellSprite;
             towerDescriptor = GameController.SelectedWhiteCell;
+            GameController.towerPoints -= GameController.SelectedWhiteCell.cellCost;
             HasSprite = true;
+
+            onTowerPlaced.Invoke();
         }
     }
 

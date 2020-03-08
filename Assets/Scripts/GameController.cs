@@ -14,7 +14,9 @@ public class GameController : MonoBehaviour
     public static Action onGameReset = () => { };
 
     public static Action onWaveSpawned = () => { };
-    
+
+    public static Action onEnemyDestroyed = () => { };
+
     public static int maxLife = 20;
     public static int maxWave = 10;
     public static int currentLife { get; private set; }
@@ -23,7 +25,15 @@ public class GameController : MonoBehaviour
 
     private static GameController instance;
 
+    /// <summary>
+    /// The white cell we selected though the UI
+    /// </summary>
     public static WhiteCellObject SelectedWhiteCell { get; set; }
+
+    /// <summary>
+    /// How many points we have (used to place towers)
+    /// </summary>
+    public static int towerPoints { get; set; } = 100;
 
     private void Awake()
     {
@@ -63,6 +73,7 @@ public class GameController : MonoBehaviour
     {
         currentLife = maxLife;
         currentWave = 0;
+        towerPoints = 100;
         onGameReset.Invoke();
     }
 

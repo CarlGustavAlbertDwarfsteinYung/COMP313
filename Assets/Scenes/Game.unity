@@ -2019,6 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifeText: {fileID: 331893525}
   waveText: {fileID: 708239463}
+  dnaText: {fileID: 1884978292}
   endScreen: {fileID: 991965739}
 --- !u!1 &1127658317
 GameObject:
@@ -4207,12 +4208,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 421625060}
     m_Modifications:
-    - target: {fileID: 2984084743789197674, guid: 2dc0296c24494844cb246eb9dd77dd82,
-        type: 3}
-      propertyPath: waves.Array.data[1].enemyType
-      value: 
-      objectReference: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae,
-        type: 2}
     - target: {fileID: 2984084744081723243, guid: 2dc0296c24494844cb246eb9dd77dd82,
         type: 3}
       propertyPath: m_Name
@@ -4272,6 +4267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495524414864506489, guid: 2dc0296c24494844cb246eb9dd77dd82,
+        type: 3}
+      propertyPath: spawnRate
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dc0296c24494844cb246eb9dd77dd82, type: 3}

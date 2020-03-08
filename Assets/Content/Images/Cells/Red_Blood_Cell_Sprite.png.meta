@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 39306a8aea14a974c9dc5cebbced07d2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7408987345007617916
+    second: Red_Blood_Cell_Sprite_0
+  - first:
+      213: 6555694656048902342
+    second: Red_Blood_Cell_Sprite_1
+  - first:
+      213: 3702498728928796070
+    second: Red_Blood_Cell_Sprite_2
+  - first:
+      213: -6436322069753038005
+    second: Red_Blood_Cell_Sprite_3
+  - first:
+      213: 8588621310843680755
+    second: Red_Blood_Cell_Sprite_4
+  - first:
+      213: 6250904118120453313
+    second: Red_Blood_Cell_Sprite_5
+  - first:
+      213: 8169633727412561789
+    second: Red_Blood_Cell_Sprite_6
+  - first:
+      213: 8459265831331028364
+    second: Red_Blood_Cell_Sprite_7
+  - first:
+      213: -7129129612949479039
+    second: Red_Blood_Cell_Sprite_8
+  - first:
+      213: -2065393649886027366
+    second: Red_Blood_Cell_Sprite_9
+  - first:
+      213: -8015567936230821497
+    second: Red_Blood_Cell_Sprite_10
+  - first:
+      213: 5651907713846047312
+    second: Red_Blood_Cell_Sprite_11
+  - first:
+      213: 235293695123595874
+    second: Red_Blood_Cell_Sprite_12
+  - first:
+      213: 6043394589610605185
+    second: Red_Blood_Cell_Sprite_13
+  - first:
+      213: 1303190637679833843
+    second: Red_Blood_Cell_Sprite_14
+  - first:
+      213: -4901065723257985564
+    second: Red_Blood_Cell_Sprite_15
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +88,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,7 +168,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 193
+        width: 56
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c772b8c5cb202d660800000000000000
+      internalID: 7408987345007617916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 193
+        width: 52
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0b8bd5e818afa50800000000000000
+      internalID: 6555694656048902342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 183
+        width: 33
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6add22f2afae16330800000000000000
+      internalID: 3702498728928796070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 191
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bfc5cbd279da6a0800000000000000
+      internalID: -6436322069753038005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 131
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7ff27e399e03770800000000000000
+      internalID: 8588621310843680755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 131
+        width: 52
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4989d3d2cafb650800000000000000
+      internalID: 6250904118120453313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 135
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77e97b279e506170800000000000000
+      internalID: 8169633727412561789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 130
+        width: 57
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8dd5195479556570800000000000000
+      internalID: 8459265831331028364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 64
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181ad66836e301d90800000000000000
+      internalID: -7129129612949479039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 61
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9122391b6f3653e0800000000000000
+      internalID: -2065393649886027366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78173f72e6bf2c090800000000000000
+      internalID: -8015567936230821497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 63
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0527513ee1c9f6e40800000000000000
+      internalID: 5651907713846047312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 54
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2622bbb7e5ee34300800000000000000
+      internalID: 235293695123595874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 6
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18af1472c537ed350800000000000000
+      internalID: 6043394589610605185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f27589fafcd51210800000000000000
+      internalID: 1303190637679833843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Blood_Cell_Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 6
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e56d5011baebfbb0800000000000000
+      internalID: -4901065723257985564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

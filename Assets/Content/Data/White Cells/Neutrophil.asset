@@ -21,3 +21,4 @@ MonoBehaviour:
     also influence the process of adaptive immunity.
   cellFireRate: 27.9
   cellDamage: 0
+  cellCost: 50

@@ -7,12 +7,24 @@ using UnityEngine.Events;
 [DisallowMultipleComponent]
 public class EnemyNPC : MonoBehaviour
 {
+    /// <summary>
+    /// The pathogen controller
+    /// </summary>
     public PathogensController controller;
 
+    /// <summary>
+    /// The index of the current waypoint
+    /// </summary>
     private int _currentWayPoint = 0;
-    private Vector3 _nextWayPoint;
 
-    private Transform[] _waypoints;
+    /// <summary>
+    /// The position of the next waypoint our pathogens should move next
+    /// </summary>
+    private Vector3 _nextWayPoint;
+    
+    /// <summary>
+    /// The transform with all the waypoints to follow
+    /// </summary>
     public Transform waypointsContainer;
     
     /// <summary>
@@ -103,7 +115,10 @@ public class EnemyNPC : MonoBehaviour
         onEnemyDamaged?.Invoke();
 
         if (_currentLife <= 0)
+        {
+            GameController.towerPoints += pathogenObject.pathogenReward;
             KillEnemy();
+        }
     }
     
     private void KillEnemy()
@@ -111,6 +126,7 @@ public class EnemyNPC : MonoBehaviour
         Debug.Log("Enemy killed");
         GetComponent<Collider2D>().enabled = false;
         onEnemyDestroyed?.Invoke();
+        GameController.onEnemyDestroyed?.Invoke();
         Destroy(gameObject, 2f);
     }
 }
