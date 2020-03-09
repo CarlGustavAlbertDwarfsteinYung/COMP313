@@ -15,6 +15,19 @@ MonoBehaviour:
   pathogenSprite: {fileID: 2192450021786810173, guid: ead53c9f1f612654b9de18d0e44e932d,
     type: 3}
   pathogenName: Bacteria
-  pathogenDescription: Bacterias are bad
+  pathogenDescription: Bacteria are a type of biological cell. Typically a few micrometres
+    in length, bacteria have a number of shapes, ranging from spheres to rods and
+    spirals. Bacteria were among the first life forms to appear on Earth, and are
+    present in most of its habitats. Bacteria inhabit soil, water, acidic hot springs,
+    radioactive waste, and the deep biosphere of the earth's crust. Bacteria also
+    live in symbiotic and parasitic relationships with plants and animals. The study
+    of bacteria is known as bacteriology, a branch of microbiology. In humans and
+    most animals the largest number of bacteria exist in the gut, and a large number
+    on the skin.[13] The vast majority of the bacteria in the body are rendered harmless
+    by the protective effects of the immune system, though many are beneficial, particularly
+    in the gut flora. However, several species of bacteria are pathogenic and cause
+    infectious diseases, including cholera, syphilis, anthrax, leprosy, and bubonic
+    plague. The most common fatal bacterial diseases are respiratory infections.
   pathogenSpeed: 3
   pathogenLife: 200
+  pathogenReward: 10

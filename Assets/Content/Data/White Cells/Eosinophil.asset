@@ -15,10 +15,13 @@ MonoBehaviour:
   cellSprite: {fileID: -3460927073171907950, guid: c0d8c98aa26f9ad43a594bb8e4f4c5de,
     type: 3}
   cellName: Eosinophil
-  cellDescription: Monocytes are a type of leukocyte, or white blood cell. They are
-    the largest type of leukocyte and can differentiate into macrophages and myeloid
-    lineage dendritic cells. As a part of the vertebrate innate immune system monocytes
-    also influence the process of adaptive immunity.
+  cellDescription: Eosinophils are a type of disease-fighting white blood cell. They
+    are specialized immune cells responsible for combating multicellular parasites
+    and certain infections in vertebrates. Along with mast cells and basophils, they
+    also control mechanisms associated with allergy and asthma. They develop in the
+    bone marrow before migrating into blood, after which they are terminally differentiated
+    and do not multiply. These cells are eosinophilic or "acid-loving" due to their
+    large acidophilic cytoplasmic granules
   cellFireRate: 10
   cellDamage: 10
   cellCost: 20

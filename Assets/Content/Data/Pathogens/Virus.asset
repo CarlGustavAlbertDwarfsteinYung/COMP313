@@ -15,6 +15,32 @@ MonoBehaviour:
   pathogenSprite: {fileID: -7537196482120660328, guid: ead53c9f1f612654b9de18d0e44e932d,
     type: 3}
   pathogenName: Virus
-  pathogenDescription: Virus are also very bad
+  pathogenDescription: "A virus is a small infectious agent that replicates only
+    inside the living cells of an organism. Viruses can infect all types of life
+    forms, from animals and plants to microorganisms, including bacteria and archaea.
+    While not inside an infected cell or in the process of infecting a cell, viruses
+    exist in the form of independent particles, or virions, consisting of: \n(i)
+    the genetic material, i.e. long molecules of DNA or RNA that encode the structure
+    of the proteins by which the virus acts.\n(ii) a protein coat, the capsid, which
+    surrounds and protects the genetic material, and in some cases\n(iii) an outside
+    envelope of lipids. The shapes of these virus particles range from simple helical
+    and icosahedral forms to more complex structures. Examples of common human diseases
+    caused by viruses include the common cold, influenza, chickenpox, and cold sores.
+    Many serious diseases such as rabies, Ebola virus disease, AIDS (HIV), avian
+    influenza, and SARS are caused by viruses. Some viruses can cause lifelong or
+    chronic infections, where the viruses continue to replicate in the body despite
+    the host's defence mechanisms. This is common in hepatitis B virus and hepatitis
+    C virus infections. People chronically infected are known as carriers, as they
+    serve as reservoirs of infectious virus. Horizontal transmission is the most
+    common mechanism of spread of viruses in populations. Transmission can occur
+    when: body fluids are exchanged during sexual activity, blood is exchanged by
+    contaminated transfusion or needle sharing, exchange of saliva by mouth, contaminated
+    food or water is ingested, aerosols containing virions are inhaled,and insect
+    vectors such as mosquitoes penetrate the skin of a host,. The rate or speed of
+    transmission of viral infections depends on factors that include population density,
+    the number of susceptible individuals, the quality of healthcare and the weather.
+    Epidemiology is used to break the chain of infection in populations during outbreaks
+    of viral diseases."
   pathogenSpeed: 5
   pathogenLife: 100
+  pathogenReward: 10
