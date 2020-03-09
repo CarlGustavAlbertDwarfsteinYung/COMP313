@@ -21,7 +21,7 @@ MonoBehaviour:
     also control mechanisms associated with allergy and asthma. They develop in the
     bone marrow before migrating into blood, after which they are terminally differentiated
     and do not multiply. These cells are eosinophilic or "acid-loving" due to their
-    large acidophilic cytoplasmic granules
+    large acidophilic cytoplasmic granules.
   cellFireRate: 10
   cellDamage: 10
   cellCost: 20

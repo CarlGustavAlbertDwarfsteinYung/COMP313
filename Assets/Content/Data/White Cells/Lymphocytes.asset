@@ -15,10 +15,12 @@ MonoBehaviour:
   cellSprite: {fileID: 4853928342005695772, guid: c0d8c98aa26f9ad43a594bb8e4f4c5de,
     type: 3}
   cellName: Lymphocytes
-  cellDescription: Monocytes are a type of leukocyte, or white blood cell. They are
-    the largest type of leukocyte and can differentiate into macrophages and myeloid
-    lineage dendritic cells. As a part of the vertebrate innate immune system monocytes
-    also influence the process of adaptive immunity.
+  cellDescription: Lymphocytes are white blood cells that are also one of the human
+    body's main types of immune cells. They are made in the bone marrow and found
+    in the blood and lymph tissue. Lymphocytes include natural killer cells for innate
+    immunity, T cells for adaptive immunity and B cells for antibody-driven adaptive
+    immunity. They are the main type of cell found in lymph, which prompted the name
+    "lymphocyte".
   cellFireRate: 27.9
   cellDamage: 0
   cellCost: 15

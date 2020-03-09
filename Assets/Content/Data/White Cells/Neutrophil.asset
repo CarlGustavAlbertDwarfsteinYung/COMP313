@@ -15,10 +15,17 @@ MonoBehaviour:
   cellSprite: {fileID: -5967517078137742881, guid: c0d8c98aa26f9ad43a594bb8e4f4c5de,
     type: 3}
   cellName: Neutrophil
-  cellDescription: Monocytes are a type of leukocyte, or white blood cell. They are
-    the largest type of leukocyte and can differentiate into macrophages and myeloid
-    lineage dendritic cells. As a part of the vertebrate innate immune system monocytes
-    also influence the process of adaptive immunity.
+  cellDescription: 'Neutrophils are a type of white blood cell that protect us from
+    infections, among other functions. They make up approximately 40%-60% of the
+    white blood cells in our bodies and are the first cells to arrive on the scene
+    when we experience a bacterial infection. They are formed from stem cells in
+    the bone marrow.
+
+    Neutrophils are a type of phagocyte and are normally found
+    in the bloodstream. They are recruited to the site of injury within minutes following
+    the trauma and are the hallmark of acute inflammation; however, due to some pathogens
+    being indigestible, they can be unable to resolve certain infections without
+    the assistance of other types of immune cells.'
   cellFireRate: 27.9
   cellDamage: 0
   cellCost: 50

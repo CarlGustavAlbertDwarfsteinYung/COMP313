@@ -15,9 +15,14 @@ MonoBehaviour:
   cellSprite: {fileID: -2605977081463725289, guid: c0d8c98aa26f9ad43a594bb8e4f4c5de,
     type: 3}
   cellName: Basophil
-  cellDescription: Monocytes are a type of leukocyte, or white blood cell. They are
-    the largest type of leukocyte and can differentiate into macrophages and myeloid
-    lineage dendritic cells. As a part of the vertebrate innate immune system monocytes
-    also influence the process of adaptive immunity.
+  cellDescription: Basophils are a type of white blood cell. Although they're produced
+    in the bone marrow, they're found in many tissues throughout your body. They're
+    part of your immune system and play a role in its proper function. If your basophil
+    level is low, it may be due to a severe allergic reaction. Basophils appear in
+    many specific kinds of inflammatory reactions, particularly those that cause
+    allergic symptoms. Basophils contain anticoagulant heparin, which prevents blood
+    from clotting too quickly. They also contain the vasodilator histamine, which
+    promotes blood flow to tissues.
   cellFireRate: 27.9
   cellDamage: 0
+  cellCost: 10
