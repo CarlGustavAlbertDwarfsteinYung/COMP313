@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4487,18 +4487,17 @@ MonoBehaviour:
     on Earth and are the most numerous type of biological entity. The study of viruses
     is known as virology, a sub-speciality of microbiology.
 
-    
 
-    While not
-    inside an infected cell or in the process of infecting a cell, viruses exist
-    in the form of independent particles, or virions, consisting of: (i) the genetic
-    material, i.e. long molecules of DNA or RNA that encode the structure of the
-    proteins by which the virus acts; (ii) a protein coat, the capsid, which surrounds
-    and protects the genetic material; and in some cases (iii) an outside envelope
-    of lipids. The shapes of these virus particles range from simple helical and
-    icosahedral forms to more complex structures. Most virus species have virions
-    too small to be seen with an optical microscope, about one hundredth the size
-    of most bacteria. '
+
+    While not inside
+    an infected cell or in the process of infecting a cell, viruses exist in the
+    form of independent particles, or virions, consisting of: (i) the genetic material,
+    i.e. long molecules of DNA or RNA that encode the structure of the proteins by
+    which the virus acts; (ii) a protein coat, the capsid, which surrounds and protects
+    the genetic material; and in some cases (iii) an outside envelope of lipids.
+    The shapes of these virus particles range from simple helical and icosahedral
+    forms to more complex structures. Most virus species have virions too small to
+    be seen with an optical microscope, about one hundredth the size of most bacteria. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4567,12 +4566,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1844062299}
-    characterCount: 1352
+    characterCount: 1351
     spriteCount: 0
-    spaceCount: 222
+    spaceCount: 223
     wordCount: 222
     linkCount: 0
-    lineCount: 23
+    lineCount: 24
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -5159,7 +5158,6 @@ GameObject:
   - component: {fileID: 2073068994}
   - component: {fileID: 2073068993}
   - component: {fileID: 2073068992}
-  - component: {fileID: 2073068991}
   m_Layer: 5
   m_Name: VideoSettings
   m_TagString: Untagged
@@ -5187,18 +5185,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0.5}
---- !u!114 &2073068991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073068989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53bef3fc18911c14e8d8c894de862d4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2073068992
 MonoBehaviour:
   m_ObjectHideFlags: 0

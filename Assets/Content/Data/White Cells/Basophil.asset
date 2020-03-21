@@ -24,5 +24,5 @@ MonoBehaviour:
     from clotting too quickly. They also contain the vasodilator histamine, which
     promotes blood flow to tissues.
   cellFireRate: 27.9
-  cellDamage: 0
+  cellDamage: 1
   cellCost: 10

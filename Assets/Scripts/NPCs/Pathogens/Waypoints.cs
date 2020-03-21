@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
-    private static Transform _waypointsTransform;
+    /// <summary>
+    /// The point where all the NPC will spawn (read-only)
+    /// </summary>
+    public Transform SpawnPoint => transform.GetChild(0);
 
-    public static Transform WaypointsTransform
-    {
-        get
-        {
-            if (_waypointsTransform != null)
-                return _waypointsTransform;
-
-            _waypointsTransform = GameObject.Find("Waypoints").transform;
-            return _waypointsTransform;
-        }
-    }
+    /// <summary>
+    /// The point where all the NPC will get de-spawned (read-only)
+    /// </summary>
+    public Transform EndPoint => transform.GetChild(transform.childCount - 1);
 }

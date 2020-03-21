@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI dnaText;
     public Image endScreen;
+    public Button nextWaveButton;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,8 @@ public class UIController : MonoBehaviour
         lifeText.text = $"{GameController.maxLife}";
         waveText.text = $"{GameController.currentWave}";
         dnaText.text = $"{GameController.towerPoints}";
+
+        nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
 
         GameController.onLifeLost += () => lifeText.text = $"{GameController.currentLife}";
         GameController.onWaveSpawned += () => waveText.text = $"{GameController.currentWave}";

@@ -1,35 +1,98 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
+using UnityEditor;
 using UnityEngine;
 
 
 public class PathogensController : MonoBehaviour
 {
+    /// <summary>
+    /// Class used to store and represent a wave data
+    /// </summary>
     [Serializable]
-    public class Wave
+    public class WaveData
     {
+        [AssetsOnly]
+        [PreviewField(ObjectFieldAlignment.Center)]
+        [Title("@ enemyType ? enemyType.pathogenName : \"Select a pathogen!\"", HorizontalLine = false, TitleAlignment = TitleAlignments.Centered)]
+        [TableColumnWidth(100, false)]
+        [OnInspectorGUI(nameof(DrawPreview))]
         public PathogenObject enemyType;
-        public int enemyPerWave;
-        public float spawnRate;
+
+        [VerticalGroup("Wave info")]
+        [BoxGroup("Wave info/Spawn info")]
+        [PropertyRange(1, 100)]
+        public int enemyPerWave = 1;
+
+        [VerticalGroup("Wave info")]
+        [BoxGroup("Wave info/Spawn info")]
+        [PropertyTooltip("How many enemies should be spawned per second?")]
+        [PropertyRange(1, 10)]
+        [SuffixLabel("/second")]
+        public int spawnRate = 1;
+
+        /// <summary>
+        /// Which waypoint container should we use?
+        /// </summary>
+        [VerticalGroup("Wave info")]
+        [BoxGroup("Wave info/Spawn pos")]
+        [SceneObjectsOnly]
+        public Waypoints waveWaypoints;
 
         /// <summary>
         /// Time until the next wave get's triggered
         /// </summary>
+        [VerticalGroup("Wave info")]
+        [BoxGroup("Wave info/Time to next wave")]
+        [SuffixLabel("seconds", true)]
         public float timeToNextWave = 25f;
+
+#if UNITY_EDITOR
+        private void DrawPreview()
+        {
+            if (enemyType == null)
+                return;
+
+            var texture = AssetPreview.GetAssetPreview(enemyType.pathogenSprite);
+            
+            GUILayout.BeginVertical();
+            GUILayout.Label(texture);
+            GUILayout.EndVertical();
+        }
+#endif
     }
 
     private int _currentWave = 0;
-    public int maxNumberOfWaves => waves.Count;
 
-    public Transform spawnZone;
-    public List<Wave> waves = new List<Wave>();
+
+    public int maxNumberOfWaves => waves.Count;
+    
+    /// <summary>
+    /// List of all the waves per level
+    /// </summary>
+    [TableList]
+    public List<WaveData> waves = new List<WaveData>();
 
     /// <summary>
     /// The prefab for the pathogen
     /// </summary>
     public EnemyNPC pathogenPrefab;
+
+    /// <summary>
+    /// The active pathogen controller
+    /// </summary>
+    public static PathogensController activeController { get; private set; }
     
+    /// <summary>
+    /// Assign the active pathogen controller
+    /// </summary>
+    private void OnEnable()
+    {
+        activeController = this;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -58,8 +121,8 @@ public class PathogensController : MonoBehaviour
 
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
-            SpawnEnemy(transform, spawnZone, this, waveToSpawn.enemyType);
-            yield return new WaitForSeconds(waveToSpawn.spawnRate);
+            SpawnEnemy(transform, waveToSpawn.waveWaypoints.SpawnPoint, this, waveToSpawn.enemyType, waveToSpawn.waveWaypoints);
+            yield return new WaitForSeconds(1f / waveToSpawn.spawnRate);
         }
     }
 
@@ -70,12 +133,14 @@ public class PathogensController : MonoBehaviour
     /// <param name="spawnPoint">Where in the World this gameObject should spawn</param>
     /// <param name="pathogensController">The PathogensController used to control the NPC</param>
     /// <param name="pathogenObject">The data of the pathogen we are spawining</param>
-    public void SpawnEnemy(Transform parent, Transform spawnPoint, PathogensController pathogensController, PathogenObject pathogenObject)
+    /// <param name="waypoints">The list of waypoints the cell should follow</param>
+    public void SpawnEnemy(Transform parent, Transform spawnPoint, PathogensController pathogensController, PathogenObject pathogenObject, Waypoints waypoints)
     {
         var newEnemy = Instantiate(pathogenPrefab, spawnPoint.position, spawnPoint.rotation, parent);
 
         newEnemy.controller = pathogensController;
         newEnemy.pathogenObject = pathogenObject;
+        newEnemy.waypointsContainer = waypoints.transform;
 
         // Execute the spawning callback
         newEnemy.onEnemySpawned?.Invoke();

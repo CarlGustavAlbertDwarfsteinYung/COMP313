@@ -6,11 +6,6 @@ using UnityEngine;
 public class RedCellsController : MonoBehaviour
 {
     /// <summary>
-    /// In which gameObject should the cell appear
-    /// </summary>
-    public Transform spawnZone;
-
-    /// <summary>
     /// The prefab for the red cell
     /// </summary>
     public RedCell redCellPrefab;
@@ -19,6 +14,11 @@ public class RedCellsController : MonoBehaviour
     /// How many red cells we should spawn per second
     /// </summary>
     public float spawnRate = 1f;
+
+    /// <summary>
+    /// List of all the possible directions for the red cells
+    /// </summary>
+    public List<Waypoints> waypointsList;
 
     private void OnEnable()
     {
@@ -34,7 +34,12 @@ public class RedCellsController : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(redCellPrefab, spawnZone.position, spawnZone.rotation, transform);
+            foreach (var waypoints in waypointsList)
+            {
+                var newRedCell = Instantiate(redCellPrefab, waypoints.SpawnPoint.position, waypoints.SpawnPoint.rotation, transform);
+                newRedCell.waypointsContainer = waypoints.transform;
+            }
+            
             yield return new WaitForSeconds(1f / spawnRate);
         }
     }

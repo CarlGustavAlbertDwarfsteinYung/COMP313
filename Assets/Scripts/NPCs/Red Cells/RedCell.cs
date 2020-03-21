@@ -27,8 +27,6 @@ public class RedCell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        waypointsContainer = Waypoints.WaypointsTransform;
-
         // Get all the waypoints
         _nextWayPoint = waypointsContainer.GetChild(_currentWayPoint).position;
     }

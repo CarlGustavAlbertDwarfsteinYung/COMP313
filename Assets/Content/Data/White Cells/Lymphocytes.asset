@@ -22,5 +22,5 @@ MonoBehaviour:
     immunity. They are the main type of cell found in lymph, which prompted the name
     "lymphocyte".
   cellFireRate: 27.9
-  cellDamage: 0
+  cellDamage: 1
   cellCost: 15
