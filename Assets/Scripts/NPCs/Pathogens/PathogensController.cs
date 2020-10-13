@@ -18,7 +18,9 @@ public class PathogensController : MonoBehaviour
         [PreviewField(ObjectFieldAlignment.Center)]
         [Title("@ enemyType ? enemyType.pathogenName : \"Select a pathogen!\"", HorizontalLine = false, TitleAlignment = TitleAlignments.Centered)]
         [TableColumnWidth(100, false)]
+#if UNITY_EDITOR
         [OnInspectorGUI(nameof(DrawPreview))]
+#endif
         public PathogenObject enemyType;
 
         [VerticalGroup("Wave info")]
@@ -84,6 +86,8 @@ public class PathogensController : MonoBehaviour
     /// The active pathogen controller
     /// </summary>
     public static PathogensController activeController { get; private set; }
+
+    public static bool enemiesAllSpawned { get; private set; }
     
     /// <summary>
     /// Assign the active pathogen controller
@@ -122,6 +126,13 @@ public class PathogensController : MonoBehaviour
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
             SpawnEnemy(transform, waveToSpawn.waveWaypoints.SpawnPoint, this, waveToSpawn.enemyType, waveToSpawn.waveWaypoints);
+
+            if (wave == waves.Count - 1 && index == waveToSpawn.enemyPerWave - 1)
+            {
+                Debug.Log("We spawned all the enemies");
+                enemiesAllSpawned = true;
+            }
+
             yield return new WaitForSeconds(1f / waveToSpawn.spawnRate);
         }
     }

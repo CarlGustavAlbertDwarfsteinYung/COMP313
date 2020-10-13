@@ -27,5 +27,5 @@ MonoBehaviour:
     being indigestible, they can be unable to resolve certain infections without
     the assistance of other types of immune cells.'
   cellFireRate: 27.9
-  cellDamage: 0
+  cellDamage: 1
   cellCost: 50

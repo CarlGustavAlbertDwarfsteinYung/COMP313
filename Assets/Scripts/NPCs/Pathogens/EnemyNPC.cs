@@ -63,9 +63,18 @@ public class EnemyNPC : MonoBehaviour
     /// </summary>
     private SpriteRenderer _pathogenSprite;
 
+    /// <summary>
+    /// Is this fella alive?
+    /// </summary>
+    private bool _isAlive = true;
+
+    public static int AliveEniemiesCount { get; private set; } = 0;
+
     private void Awake()
     {
         _pathogenSprite = transform.Find("Sprite").GetComponent<SpriteRenderer>();
+
+        AliveEniemiesCount = 0;
     }
 
     // Start is called before the first frame update
@@ -78,13 +87,15 @@ public class EnemyNPC : MonoBehaviour
 
         // Set the right amount of hit points on the pathogen
         _currentLife = pathogenObject.pathogenLife;
+
+        ++AliveEniemiesCount;
     }
 
     // Update is called once per frame
     void Update()
     {
         // Check if we reached the end, if yes, skip the rest of the function
-        if (_currentWayPoint == waypointsContainer.childCount)
+        if (_currentWayPoint == waypointsContainer.childCount || !_isAlive)
             return;
 
         // Smoothly move the camera towards that target position
@@ -121,6 +132,8 @@ public class EnemyNPC : MonoBehaviour
     
     private void KillEnemy()
     {
+        --AliveEniemiesCount;
+        _isAlive = false;
         Debug.Log("Enemy killed");
         GetComponent<Collider2D>().enabled = false;
         onEnemyDestroyed?.Invoke();

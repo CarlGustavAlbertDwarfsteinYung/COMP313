@@ -10,12 +10,18 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI dnaText;
     public Image endScreen;
+    public Image wonScreen;
     public Button nextWaveButton;
 
     // Start is called before the first frame update
     void Start()
     {
+        // Enables/Disable the Tutorial
+        var tutorialSequence = transform.Find("TutorialSequence").gameObject;
+        tutorialSequence.SetActive(GameController.currentLevel == "Tutorial");
+        
         endScreen.gameObject.SetActive(false);
+        wonScreen.gameObject.SetActive(false);
         lifeText.text = $"{GameController.maxLife}";
         waveText.text = $"{GameController.currentWave}";
         dnaText.text = $"{GameController.towerPoints}";
@@ -24,8 +30,10 @@ public class UIController : MonoBehaviour
 
         GameController.onLifeLost += () => lifeText.text = $"{GameController.currentLife}";
         GameController.onWaveSpawned += () => waveText.text = $"{GameController.currentWave}";
-        GameController.onGameOver += () => endScreen.gameObject.SetActive(true);
         
+        GameController.onGameOver += () => endScreen.gameObject.SetActive(true);
+        GameController.onGameWon += () => wonScreen.gameObject.SetActive(true);
+
         TowerController.onTowerPlaced += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateDnaText;
     }
