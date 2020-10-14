@@ -148,6 +148,8 @@ public class GameController : MonoBehaviour
         yield return SceneManager.UnloadSceneAsync(currentScene);
 
         ResetGame();
+
+        Time.timeScale = 1f;    // Reset Game Speed
     }
 
     public static void ResetGame()
