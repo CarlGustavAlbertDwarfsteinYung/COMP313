@@ -203,4 +203,13 @@ public class GameController : MonoBehaviour
         yield return new WaitForSeconds(5f);
         instance.SwitchScene("Menu");
     }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
 }
