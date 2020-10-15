@@ -1,2 +1,2 @@
-# COMP231
-Repository for COMP231 class
+# COMP313
+Repository for COMP313 class
