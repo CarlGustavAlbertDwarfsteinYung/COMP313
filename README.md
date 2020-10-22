@@ -1,5 +1,5 @@
-# Comp313
-## MediSiege
+# MediSiege
+### COMP313
 
 > Quick "Getting started" guide
 
