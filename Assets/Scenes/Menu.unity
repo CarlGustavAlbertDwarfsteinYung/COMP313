@@ -2968,23 +2968,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Bacteria are microscopic, single-celled organisms that thrive in diverse
     environments. These organisms can live in soil, the ocean and inside the human
-    gut.\r\n\r\nHumans' relationship with bacteria is complex. Sometimes bacteria
-    lend us a helping hand, such as by curdling milk into yogurt or helping with
-    our digestion. In other cases, bacteria are destructive, causing diseases like
-    pneumonia and methicillin-resistant Staphylococcus aureus (MRSA).\n\nBacteria
-    can be beneficial as well as detrimental to human health. Commensal, or \"friendly\"
-    bacteria, share space and resources within our bodies and tend to be helpful.
-    There are about 10 times more microbial cells than human cells in our bodies;
-    the highest numbers of microbial species are found in the gut, according to microbiologist
-    David A. Relman's 2012 article in Nature.\r\n\r\nThe human gut is a comfortable
-    setting for bacteria, with plenty of nutrients available for their sustenance.
-    In a 2014 review article published in the American Journal of Gastroenterology,
-    the authors mention that gut bacteria and other microorganisms, such as helpful
-    strains of E.coli and Streptococcus, aid in digestion, stave off colonization
-    by harmful pathogens, and help to develop the immune system. Moreover, the disruption
-    of gut bacteria has been linked to certain disease conditions. For instance,
-    patients with Crohn's disease have an increased immune response against gut bacteria,
-    according to a 2003 review published in the journal The Lancet.\r"
+    gut.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3029,7 +3013,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 433
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3053,12 +3037,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 507073274}
-    characterCount: 1494
+    characterCount: 157
     spriteCount: 0
-    spaceCount: 227
-    wordCount: 226
+    spaceCount: 22
+    wordCount: 23
     linkCount: 0
-    lineCount: 27
+    lineCount: 3
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -6140,6 +6124,12 @@ MonoBehaviour:
   IdentityPoolId: us-east-1:08d265a6-3ca7-434a-9c7f-657e492004f7
   CognitoPoolRegion: us-east-1
   DynamoRegion: us-east-1
+  bacteriaButtonText: {fileID: 0}
+  bacteriaDescriptionHeaderText: {fileID: 0}
+  bacteriaDescriptionBodyText: {fileID: 0}
+  virusButtonText: {fileID: 0}
+  virusDescriptionHeaderText: {fileID: 0}
+  virusDescriptionBodyText: {fileID: 0}
 --- !u!1 &1068798379
 GameObject:
   m_ObjectHideFlags: 0
@@ -10037,30 +10027,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A virus is a small infectious agent that replicates only inside the living
+  m_text: A virus is a small infectious agent that replicates only inside the living
     cells of an organism. Viruses can infect all types of life forms, from animals
     and plants to microorganisms, including bacteria and archaea.
-
-
-    Since Dmitri
-    Ivanovsky''s 1892 article describing a non-bacterial pathogen infecting tobacco
-    plants, and the discovery of the tobacco mosaic virus by Martinus Beijerinck
-    in 1898, about 5,000 virus species have been described in detail, of the millions
-    of types of viruses in the environment. Viruses are found in almost every ecosystem
-    on Earth and are the most numerous type of biological entity. The study of viruses
-    is known as virology, a sub-speciality of microbiology.
-
-
-
-    While not inside
-    an infected cell or in the process of infecting a cell, viruses exist in the
-    form of independent particles, or virions, consisting of: (i) the genetic material,
-    i.e. long molecules of DNA or RNA that encode the structure of the proteins by
-    which the virus acts; (ii) a protein coat, the capsid, which surrounds and protects
-    the genetic material; and in some cases (iii) an outside envelope of lipids.
-    The shapes of these virus particles range from simple helical and icosahedral
-    forms to more complex structures. Most virus species have virions too small to
-    be seen with an optical microscope, about one hundredth the size of most bacteria. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10105,7 +10074,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 421
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -10129,12 +10098,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1844062299}
-    characterCount: 1351
+    characterCount: 215
     spriteCount: 0
-    spaceCount: 223
-    wordCount: 222
+    spaceCount: 34
+    wordCount: 35
     linkCount: 0
-    lineCount: 24
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
