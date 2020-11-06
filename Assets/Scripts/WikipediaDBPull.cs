@@ -1,32 +1,21 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
-using Amazon.DynamoDBv2.DocumentModel;
-using System;
-using System.Threading;
 using Amazon;
 using Amazon.DynamoDBv2;
-using Amazon.Runtime.Internal;
-using System.Collections.Generic;
-using Amazon.Util;
-using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DataModel;
-using UnityEditor;
+using TMPro;
 
 public class WikipediaDBPull : DynamoDBBaseConnection
 {
-    public Text bacteriaButtonText;
-    public Text bacteriaDescriptionHeaderText;
-    public Text bacteriaDescriptionBodyText;
+    public TextMeshProUGUI bacteriaButtonText;
+    public TextMeshProUGUI bacteriaDescriptionHeaderText;
+    public TextMeshProUGUI bacteriaDescriptionBodyText;
 
-    public Text virusButtonText;
-    public Text virusDescriptionHeaderText;
-    public Text virusDescriptionBodyText;
+    public TextMeshProUGUI virusButtonText;
+    public TextMeshProUGUI virusDescriptionHeaderText;
+    public TextMeshProUGUI virusDescriptionBodyText;
 
     private IAmazonDynamoDB _client;
     private DynamoDBContext _context;
-
-    private string resultText;
 
     int bacteriaID = 1;
     int virusID = 2;
@@ -67,9 +56,9 @@ public class WikipediaDBPull : DynamoDBBaseConnection
                 Debug.Log("bacteriaRetrieved.EnemyName: " + bacteriaRetrieved.EnemyName);
                 Debug.Log("bacteriaRetrieved.Description: " + bacteriaRetrieved.Description);
 
-                //bacteriaButtonText.text = bacteriaRetrieved.EnemyName;
-                //bacteriaDescriptionHeaderText.text = bacteriaRetrieved.EnemyName;
-                //bacteriaDescriptionBodyText.text = bacteriaRetrieved.Description;
+                bacteriaButtonText.text = bacteriaRetrieved.EnemyName;
+                bacteriaDescriptionHeaderText.text = bacteriaRetrieved.EnemyName;
+                bacteriaDescriptionBodyText.text = bacteriaRetrieved.Description;
             }
         });
 
@@ -85,11 +74,9 @@ public class WikipediaDBPull : DynamoDBBaseConnection
                 Debug.Log("virusRetrieved.EnemyName: " + virusRetrieved.EnemyName);
                 Debug.Log("virusRetrieved.Description: " + virusRetrieved.Description);
 
-                //virusButtonText.text = virusRetrieved.EnemyName;
-                //virusDescriptionHeaderText.text = virusRetrieved.EnemyName;
-                //virusDescriptionBodyText.text = virusRetrieved.Description;
-
-                EditorUtility.DisplayDialog("Load from Database", "Encyclopedia is now updated from the Database", "Ok");
+                virusButtonText.text = virusRetrieved.EnemyName;
+                virusDescriptionHeaderText.text = virusRetrieved.EnemyName;
+                virusDescriptionBodyText.text = virusRetrieved.Description;
             }
         });
     }

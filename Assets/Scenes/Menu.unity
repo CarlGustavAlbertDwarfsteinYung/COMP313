@@ -6124,12 +6124,12 @@ MonoBehaviour:
   IdentityPoolId: us-east-1:08d265a6-3ca7-434a-9c7f-657e492004f7
   CognitoPoolRegion: us-east-1
   DynamoRegion: us-east-1
-  bacteriaButtonText: {fileID: 0}
-  bacteriaDescriptionHeaderText: {fileID: 0}
-  bacteriaDescriptionBodyText: {fileID: 0}
-  virusButtonText: {fileID: 0}
-  virusDescriptionHeaderText: {fileID: 0}
-  virusDescriptionBodyText: {fileID: 0}
+  bacteriaButtonText: {fileID: 892470764}
+  bacteriaDescriptionHeaderText: {fileID: 1635305832}
+  bacteriaDescriptionBodyText: {fileID: 507073274}
+  virusButtonText: {fileID: 676471998}
+  virusDescriptionHeaderText: {fileID: 1530412069}
+  virusDescriptionBodyText: {fileID: 1844062299}
 --- !u!1 &1068798379
 GameObject:
   m_ObjectHideFlags: 0

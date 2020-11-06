@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using Amazon.DynamoDBv2;
 using Amazon.CognitoIdentity;
 using Amazon.Runtime;

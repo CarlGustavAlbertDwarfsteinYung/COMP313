@@ -1,7 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using Amazon.DynamoDBv2;
-using UnityEngine.UI;
 using Amazon;
 
 public class DynamoDBConnection : MonoBehaviour
