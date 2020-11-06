@@ -48,8 +48,6 @@ public class UIController : MonoBehaviour
 
     public void TogglePause()
     {
-        Time.timeScale = Time.timeScale == 1f ? 0f : 1f;
-
         if (Time.timeScale != 0)
         {
             // Pause the game
