@@ -13,6 +13,8 @@ public class UIController : MonoBehaviour
     public Image wonScreen;
     public Button nextWaveButton;
 
+    private float gameSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,11 +49,32 @@ public class UIController : MonoBehaviour
     public void TogglePause()
     {
         Time.timeScale = Time.timeScale == 1f ? 0f : 1f;
+
+        if (Time.timeScale != 0)
+        {
+            // Pause the game
+            gameSpeed = Time.timeScale;
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            // Resume the game
+            Time.timeScale = gameSpeed;
+        }
     }
 
     public void ToggleSpeed(float newSpeed)
     {
-        Time.timeScale = newSpeed;
+        if (Time.timeScale != 0)
+        {
+            // During Playing
+            Time.timeScale = newSpeed;
+        }
+        else
+        {
+            // During Paused
+            gameSpeed = newSpeed;
+        }
     }
 
     public void UpdateDnaText()
