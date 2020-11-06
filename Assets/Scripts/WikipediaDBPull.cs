@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using Amazon.Util;
 using Amazon.DynamoDBv2.Model;
 using Amazon.DynamoDBv2.DataModel;
+using UnityEditor;
 
 public class WikipediaDBPull : DynamoDBBaseConnection
 {
@@ -53,6 +54,8 @@ public class WikipediaDBPull : DynamoDBBaseConnection
 
     public void GetInfoFromDB()
     {
+        Debug.Log("Get Info From DB starting...");
+
         // Retrieve the bacteria info. 
         EnemyInfo bacteriaRetrieved = null;
         Context.LoadAsync<EnemyInfo>(bacteriaID, (result) =>
@@ -85,6 +88,8 @@ public class WikipediaDBPull : DynamoDBBaseConnection
                 //virusButtonText.text = virusRetrieved.EnemyName;
                 //virusDescriptionHeaderText.text = virusRetrieved.EnemyName;
                 //virusDescriptionBodyText.text = virusRetrieved.Description;
+
+                EditorUtility.DisplayDialog("Load from Database", "Encyclopedia is now updated from the Database", "Ok");
             }
         });
     }
