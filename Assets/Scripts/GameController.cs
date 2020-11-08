@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
 
     public static int maxLife = 20;
     public static int maxWave = 10;
+    
     public static int currentLife { get; private set; }
 
     public static int currentWave { get; private set; }
@@ -82,9 +83,9 @@ public class GameController : MonoBehaviour
         onEnemyDestroyed += () =>
         {
             Debug.Log($"enemiesAllSpawned: ${PathogensController.enemiesAllSpawned}");
-            Debug.Log($"EnemyNPC.AliveEniemiesCount: ${EnemyNPC.AliveEniemiesCount}");
+            Debug.Log($"EnemyNPC.AliveEniemiesCount: ${PathogensController.activeController.AliveEniemiesCount}");
 
-            if (PathogensController.enemiesAllSpawned && EnemyNPC.AliveEniemiesCount == 0)
+            if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEniemiesCount == 0 && currentLife > 0)
             {
                 Debug.Log("We won!");
                 onGameWon();
@@ -117,9 +118,11 @@ public class GameController : MonoBehaviour
         if (levelName == "Tutorial")
         {
             _saveGame.maxUnlockedLevel = "Level_1";
+            maxLife = 5;
         }
         else if (string.IsNullOrEmpty(_saveGame.maxUnlockedLevel) || String.Compare(_saveGame.maxUnlockedLevel, levelName, StringComparison.Ordinal) < 0)
         {
+            maxLife = 20;
             _saveGame.maxUnlockedLevel = levelName == "Tutorial" ? "Level_1" : levelName;
         }
     }
