@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -29,22 +30,39 @@ public class UIController : MonoBehaviour
         dnaText.text = $"{GameController.towerPoints}";
 
         nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
+    }
 
-        GameController.onLifeLost += () => lifeText.text = $"{GameController.currentLife}";
-        GameController.onWaveSpawned += () => waveText.text = $"{GameController.currentWave}";
+    private void OnEnable()
+    {
+        GameController.onLifeLost += UpdateLifeText;
+        GameController.onWaveSpawned += UpdateWaveText;
         
-        GameController.onGameOver += () => endScreen.gameObject.SetActive(true);
-        GameController.onGameWon += () => wonScreen.gameObject.SetActive(true);
+        GameController.onGameOver += ShowGameOverScreen;
+        GameController.onGameWon += ShowGameWonScreen;
 
         TowerController.onTowerPlaced += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateDnaText;
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    private void OnDisable()
     {
+        GameController.onLifeLost -= UpdateLifeText;
+        GameController.onWaveSpawned -= UpdateWaveText;
         
+        GameController.onGameOver -= ShowGameOverScreen;
+        GameController.onGameWon -= ShowGameWonScreen;
+
+        TowerController.onTowerPlaced -= UpdateDnaText;
+        GameController.onEnemyDestroyed -= UpdateDnaText;
     }
+
+    private void ShowGameOverScreen() => endScreen.gameObject.SetActive(true);
+    
+    private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
+
+    private void UpdateWaveText() => waveText.text = $"{GameController.currentWave}";
+
+    private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
 
     public void TogglePause()
     {

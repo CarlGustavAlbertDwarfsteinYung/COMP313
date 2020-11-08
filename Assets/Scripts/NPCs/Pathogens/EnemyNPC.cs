@@ -68,13 +68,9 @@ public class EnemyNPC : MonoBehaviour
     /// </summary>
     private bool _isAlive = true;
 
-    public static int AliveEniemiesCount { get; private set; } = 0;
-
     private void Awake()
     {
         _pathogenSprite = transform.Find("Sprite").GetComponent<SpriteRenderer>();
-
-        AliveEniemiesCount = 0;
     }
 
     // Start is called before the first frame update
@@ -87,8 +83,6 @@ public class EnemyNPC : MonoBehaviour
 
         // Set the right amount of hit points on the pathogen
         _currentLife = pathogenObject.pathogenLife;
-
-        ++AliveEniemiesCount;
     }
 
     // Update is called once per frame
@@ -108,9 +102,9 @@ public class EnemyNPC : MonoBehaviour
             if (_currentWayPoint == waypointsContainer.childCount - 1)
             {
                 onEnemyAttackHearth.Invoke();
+                controller.RegisterHit();
                 KillEnemy();
                 ++_currentWayPoint;
-                controller.RegisterHit();
                 return;
             }
 
@@ -132,7 +126,6 @@ public class EnemyNPC : MonoBehaviour
     
     private void KillEnemy()
     {
-        --AliveEniemiesCount;
         _isAlive = false;
         Debug.Log("Enemy killed");
         GetComponent<Collider2D>().enabled = false;

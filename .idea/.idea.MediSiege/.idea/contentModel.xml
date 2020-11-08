@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Matteo\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Matteo\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_MediSiege.-113294696.00" t="ExcludeRecursive" />
+    <e p="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Examples" t="Include">
+          <e p="DynamoDBBaseExample.cs" t="Include" />
+          <e p="DynamoDBExample.cs" t="Include" />
+          <e p="HighLevelTableExample.cs" t="Include" />
+          <e p="License.txt" t="Include" />
+          <e p="LowLevelTableExample.cs" t="Include" />
+          <e p="TableQueryAndScanExample.cs" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Android" t="Include">
+            <e p="AndroidManifest.xml" t="Include" />
+          </e>
+          <e p="Sirenix" t="Include">
+            <e p="Assemblies" t="Include">
+              <e p="link.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Attributes.xml" t="Include" />
+              <e p="Sirenix.OdinInspector.Editor.xml" t="Include" />
+              <e p="Sirenix.Serialization.Config.xml" t="Include" />
+              <e p="Sirenix.Utilities.Editor.xml" t="Include" />
+              <e p="Sirenix.Utilities.xml" t="Include" />
+            </e>
+            <e p="Demos" t="Include">
+              <e p="Custom Attribute Processors" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="AttributeProcessorForListItemsExample.cs" t="Include" />
+                  <e p="AttributeProcessorPriorityExample.cs" t="Include" />
+                  <e p="Bar.cs" t="Include" />
+                  <e p="BasicAttributeProcessorExample.cs" t="Include" />
+                  <e p="CustomAttributeProcessorLocatorExample.cs" t="Include" />
+                  <e p="CustomizeDictionaryKeyValueExample.cs" t="Include" />
+                  <e p="Foo.cs" t="Include" />
+                  <e p="PutAttributesOnAnyType.cs" t="Include" />
+                  <e p="SelfAndChildrenExample.cs" t="Include" />
+                  <e p="TabGroupByDeclaringType.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Custom Drawers" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="CustomDrawerExample.cs" t="Include" />
+                  <e p="CustomGroupExample.cs" t="Include" />
+                  <e p="GenericDrawerExample.cs" t="Include" />
+                  <e p="GenericMenuExample.cs" t="Include" />
+                  <e p="HealthBarExample.cs" t="Include" />
+                  <e p="InstancedDrawerExample.cs" t="Include" />
+                  <e p="MinesweeperExample.cs" t="Include" />
+                  <e p="PriorityExamples.cs" t="Include" />
+                  <e p="ReflectionExample.cs" t="Include" />
+                  <e p="StringMemberHelperExample.cs" t="Include" />
+                  <e p="ValidationExample.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Editor Windows" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Editor" t="Include">
+                    <e p="BasicOdinEditorExampleWindow.cs" t="Include" />
+                    <e p="OdinMenuEditorWindowExample.cs" t="Include" />
+                    <e p="OdinMenuStyleExample.cs" t="Include" />
+                    <e p="OverrideGetTargetsExampleWindow.cs" t="Include" />
+                    <e p="QuicklyInspectObjects.cs" t="Include" />
+                    <e p="SomeData.cs" t="Include" />
+                    <e p="SomeTextureToolWindow.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="Sirenix.OdinInspector.CompatibilityLayer.asmdef" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Odin Validator" t="Include">
+              <e p="Editor" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Automation" t="Include">
+                    <e p="AutomatedValidation.cs" t="Include" />
+                    <e p="AutomatedValidationHook.cs" t="Include" />
+                    <e p="IValidationHook.cs" t="Include" />
+                    <e p="OnBuildValidationHook.cs" t="Include" />
+                    <e p="OnPlayValidationHook.cs" t="Include" />
+                    <e p="OnProjectStartupValidationHook.cs" t="Include" />
+                  </e>
+                  <e p="Editors" t="Include">
+                    <e p="ValidationOverview.cs" t="Include" />
+                    <e p="ValidationProfileEditor.cs" t="Include" />
+                    <e p="ValidationProfileEditorDrawer.cs" t="Include" />
+                    <e p="ValidationProfileManagerOverview.cs" t="Include" />
+                    <e p="ValidationProfileManagerWindow.cs" t="Include" />
+                    <e p="ValidationProfileSOCreator.cs" t="Include" />
+                    <e p="ValidationProfileTree.cs" t="Include" />
+                  </e>
+                  <e p="Misc" t="Include">
+                    <e p="EnsureOdinValidatorDefine.cs" t="Include" />
+                  </e>
+                  <e p="Profiles" t="Include">
+                    <e p="AssetValidationProfile.cs" t="Include" />
+                    <e p="AssetValidationProfileAsset.cs" t="Include" />
+                    <e p="OdinValidationConfig.cs" t="Include" />
+                    <e p="SceneValidationProfile.cs" t="Include" />
+                    <e p="SceneValidationProfileAsset.cs" t="Include" />
+                    <e p="ValidationCollectionProfile.cs" t="Include" />
+                    <e p="ValidationCollectionProfileAsset.cs" t="Include" />
+                    <e p="ValidationProfile.cs" t="Include" />
+                    <e p="ValidationProfileAsset.cs" t="Include" />
+                  </e>
+                  <e p="Sirenix.OdinValidator.asmdef" t="Include" />
+                </e>
+              </e>
+              <e p="Readme.txt" t="Include" />
+            </e>
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="awsconfig.xml" t="Include" />
+          <e p="link.xml" t="Include" />
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraTilemapController.cs" t="Include" />
+            <e p="SimpleCameraController.cs" t="Include" />
+          </e>
+          <e p="DynamoDBBaseConnection.cs" t="Include" />
+          <e p="DynamoDBConnection.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
+          <e p="NPCs" t="Include">
+            <e p="Pathogens" t="Include">
+              <e p="EnemyNPC.cs" t="Include" />
+              <e p="PathogenObject.cs" t="Include" />
+              <e p="PathogensController.cs" t="Include" />
+              <e p="Waypoints.cs" t="Include" />
+            </e>
+            <e p="Red Cells" t="Include">
+              <e p="RedCell.cs" t="Include" />
+              <e p="RedCellsController.cs" t="Include" />
+            </e>
+            <e p="Tower" t="Include">
+              <e p="AttackCell.cs" t="Include" />
+              <e p="TowerController.cs" t="Include" />
+              <e p="WhiteCellObject.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Savegame" t="Include">
+            <e p="SaveGameData.cs" t="Include" />
+          </e>
+          <e p="Tilemaps" t="Include">
+            <e p="LevelComponent.cs" t="Include" />
+            <e p="LevelsManager.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="IconController.cs" t="Include" />
+            <e p="LevelSelectionButton.cs" t="Include" />
+            <e p="LoadingBarProgress.cs" t="Include" />
+            <e p="UIController.cs" t="Include" />
+          </e>
+          <e p="WikipediaDBPull.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="MediSiege.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinValidator.csproj" t="IncludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

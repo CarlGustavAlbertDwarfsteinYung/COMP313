@@ -68,7 +68,8 @@ public class PathogensController : MonoBehaviour
 
     private int _currentWave = 0;
 
-
+    public int AliveEniemiesCount { get; private set; } = 0;
+    
     public int maxNumberOfWaves => waves.Count;
     
     /// <summary>
@@ -95,6 +96,8 @@ public class PathogensController : MonoBehaviour
     private void OnEnable()
     {
         activeController = this;
+
+        AliveEniemiesCount = 0;
     }
 
     // Update is called once per frame
@@ -126,6 +129,8 @@ public class PathogensController : MonoBehaviour
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
             SpawnEnemy(transform, waveToSpawn.waveWaypoints.SpawnPoint, this, waveToSpawn.enemyType, waveToSpawn.waveWaypoints);
+
+            ++AliveEniemiesCount;
 
             if (wave == waves.Count - 1 && index == waveToSpawn.enemyPerWave - 1)
             {
@@ -166,6 +171,8 @@ public class PathogensController : MonoBehaviour
 
     public void RegisterHit()
     {
+        --AliveEniemiesCount;
+        
         GameController.RegisterHit();
     }
 }
