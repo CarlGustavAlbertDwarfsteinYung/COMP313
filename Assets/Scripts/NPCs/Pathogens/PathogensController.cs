@@ -9,6 +9,11 @@ using UnityEngine;
 public class PathogensController : MonoBehaviour
 {
     /// <summary>
+    /// Coroutine for the next wave countdown
+    /// </summary>
+    private Coroutine _countDownCoroutine;
+    
+    /// <summary>
     /// Class used to store and represent a wave data
     /// </summary>
     [Serializable]
@@ -70,7 +75,9 @@ public class PathogensController : MonoBehaviour
 
     public int AliveEnemiesCount { get; private set; } = 0;
     
-    public int maxNumberOfWaves => waves.Count;
+    public int MAXNumberOfWaves => waves.Count;
+    
+    public bool WaveSpawningComplete { get; private set; } = false;
     
     /// <summary>
     /// List of all the waves per level
@@ -98,6 +105,14 @@ public class PathogensController : MonoBehaviour
         activeController = this;
 
         AliveEnemiesCount = 0;
+
+        GameController.onWaveCleared += () =>
+        {
+            if (_countDownCoroutine != null)
+                activeController.StopCoroutine(_countDownCoroutine);
+            
+            activeController.StartCoroutine(CountdownToNextWave(3f));
+        };
     }
 
     // Update is called once per frame
@@ -118,7 +133,7 @@ public class PathogensController : MonoBehaviour
             return;
         
         StartCoroutine(SpawnWaveEnumerator(wave));
-        StartCoroutine(CountdownToNextWave(wave));
+        _countDownCoroutine = StartCoroutine(CountdownToNextWave(wave));
     }
 
     private IEnumerator SpawnWaveEnumerator(int wave)
@@ -131,8 +146,12 @@ public class PathogensController : MonoBehaviour
         
         GameController.WaveSpawned();
 
+        WaveSpawningComplete = false;
+
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
+            yield return new WaitForSeconds(1f / waveToSpawn.spawnRate);
+            
             SpawnEnemy(transform, waveToSpawn.waveWaypoints.SpawnPoint, this, waveToSpawn.enemyType, waveToSpawn.waveWaypoints);
 
             if (wave == waves.Count - 1 && index == waveToSpawn.enemyPerWave - 1)
@@ -140,9 +159,9 @@ public class PathogensController : MonoBehaviour
                 Debug.Log("We spawned all the enemies");
                 enemiesAllSpawned = true;
             }
-
-            yield return new WaitForSeconds(1f / waveToSpawn.spawnRate);
         }
+
+        WaveSpawningComplete = true;
     }
 
     /// <summary>
@@ -168,7 +187,27 @@ public class PathogensController : MonoBehaviour
 
     private IEnumerator CountdownToNextWave(int wave)
     {
-        yield return new WaitForSeconds(waves[wave].timeToNextWave);
+        GameController.onCountdownTick(-1);
+        
+        for (var timeToNextWave = waves[wave].timeToNextWave; timeToNextWave > 0f; timeToNextWave -= 1f)
+        {
+            if (timeToNextWave < 4)
+                GameController.onCountdownTick((int) timeToNextWave);
+            
+            yield return new WaitForSeconds(1f);
+        }
+
+        PlayNextWave();
+    }
+    
+    private IEnumerator CountdownToNextWave(float timeLeft)
+    {
+        for (var timeToNextWave = timeLeft; timeToNextWave > 0f; timeToNextWave -= 1f)
+        {
+            GameController.onCountdownTick((int) timeToNextWave);
+            
+            yield return new WaitForSeconds(1f);
+        }
 
         PlayNextWave();
     }

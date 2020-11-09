@@ -114,6 +114,9 @@ public class EnemyNPC : MonoBehaviour
     
     public void ReceiveHit(float damageAmount)
     {
+        if (!_isAlive)
+            return;
+        
         _currentLife -= damageAmount;
         onEnemyDamaged?.Invoke();
 

@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="34f67284-9e7e-47d0-b830-b786e77be772" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MediSiege/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MediSiege/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/EnemyNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/EnemyNPC.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" afterDir="false" />
     </list>
@@ -23,10 +26,10 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Tilemaps/LevelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tilemaps/LevelComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/EnemyNPC.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs" />
       </list>
     </option>
   </component>
@@ -83,6 +86,7 @@
       <workItem from="1604685143292" duration="2780000" />
       <workItem from="1604798390123" duration="3674000" />
       <workItem from="1604878510711" duration="1614000" />
+      <workItem from="1604883395030" duration="5333000" />
     </task>
     <servers />
   </component>
@@ -99,168 +103,120 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="530" height="436" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604801335494" />
-    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1604888300244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300244" />
+    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1604888300244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300244" />
+    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1604888300243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300243" />
+    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1604888300244">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.1.bottom" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300244" />
+    <state width="1877" height="221" key="GridCell.Tab.1.bottom" timestamp="1604888304973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.1.center" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888304973" />
+    <state width="1877" height="221" key="GridCell.Tab.1.center" timestamp="1604888304972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.1.left" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888304972" />
+    <state width="1877" height="221" key="GridCell.Tab.1.left" timestamp="1604888304972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.1.right" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888304972" />
+    <state width="1877" height="221" key="GridCell.Tab.1.right" timestamp="1604888304973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.2.bottom" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888304973" />
+    <state width="1877" height="221" key="GridCell.Tab.2.bottom" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.2.center" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.2.center" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.2.left" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.2.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.2.left" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.2.right" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.2.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.2.right" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.3.bottom" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.2.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.3.bottom" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.3.center" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.3.center" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.3.left" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.3.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.3.left" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state width="1877" height="221" key="GridCell.Tab.3.right" timestamp="1604881038564">
+    <state width="1877" height="221" key="GridCell.Tab.3.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state width="1877" height="221" key="GridCell.Tab.3.right" timestamp="1604888300128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604881038564" />
-    <state x="567" y="253" width="786" height="534" key="find.popup" timestamp="1604879082495">
+    <state width="1877" height="221" key="GridCell.Tab.3.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888300128" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1604888186268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="253" width="786" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604879082495" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888186268" />
+    <state x="567" y="253" width="786" height="534" key="find.popup" timestamp="1604888701668">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="253" width="786" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1604888701668" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs</url>
-          <line>173</line>
-          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\NPCs\Pathogens\PathogensController.cs" initialLine="173">
-            <startOffsets>
-              <option value="5271" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5271" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/GameController.cs</url>
-          <line>173</line>
+          <line>182</line>
           <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\GameController.cs" initialLine="173">
             <startOffsets>
-              <option value="4506" />
+              <option value="4816" />
             </startOffsets>
             <endOffsets>
-              <option value="4520" />
+              <option value="4830" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs</url>
-          <line>128</line>
-          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\NPCs\Pathogens\PathogensController.cs" initialLine="128">
-            <startOffsets>
-              <option value="3392" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3438" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs</url>
-          <line>174</line>
-          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\NPCs\Pathogens\PathogensController.cs" initialLine="175">
-            <startOffsets>
-              <option value="5280" />
-            </startOffsets>
-            <endOffsets>
-              <option value="5309" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/GameController.cs</url>
-          <line>87</line>
-          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\GameController.cs" initialLine="87">
+          <line>98</line>
+          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\GameController.cs" initialLine="98">
             <startOffsets>
-              <option value="2192" />
+              <option value="2729" />
             </startOffsets>
             <endOffsets>
-              <option value="2317" />
+              <option value="2745" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs</url>
-          <line>28</line>
-          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\UI\UIController.cs" initialLine="28">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/NPCs/Pathogens/PathogensController.cs</url>
+          <line>161</line>
+          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\NPCs\Pathogens\PathogensController.cs" initialLine="161">
             <startOffsets>
-              <option value="841" />
+              <option value="4449" />
             </startOffsets>
             <endOffsets>
-              <option value="893" />
+              <option value="4477" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/UIController.cs</url>
-          <line>62</line>
-          <properties documentPath="D:\Documents\Canada\Centennial College\Winter 2020\COMP231\Game\MediSiege\Assets\Scripts\UI\UIController.cs" initialLine="62">
-            <startOffsets>
-              <option value="2030" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2081" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

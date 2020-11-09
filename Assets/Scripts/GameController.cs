@@ -18,12 +18,15 @@ public class GameController : MonoBehaviour
 
     public static Action onGameReset = () => { };
 
+    public static Action<int> onCountdownTick = (timeLeft) => { };
+
     public static Action onWaveSpawned = () => { };
+
+    public static Action onWaveCleared = () => { };
 
     public static Action onEnemyDestroyed = () => { };
 
     public static int maxLife = 20;
-    public static int maxWave = 10;
     
     public static int currentLife { get; private set; }
 
@@ -89,7 +92,11 @@ public class GameController : MonoBehaviour
             {
                 Debug.Log("We won!");
                 onGameWon();
-                instance.StartCoroutine(GameWonCounter());
+                instance.StartCoroutine(GameWonCounter()); 
+            }
+            else if (PathogensController.activeController.WaveSpawningComplete && PathogensController.activeController.AliveEnemiesCount == 0)
+            {
+                onWaveCleared();
             }
         };
     }
@@ -125,6 +132,8 @@ public class GameController : MonoBehaviour
             maxLife = 20;
             _saveGame.maxUnlockedLevel = levelName == "Tutorial" ? "Level_1" : levelName;
         }
+
+        ResetGame();
     }
 
     public void SwitchScene(string nextScene)
