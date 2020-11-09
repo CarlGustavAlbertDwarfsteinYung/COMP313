@@ -17420,6 +17420,11 @@ PrefabInstance:
       propertyPath: waves.Array.data[4].waveWaypoints
       value: 
       objectReference: {fileID: 1070922314}
+    - target: {fileID: 2984084743789197674, guid: 068dab8e2cedce24696d35d66bfdd634,
+        type: 3}
+      propertyPath: waves.Array.data[3].waveWaypoints
+      value: 
+      objectReference: {fileID: 1070922314}
     - target: {fileID: 2984084744081723243, guid: 068dab8e2cedce24696d35d66bfdd634,
         type: 3}
       propertyPath: m_Name

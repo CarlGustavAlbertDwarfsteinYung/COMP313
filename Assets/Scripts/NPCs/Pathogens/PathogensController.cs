@@ -128,6 +128,8 @@ public class PathogensController : MonoBehaviour
         
         AliveEniemiesCount = waveToSpawn.enemyPerWave;
 
+        enemiesAllSpawned = false;
+
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
             SpawnEnemy(transform, waveToSpawn.waveWaypoints.SpawnPoint, this, waveToSpawn.enemyType, waveToSpawn.waveWaypoints);

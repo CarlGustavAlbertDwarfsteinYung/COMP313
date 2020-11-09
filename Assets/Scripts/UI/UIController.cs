@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
         endScreen.gameObject.SetActive(false);
         wonScreen.gameObject.SetActive(false);
         lifeText.text = $"{GameController.maxLife}";
-        waveText.text = $"{GameController.currentWave + 1}";
+        waveText.text = $"{GameController.maxWave - (GameController.currentWave + 1)}";
         dnaText.text = $"{GameController.towerPoints}";
 
         nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
@@ -60,7 +60,7 @@ public class UIController : MonoBehaviour
     
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
 
-    private void UpdateWaveText() => waveText.text = $"{GameController.currentWave + 1}";
+    private void UpdateWaveText() => waveText.text = $"{GameController.maxWave - (GameController.currentWave + 1)}";
 
     private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
 
