@@ -68,7 +68,7 @@ public class PathogensController : MonoBehaviour
 
     private int _currentWave = 0;
 
-    public int AliveEniemiesCount { get; private set; } = 0;
+    public int AliveEnemiesCount { get; private set; } = 0;
     
     public int maxNumberOfWaves => waves.Count;
     
@@ -97,7 +97,7 @@ public class PathogensController : MonoBehaviour
     {
         activeController = this;
 
-        AliveEniemiesCount = 0;
+        AliveEnemiesCount = 0;
     }
 
     // Update is called once per frame
@@ -116,8 +116,7 @@ public class PathogensController : MonoBehaviour
     {
         if (wave >= waves.Count)
             return;
-
-        GameController.WaveSpawned();
+        
         StartCoroutine(SpawnWaveEnumerator(wave));
         StartCoroutine(CountdownToNextWave(wave));
     }
@@ -126,9 +125,11 @@ public class PathogensController : MonoBehaviour
     {
         var waveToSpawn = waves[wave];
         
-        AliveEniemiesCount = waveToSpawn.enemyPerWave;
+        AliveEnemiesCount = waveToSpawn.enemyPerWave;
 
         enemiesAllSpawned = false;
+        
+        GameController.WaveSpawned();
 
         for (int index = 0; index < waveToSpawn.enemyPerWave; index++)
         {
@@ -162,7 +163,7 @@ public class PathogensController : MonoBehaviour
 
         // Execute the spawning callback
         newEnemy.onEnemySpawned?.Invoke();
-        newEnemy.onEnemyDestroyed.AddListener( () => --AliveEniemiesCount);
+        newEnemy.onEnemyDestroyed.AddListener( () => --AliveEnemiesCount);
     }
 
     private IEnumerator CountdownToNextWave(int wave)

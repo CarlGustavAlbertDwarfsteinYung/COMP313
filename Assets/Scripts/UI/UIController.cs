@@ -10,6 +10,7 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI lifeText;
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI dnaText;
+    public TextMeshProUGUI enemiesLeftText;
     public Image endScreen;
     public Image wonScreen;
     public Button nextWaveButton;
@@ -29,38 +30,46 @@ public class UIController : MonoBehaviour
         waveText.text = $"{GameController.maxWave - (GameController.currentWave + 1)}";
         dnaText.text = $"{GameController.towerPoints}";
 
+        UpdateWaveText();
+        UpdateEnemiesCount();
+
         nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
     }
 
     private void OnEnable()
     {
         GameController.onLifeLost += UpdateLifeText;
+        
         GameController.onWaveSpawned += UpdateWaveText;
+        GameController.onWaveSpawned += UpdateEnemiesCount;
         
         GameController.onGameOver += ShowGameOverScreen;
         GameController.onGameWon += ShowGameWonScreen;
 
         TowerController.onTowerPlaced += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateDnaText;
+        GameController.onEnemyDestroyed += UpdateEnemiesCount;
     }
     
     private void OnDisable()
     {
         GameController.onLifeLost -= UpdateLifeText;
+        
         GameController.onWaveSpawned -= UpdateWaveText;
+        GameController.onWaveSpawned -= UpdateEnemiesCount;
         
         GameController.onGameOver -= ShowGameOverScreen;
         GameController.onGameWon -= ShowGameWonScreen;
 
         TowerController.onTowerPlaced -= UpdateDnaText;
         GameController.onEnemyDestroyed -= UpdateDnaText;
+        GameController.onEnemyDestroyed -= UpdateEnemiesCount;
     }
 
     private void ShowGameOverScreen() => endScreen.gameObject.SetActive(true);
-    
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
-
     private void UpdateWaveText() => waveText.text = $"{GameController.maxWave - (GameController.currentWave + 1)}";
+    private void UpdateEnemiesCount() => enemiesLeftText.text = $"{PathogensController.activeController.AliveEnemiesCount}";
 
     private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
 
