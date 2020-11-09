@@ -22,6 +22,8 @@ public class UIController : MonoBehaviour
         // Enables/Disable the Tutorial
         var tutorialSequence = transform.Find("TutorialSequence").gameObject;
         tutorialSequence.SetActive(GameController.currentLevel == "Tutorial");
+
+        Debug.Log("GameController.currentWave: " + GameController.currentWave);
         
         endScreen.gameObject.SetActive(false);
         wonScreen.gameObject.SetActive(false);
@@ -60,7 +62,7 @@ public class UIController : MonoBehaviour
     
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
 
-    private void UpdateWaveText() => waveText.text = $"{GameController.currentWave + 1}";
+    private void UpdateWaveText() => waveText.text = $"{GameController.currentWave - 1}";
 
     private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
 

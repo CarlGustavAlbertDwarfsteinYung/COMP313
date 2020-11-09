@@ -85,7 +85,7 @@ public class GameController : MonoBehaviour
             Debug.Log($"enemiesAllSpawned: ${PathogensController.enemiesAllSpawned}");
             Debug.Log($"EnemyNPC.AliveEniemiesCount: ${PathogensController.activeController.AliveEniemiesCount}");
 
-            if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEniemiesCount == 0 && currentLife > 0)
+            if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEniemiesCount <= 0 && currentLife > 0)
             {
                 Debug.Log("We won!");
                 onGameWon();
