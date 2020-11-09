@@ -5327,7 +5327,7 @@ PrefabInstance:
     - target: {fileID: 2984084744081723243, guid: f72d4561afd080945a4d478bfb364b6a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2984084744081723245, guid: f72d4561afd080945a4d478bfb364b6a,
         type: 3}
@@ -17267,6 +17267,7 @@ MonoBehaviour:
   waveText: {fileID: 708239463}
   dnaText: {fileID: 1884978292}
   enemiesLeftText: {fileID: 1200435276}
+  timeToNextWaveText: {fileID: 1127658319}
   endScreen: {fileID: 991965739}
   wonScreen: {fileID: 1220200476}
   nextWaveButton: {fileID: 184498736}
@@ -17463,6 +17464,11 @@ PrefabInstance:
       propertyPath: waves.Array.data[3].waveWaypoints
       value: 
       objectReference: {fileID: 1070922314}
+    - target: {fileID: 2984084743789197674, guid: 068dab8e2cedce24696d35d66bfdd634,
+        type: 3}
+      propertyPath: waves.Array.data[0].timeToNextWave
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2984084744081723243, guid: 068dab8e2cedce24696d35d66bfdd634,
         type: 3}
       propertyPath: m_Name
@@ -17583,7 +17589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1127658318
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27133,6 +27139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2984084744081723243, guid: 2dc0296c24494844cb246eb9dd77dd82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2984084744081723245, guid: 2dc0296c24494844cb246eb9dd77dd82,
         type: 3}

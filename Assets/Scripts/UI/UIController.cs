@@ -11,6 +11,7 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI waveText;
     public TextMeshProUGUI dnaText;
     public TextMeshProUGUI enemiesLeftText;
+    public TextMeshProUGUI timeToNextWaveText;
     public Image endScreen;
     public Image wonScreen;
     public Button nextWaveButton;
@@ -23,17 +24,22 @@ public class UIController : MonoBehaviour
         // Enables/Disable the Tutorial
         var tutorialSequence = transform.Find("TutorialSequence").gameObject;
         tutorialSequence.SetActive(GameController.currentLevel == "Tutorial");
+
+        ResetUI();
         
+        nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
+    }
+
+    public void ResetUI()
+    {
         endScreen.gameObject.SetActive(false);
         wonScreen.gameObject.SetActive(false);
-        lifeText.text = $"{GameController.maxLife}";
-        waveText.text = $"{GameController.maxWave - (GameController.currentWave + 1)}";
-        dnaText.text = $"{GameController.towerPoints}";
 
+        UpdateTimeToNextWave(-1);
+        UpdateLifeText();
+        UpdateDnaText();
         UpdateWaveText();
         UpdateEnemiesCount();
-
-        nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
     }
 
     private void OnEnable()
@@ -45,10 +51,14 @@ public class UIController : MonoBehaviour
         
         GameController.onGameOver += ShowGameOverScreen;
         GameController.onGameWon += ShowGameWonScreen;
+        
+        GameController.onCountdownTick += UpdateTimeToNextWave;
 
         TowerController.onTowerPlaced += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateEnemiesCount;
+        
+        GameController.onGameReset += ResetUI;
     }
     
     private void OnDisable()
@@ -64,13 +74,18 @@ public class UIController : MonoBehaviour
         TowerController.onTowerPlaced -= UpdateDnaText;
         GameController.onEnemyDestroyed -= UpdateDnaText;
         GameController.onEnemyDestroyed -= UpdateEnemiesCount;
+        
+        GameController.onCountdownTick -= UpdateTimeToNextWave;
+        
+        GameController.onGameReset -= ResetUI;
     }
 
     private void ShowGameOverScreen() => endScreen.gameObject.SetActive(true);
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
-    private void UpdateWaveText() => waveText.text = $"{GameController.maxWave - (GameController.currentWave + 1)}";
+    private void UpdateWaveText() => waveText.text = $"{PathogensController.activeController.MAXNumberOfWaves - (GameController.currentWave + 1)}";
     private void UpdateEnemiesCount() => enemiesLeftText.text = $"{PathogensController.activeController.AliveEnemiesCount}";
 
+    private void UpdateTimeToNextWave(int timeLeft) => timeToNextWaveText.text = timeLeft > -1 ? $"{timeLeft}s" : "";
     private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
 
     public void TogglePause()
