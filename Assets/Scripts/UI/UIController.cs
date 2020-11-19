@@ -12,11 +12,13 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI dnaText;
     public TextMeshProUGUI enemiesLeftText;
     public TextMeshProUGUI timeToNextWaveText;
+    public TextMeshProUGUI scoreText;
     public Image endScreen;
     public Image wonScreen;
     public Button nextWaveButton;
 
     private float gameSpeed;
+    private int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -57,6 +59,7 @@ public class UIController : MonoBehaviour
         TowerController.onTowerPlaced += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateEnemiesCount;
+        GameController.onEnemyDestroyed += UpdateScore;
         
         GameController.onGameReset += ResetUI;
     }
@@ -84,6 +87,7 @@ public class UIController : MonoBehaviour
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
     private void UpdateWaveText() => waveText.text = $"{PathogensController.activeController.MAXNumberOfWaves - (GameController.currentWave + 1)}";
     private void UpdateEnemiesCount() => enemiesLeftText.text = $"{PathogensController.activeController.AliveEnemiesCount}";
+    private void UpdateScore() => scoreText.text = $"{score += 100}";
 
     private void UpdateTimeToNextWave(int timeLeft) => timeToNextWaveText.text = timeLeft > -1 ? $"{timeLeft}s" : "";
     private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
