@@ -85,12 +85,9 @@ public class GameController : MonoBehaviour
     {
         onEnemyDestroyed += () =>
         {
-            Debug.Log($"enemiesAllSpawned: ${PathogensController.enemiesAllSpawned}");
-            Debug.Log($"EnemyNPC.AliveEniemiesCount: ${PathogensController.activeController.AliveEnemiesCount}");
-
+            // we win if all the enemies that are spawned are dead and the health is still greater than 0
             if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEnemiesCount == 0 && currentLife > 0)
             {
-                Debug.Log("We won!");
                 onGameWon();
                 instance.StartCoroutine(GameWonCounter()); 
             }
@@ -118,11 +115,15 @@ public class GameController : MonoBehaviour
         _saveGame = JsonUtility.FromJson<SaveGameData>(saveGameText);
     }
 
+    /// <summary>
+    /// Sets the level based on the level selector
+    /// </summary>
+    /// <param name="levelName"></param>
     public void SetLevel(string levelName)
     {
         currentLevel = levelName;
 
-        if (levelName == "Tutorial")
+        if (levelName == "Tutorial") // Tutorial only gets 5 lives for demonstration
         {
             _saveGame.maxUnlockedLevel = "Level_1";
             maxLife = 5;
@@ -161,9 +162,12 @@ public class GameController : MonoBehaviour
 
         ResetGame();
 
-        Time.timeScale = 1f;    // Reset Game Speed
+        Time.timeScale = 1f; // Reset Game Speed
     }
 
+    /// <summary>
+    /// Resets the game life, wave and tower points
+    /// </summary>
     public static void ResetGame()
     {
         currentLife = maxLife;
@@ -172,12 +176,18 @@ public class GameController : MonoBehaviour
         onGameReset.Invoke();
     }
 
+    /// <summary>
+    /// Increments the number of waves once the wave is spawned
+    /// </summary>
     public static void WaveSpawned()
     {
         currentWave++;
         onWaveSpawned();
     }
 
+    /// <summary>
+    /// Decreases the life value when the enemy reaches the end point alive
+    /// </summary>
     public static void RegisterHit()
     {
         currentLife--;
@@ -212,12 +222,18 @@ public class GameController : MonoBehaviour
         instance.SwitchScene("Game");
     }
 
+    /// <summary>
+    /// Returns to main menu when you lost game after 5 seconds
+    /// </summary>
     private static IEnumerator GameOverCounter()
     {
         yield return new WaitForSeconds(5f);
         instance.SwitchScene("Menu");
     }
 
+    /// <summary>
+    /// When 'Exit' is clicked from the UI this exits the game
+    /// </summary>
     public void QuitGame()
     {
 #if UNITY_EDITOR

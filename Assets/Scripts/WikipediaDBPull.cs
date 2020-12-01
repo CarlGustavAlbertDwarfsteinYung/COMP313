@@ -43,8 +43,6 @@ public class WikipediaDBPull : DynamoDBBaseConnection
 
     public void GetInfoFromDB()
     {
-        Debug.Log("Get Info From DB starting...");
-
         // Retrieve the bacteria info. 
         EnemyInfo bacteriaRetrieved = null;
         Context.LoadAsync<EnemyInfo>(bacteriaID, (result) =>
@@ -52,9 +50,6 @@ public class WikipediaDBPull : DynamoDBBaseConnection
             if (result.Exception == null)
             {
                 bacteriaRetrieved = result.Result as EnemyInfo;
-
-                Debug.Log("bacteriaRetrieved.EnemyName: " + bacteriaRetrieved.EnemyName);
-                Debug.Log("bacteriaRetrieved.Description: " + bacteriaRetrieved.Description);
 
                 bacteriaButtonText.text = bacteriaRetrieved.EnemyName;
                 bacteriaDescriptionHeaderText.text = bacteriaRetrieved.EnemyName;
@@ -71,9 +66,6 @@ public class WikipediaDBPull : DynamoDBBaseConnection
             {
                 virusRetrieved = result.Result as EnemyInfo;
 
-                Debug.Log("virusRetrieved.EnemyName: " + virusRetrieved.EnemyName);
-                Debug.Log("virusRetrieved.Description: " + virusRetrieved.Description);
-
                 virusButtonText.text = virusRetrieved.EnemyName;
                 virusDescriptionHeaderText.text = virusRetrieved.EnemyName;
                 virusDescriptionBodyText.text = virusRetrieved.Description;
@@ -84,7 +76,7 @@ public class WikipediaDBPull : DynamoDBBaseConnection
     [DynamoDBTable("EnemyInfo")]
     public class EnemyInfo
     {
-        [DynamoDBHashKey]   // Hash key.
+        [DynamoDBHashKey]   // Hash key
         public int Id { get; set; }
         [DynamoDBProperty]
         public string EnemyName { get; set; }
