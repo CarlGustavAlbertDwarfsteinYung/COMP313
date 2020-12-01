@@ -23,7 +23,7 @@ public class UIController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Enables/Disable the Tutorial
+        // Enables/Disables the Tutorial
         var tutorialSequence = transform.Find("TutorialSequence").gameObject;
         tutorialSequence.SetActive(GameController.currentLevel == "Tutorial");
 
@@ -32,6 +32,9 @@ public class UIController : MonoBehaviour
         nextWaveButton.onClick.AddListener(PathogensController.activeController.PlayNextWave);
     }
 
+    /// <summary>
+    /// Resets the information on the game UI
+    /// </summary>
     public void ResetUI()
     {
         endScreen.gameObject.SetActive(false);
