@@ -90,7 +90,7 @@ public class UIController : MonoBehaviour
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
     private void UpdateWaveText() => waveText.text = $"{ PathogensController.activeController.MAXNumberOfWaves - (GameController.currentWave) }";
     private void UpdateEnemiesCount() => enemiesLeftText.text = $"{PathogensController.activeController.AliveEnemiesCount}";
-    private void UpdateScore() => scoreText.text = $"{score += 100}";
+    private void UpdateScore() => scoreText.text = $"{score += PathogensController.EnemyPoints }";
 
     private void UpdateTimeToNextWave(int timeLeft) => timeToNextWaveText.text = timeLeft > -1 ? $"{timeLeft}s" : "";
     private void UpdateLifeText() => lifeText.text = $"{GameController.currentLife}";
