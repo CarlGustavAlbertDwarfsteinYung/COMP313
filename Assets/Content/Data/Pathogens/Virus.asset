@@ -43,4 +43,4 @@ MonoBehaviour:
     of viral diseases."
   pathogenSpeed: 5
   pathogenLife: 100
-  pathogenReward: 10
+  pathogenReward: 20
