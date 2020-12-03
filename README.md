@@ -13,7 +13,7 @@
 This repository contain the main **MediSiege** game? What is **MediSiege**? Take a look at our [Project Proposal](https://drive.google.com/drive/folders/1eUYfmzv3omPL_pIO08Y0UQAIX2RQ2bEP) for a quick introduction to what we are making.
 
 ### Setup
-In order to install Treasure World the following software are required.
+In order to install MediSiege the following software are required.
 
 ###### Unity
  - [Unity Hub](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe)
