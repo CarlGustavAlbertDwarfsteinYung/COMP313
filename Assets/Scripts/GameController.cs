@@ -208,7 +208,7 @@ public class GameController : MonoBehaviour
 
     private static IEnumerator GameWonCounter()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         int currentLevel = 0;
 
