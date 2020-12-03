@@ -7,6 +7,7 @@ using Sirenix.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class GameController : MonoBehaviour
 {
@@ -27,12 +28,16 @@ public class GameController : MonoBehaviour
     public static Action onEnemyDestroyed = () => { };
 
     public static int maxLife = 20;
+
+    public AudioMixer audioMixer;
     
     public static int currentLife { get; private set; }
 
     public static int currentWave { get; private set; }
 
     private static GameController instance;
+
+    private static int final_level = 12;
 
     /// <summary>
     /// The white cell we selected though the UI
@@ -42,7 +47,7 @@ public class GameController : MonoBehaviour
     /// <summary>
     /// How many points we have (used to place towers)
     /// </summary>
-    public static int towerPoints { get; set; } = 100;
+    public static int towerPoints { get; set; } = 400;
 
     /// <summary>
     /// The current level
@@ -172,7 +177,7 @@ public class GameController : MonoBehaviour
     {
         currentLife = maxLife;
         currentWave = 0;
-        towerPoints = 100;
+        towerPoints = 400;
         onGameReset.Invoke();
     }
 
@@ -203,7 +208,7 @@ public class GameController : MonoBehaviour
 
     private static IEnumerator GameWonCounter()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         int currentLevel = 0;
 
@@ -217,9 +222,15 @@ public class GameController : MonoBehaviour
             currentLevel++;
         }
         
-
-        instance.SetLevel("Level_" + currentLevel);
-        instance.SwitchScene("Game");
+        if(currentLevel <= final_level)
+        {
+            instance.SetLevel("Level_" + currentLevel);
+            instance.SwitchScene("Game");
+        }
+        else
+        {
+            instance.SwitchScene("Menu");
+        }
     }
 
     /// <summary>
@@ -227,8 +238,17 @@ public class GameController : MonoBehaviour
     /// </summary>
     private static IEnumerator GameOverCounter()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         instance.SwitchScene("Menu");
+    }
+
+    /// <summary>
+    /// Used to set the volume of the game
+    /// </summary>
+    /// <param name="volume"></param>
+    public void SetVolume(float volume)
+    {
+        audioMixer.SetFloat("volume", volume);
     }
 
     /// <summary>

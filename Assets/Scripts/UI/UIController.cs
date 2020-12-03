@@ -88,7 +88,7 @@ public class UIController : MonoBehaviour
 
     private void ShowGameOverScreen() => endScreen.gameObject.SetActive(true);
     private void ShowGameWonScreen() => wonScreen.gameObject.SetActive(true);
-    private void UpdateWaveText() => waveText.text = $"{PathogensController.activeController.MAXNumberOfWaves - (GameController.currentWave + 1)}";
+    private void UpdateWaveText() => waveText.text = $"{ PathogensController.activeController.MAXNumberOfWaves - (GameController.currentWave) }";
     private void UpdateEnemiesCount() => enemiesLeftText.text = $"{PathogensController.activeController.AliveEnemiesCount}";
     private void UpdateScore() => scoreText.text = $"{score += 100}";
 

@@ -31,7 +31,6 @@ public class WikipediaDBPull : DynamoDBBaseConnection
         }
     }
 
-    // Start is called before the first frame update
     void Awake()
     {
         UnityInitializer.AttachToGameObject(this.gameObject);
@@ -41,10 +40,14 @@ public class WikipediaDBPull : DynamoDBBaseConnection
         _client = Client;
     }
 
+    /// <summary>
+    /// Pulls the information from the Amazon DynamoDB
+    /// </summary>
     public void GetInfoFromDB()
     {
         // Retrieve the bacteria info. 
         EnemyInfo bacteriaRetrieved = null;
+
         Context.LoadAsync<EnemyInfo>(bacteriaID, (result) =>
         {
             if (result.Exception == null)
@@ -54,6 +57,7 @@ public class WikipediaDBPull : DynamoDBBaseConnection
                 bacteriaButtonText.text = bacteriaRetrieved.EnemyName;
                 bacteriaDescriptionHeaderText.text = bacteriaRetrieved.EnemyName;
                 bacteriaDescriptionBodyText.text = bacteriaRetrieved.Description;
+                bacteriaDescriptionBodyText.overflowMode = TextOverflowModes.Page;
             }
         });
 
@@ -69,6 +73,7 @@ public class WikipediaDBPull : DynamoDBBaseConnection
                 virusButtonText.text = virusRetrieved.EnemyName;
                 virusDescriptionHeaderText.text = virusRetrieved.EnemyName;
                 virusDescriptionBodyText.text = virusRetrieved.Description;
+                virusDescriptionBodyText.overflowMode = TextOverflowModes.Page;
             }
         });
     }
