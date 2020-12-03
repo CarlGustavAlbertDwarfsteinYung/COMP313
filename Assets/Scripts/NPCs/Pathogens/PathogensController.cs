@@ -76,6 +76,8 @@ public class PathogensController : MonoBehaviour
     public int AliveEnemiesCount { get; private set; } = 0;
     
     public int MAXNumberOfWaves => waves.Count;
+
+    public static int EnemyPoints = 10;
     
     public bool WaveSpawningComplete { get; private set; } = false;
     
@@ -113,11 +115,6 @@ public class PathogensController : MonoBehaviour
             
             activeController.StartCoroutine(CountdownToNextWave(3f));
         };
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void PlayNextWave()
@@ -177,6 +174,8 @@ public class PathogensController : MonoBehaviour
         newEnemy.controller = pathogensController;
         newEnemy.pathogenObject = pathogenObject;
         newEnemy.waypointsContainer = waypoints.transform;
+
+        EnemyPoints = newEnemy.pathogenObject.pathogenReward;
 
         // Execute the spawning callback
         newEnemy.onEnemySpawned?.Invoke();
