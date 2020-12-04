@@ -21,6 +21,6 @@ MonoBehaviour:
     immunity, T cells for adaptive immunity and B cells for antibody-driven adaptive
     immunity. They are the main type of cell found in lymph, which prompted the name
     "lymphocyte".
-  cellFireRate: 27.9
-  cellDamage: 1
-  cellCost: 15
+  cellFireRate: 10
+  cellDamage: 20
+  cellCost: 20

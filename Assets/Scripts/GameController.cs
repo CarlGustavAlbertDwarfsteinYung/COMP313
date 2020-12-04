@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
     /// <summary>
     /// How many points we have (used to place towers)
     /// </summary>
-    public static int towerPoints { get; set; } = 400;
+    public static int towerPoints { get; set; } = 50;
 
     /// <summary>
     /// The current level
@@ -177,7 +177,7 @@ public class GameController : MonoBehaviour
     {
         currentLife = maxLife;
         currentWave = 0;
-        towerPoints = 400;
+        towerPoints = 50;
         onGameReset.Invoke();
     }
 

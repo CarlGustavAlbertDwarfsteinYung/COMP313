@@ -19,6 +19,6 @@ MonoBehaviour:
     the largest type of leukocyte and can differentiate into macrophages and myeloid
     lineage dendritic cells. As a part of the vertebrate innate immune system monocytes
     also influence the process of adaptive immunity.
-  cellFireRate: 60
-  cellDamage: 10
-  cellCost: 25
+  cellFireRate: 20
+  cellDamage: 5
+  cellCost: 10

@@ -41,6 +41,6 @@ MonoBehaviour:
     the number of susceptible individuals, the quality of healthcare and the weather.
     Epidemiology is used to break the chain of infection in populations during outbreaks
     of viral diseases."
-  pathogenSpeed: 5
-  pathogenLife: 100
-  pathogenReward: 10
+  pathogenSpeed: 2
+  pathogenLife: 200
+  pathogenReward: 50

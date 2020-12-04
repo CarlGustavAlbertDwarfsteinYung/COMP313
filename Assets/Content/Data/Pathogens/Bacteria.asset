@@ -29,5 +29,5 @@ MonoBehaviour:
     infectious diseases, including cholera, syphilis, anthrax, leprosy, and bubonic
     plague. The most common fatal bacterial diseases are respiratory infections.
   pathogenSpeed: 3
-  pathogenLife: 200
+  pathogenLife: 150
   pathogenReward: 10
