@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+ * Author: Matteo
+ * Last Modified by: Matteo
+ * Date Last Modified: 2020-04-14
+ * Program Description: Manages the attack cells that are spawned in the level
+ * Revision History:
+ *      - Initial Setup
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

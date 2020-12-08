@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * Author: Matteo
+ * Last Modified by: Leslie
+ * Date Last Modified: 2020-12-08
+ * Program Description: Controller for the Pathogens that are spawned in game
+ * Revision History:
+ *      - Initial Setup
+ *      - Added EnemyPoints which is used to update the score in UIController
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;

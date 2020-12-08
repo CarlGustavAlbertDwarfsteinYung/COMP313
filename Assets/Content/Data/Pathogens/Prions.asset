@@ -44,3 +44,4 @@ MonoBehaviour:
   pathogenSpeed: 2
   pathogenLife: 200
   pathogenReward: 50
+  pathogenHitAudio: {fileID: 8300000, guid: 948b71c6a4a26bb48817d6a6872ea445, type: 3}

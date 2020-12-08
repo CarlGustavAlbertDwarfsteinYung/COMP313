@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/*
+ * Author: Matteo
+ * Last Modified by: Matteo
+ * Date Last Modified: 2020-04-14
+ * Program Description: Manages the Camera controls used in Game
+ * Revision History:
+ *      - Initial Setup
+ */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.ProBuilder;

@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/*
+ * Author: Leslie
+ * Last Modified by: Leslie
+ * Date Last Modified: 2020-11-05
+ * Program Description: Amazon Dynamo DB connection setup for Encyclopedia information population
+ * Revision History:
+ *      - Initial Setup
+ */
+
+using UnityEngine;
 using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;

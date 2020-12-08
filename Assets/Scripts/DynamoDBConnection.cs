@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/*
+ * Author: Leslie
+ * Last Modified by: Leslie
+ * Date Last Modified: 2020-11-05
+ * Program Description: Amazon Dynamo DB connection setup
+ * Revision History:
+ *      - Initial Setup
+ */
+
+using UnityEngine;
 using Amazon;
 
 public class DynamoDBConnection : MonoBehaviour

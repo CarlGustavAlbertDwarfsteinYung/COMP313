@@ -1,4 +1,14 @@
-﻿using System;
+﻿/*
+ * Author: Matteo
+ * Last Modified by: Leslie
+ * Date Last Modified: 2020-12-08
+ * Program Description: Handles the overall control of the flow and interactions in the Game
+ * Revision History:
+ *      - Initial Setup
+ *      - Added PlayAgain and MainMenu function
+ */
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -94,7 +104,7 @@ public class GameController : MonoBehaviour
             if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEnemiesCount == 0 && currentLife > 0)
             {
                 onGameWon();
-                instance.StartCoroutine(GameWonCounter()); 
+                //instance.StartCoroutine(GameWonCounter()); 
             }
             else if (PathogensController.activeController.WaveSpawningComplete && PathogensController.activeController.AliveEnemiesCount == 0)
             {
@@ -202,7 +212,7 @@ public class GameController : MonoBehaviour
         if (currentLife == 0)
         {
             onGameOver();
-            instance.StartCoroutine(GameOverCounter());
+            //instance.StartCoroutine(GameOverCounter());
         }
     }
 
@@ -261,5 +271,63 @@ public class GameController : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    /// <summary>
+    /// On GameOver/GameWon Scene, play the same level once the Play Again button is clicked
+    /// </summary>
+    public void PlayAgain()
+    {
+        int currentLevel = 0;
+
+        if (GameController.currentLevel == "Tutorial")
+        {
+            currentLevel = 1;
+        }
+        else
+        {
+            currentLevel = Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
+            _saveGame.maxUnlockedLevel = "Level_" + (currentLevel + 1);
+        }
+
+        if (currentLevel <= final_level)
+        {
+            string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
+
+            if (currentLevel < int.Parse(saved_level[1].Trim()))
+            {
+                SaveGameData(Application.persistentDataPath + "save.pack");
+            }
+
+            instance.SetLevel("Level_" + currentLevel);
+            instance.SwitchScene("Game");
+        }
+    }
+
+    /// <summary>
+    /// On GameOver/GameWon Scene, open the Menu scene once the Main Menu button is clicked
+    /// </summary>
+    public void MainMenu()
+    {
+        int currentLevel = 0;
+
+        if (GameController.currentLevel == "Tutorial")
+        {
+            currentLevel = 1;
+        }
+        else
+        {
+            currentLevel = Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
+            _saveGame.maxUnlockedLevel = "Level_" + (currentLevel+1);
+        }
+
+        string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
+
+        if (currentLevel < int.Parse(saved_level[1].Trim()))
+        {
+            SaveGameData(Application.persistentDataPath + "save.pack");
+        }
+
+        instance.SwitchScene("Menu");
     }
 }

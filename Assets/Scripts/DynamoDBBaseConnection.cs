@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/*
+ * Author: Leslie
+ * Last Modified by: Leslie
+ * Date Last Modified: 2020-11-05
+ * Program Description: Amazon Dynamo DB connection setup for AWS SDK
+ * Revision History:
+ *      - Initial Setup
+ */
+
+using UnityEngine;
 using Amazon.DynamoDBv2;
 using Amazon.CognitoIdentity;
 using Amazon.Runtime;

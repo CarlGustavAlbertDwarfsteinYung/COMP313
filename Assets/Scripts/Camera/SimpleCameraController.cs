@@ -1,4 +1,13 @@
-﻿using UnityEngine;
+﻿/*
+ * Author: Matteo
+ * Last Modified by: Matteo
+ * Date Last Modified: 2020-04-14
+ * Program Description: Manages Camera Controls in Game
+ * Revision History:
+ *      - Initial Setup
+ */
+
+using UnityEngine;
 
 namespace UnityTemplateProjects
 {
