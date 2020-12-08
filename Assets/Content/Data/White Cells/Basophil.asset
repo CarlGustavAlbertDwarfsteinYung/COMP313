@@ -23,6 +23,7 @@ MonoBehaviour:
     allergic symptoms. Basophils contain anticoagulant heparin, which prevents blood
     from clotting too quickly. They also contain the vasodilator histamine, which
     promotes blood flow to tissues.
-  cellFireRate: 10
+  cellFireRate: 5
   cellDamage: 15
   cellCost: 15
+  attackRange: 2

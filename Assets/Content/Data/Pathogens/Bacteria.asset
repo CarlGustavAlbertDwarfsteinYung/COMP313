@@ -28,7 +28,7 @@ MonoBehaviour:
     in the gut flora. However, several species of bacteria are pathogenic and cause
     infectious diseases, including cholera, syphilis, anthrax, leprosy, and bubonic
     plague. The most common fatal bacterial diseases are respiratory infections.
-  pathogenSpeed: 3
+  pathogenSpeed: 2
   pathogenLife: 150
   pathogenReward: 10
   pathogenSoundEffect: {fileID: 8300000, guid: cfea385b338c003429142712e4988106, type: 3}

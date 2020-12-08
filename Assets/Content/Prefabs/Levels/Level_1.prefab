@@ -126,12 +126,12 @@ MonoBehaviour:
     enemyPerWave: 5
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 10
+    timeToNextWave: 15
   - enemyType: {fileID: 11400000, guid: a07ff829f13bb1a4fb6361bd6c12202d, type: 2}
     enemyPerWave: 1
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 20
+    timeToNextWave: 25
   pathogenPrefab: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
     type: 3}
 --- !u!1 &2984084743871572100

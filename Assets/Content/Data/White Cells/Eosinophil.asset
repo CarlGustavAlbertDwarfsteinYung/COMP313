@@ -22,6 +22,7 @@ MonoBehaviour:
     bone marrow before migrating into blood, after which they are terminally differentiated
     and do not multiply. These cells are eosinophilic or "acid-loving" due to their
     large acidophilic cytoplasmic granules.
-  cellFireRate: 20
+  cellFireRate: 10
   cellDamage: 10
   cellCost: 10
+  attackRange: 2

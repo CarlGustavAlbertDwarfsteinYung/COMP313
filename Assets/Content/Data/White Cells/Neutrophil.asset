@@ -26,6 +26,7 @@ MonoBehaviour:
     the trauma and are the hallmark of acute inflammation; however, due to some pathogens
     being indigestible, they can be unable to resolve certain infections without
     the assistance of other types of immune cells.'
-  cellFireRate: 10
-  cellDamage: 50
+  cellFireRate: 5
+  cellDamage: 25
   cellCost: 50
+  attackRange: 2

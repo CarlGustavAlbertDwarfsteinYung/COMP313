@@ -276,27 +276,27 @@ MonoBehaviour:
     enemyPerWave: 5
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 10
+    timeToNextWave: 15
   - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
     enemyPerWave: 10
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 25
+    timeToNextWave: 35
   - enemyType: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae, type: 2}
     enemyPerWave: 10
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 40
+    timeToNextWave: 55
   - enemyType: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae, type: 2}
     enemyPerWave: 15
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 60
+    timeToNextWave: 80
   - enemyType: {fileID: 11400000, guid: a07ff829f13bb1a4fb6361bd6c12202d, type: 2}
     enemyPerWave: 1
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 70
+    timeToNextWave: 90
   pathogenPrefab: {fileID: 1032814065228926020, guid: 75f7814ad4fcaad4585f5bc43135f6ee,
     type: 3}
 --- !u!1 &2984084743871572100
@@ -30059,12 +30059,12 @@ Tilemap:
   - first: {x: -10, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 4
-      m_TileSpriteIndex: 3
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 0
   - first: {x: 3, y: 2, z: 0}
     second:
       serializedVersion: 2
@@ -31606,6 +31606,16 @@ Tilemap:
       m_AnimationSpeed: 1
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
+  - first: {x: -10, y: 2, z: 0}
+    second:
+      m_AnimatedSprites:
+      - {fileID: 7863480010670594001, guid: 95e1360abd2f30240b7fd71654b47a46, type: 3}
+      - {fileID: -1474618012835423619, guid: 95e1360abd2f30240b7fd71654b47a46, type: 3}
+      - {fileID: 7798182157302449681, guid: 95e1360abd2f30240b7fd71654b47a46, type: 3}
+      - {fileID: 2033427192928789207, guid: 95e1360abd2f30240b7fd71654b47a46, type: 3}
+      m_AnimationSpeed: 1
+      m_AnimationTimeOffset: 0
+      m_IsLooping: 1
   - first: {x: 3, y: 2, z: 0}
     second:
       m_AnimatedSprites:
@@ -32309,13 +32319,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 51
+  - m_RefCount: 52
     m_Data: {fileID: 11400000, guid: fa8c1ab42eaf61048836e63921c5a02e, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 07f01bf7dda0da1418546c0e301bf680, type: 2}
   - m_RefCount: 56
     m_Data: {fileID: 11400000, guid: 28118a3171403bd4eae644a052213427, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: d81d41bed96be52488f13ce6535e319a, type: 2}
   - m_RefCount: 40
     m_Data: {fileID: 11400000, guid: 0639ac915d8c24d4c9ac3fd5b9241c77, type: 2}
@@ -32329,10 +32339,10 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 1757363557254752908, guid: 95e1360abd2f30240b7fd71654b47a46,
       type: 3}
-  - m_RefCount: 51
+  - m_RefCount: 52
     m_Data: {fileID: 2033427192928789207, guid: 95e1360abd2f30240b7fd71654b47a46,
       type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {fileID: 2195716862548049476, guid: fd47ce07b9782524a8a4c8dc8d451287,
       type: 3}
   - m_RefCount: 40
