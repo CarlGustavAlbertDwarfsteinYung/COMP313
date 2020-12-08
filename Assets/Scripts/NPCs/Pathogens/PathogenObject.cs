@@ -29,7 +29,7 @@ public class PathogenObject : ScriptableObject
     /// <summary>
     /// How much life does this pathogen have
     /// </summary>
-    [Range(1f, 200f)]
+    [Range(1f, 500f)]
     public float pathogenLife = 100f;
 
     /// <summary>
@@ -37,4 +37,9 @@ public class PathogenObject : ScriptableObject
     /// </summary>
     [Range(1, 200)]
     public int pathogenReward = 10;
+
+    /// <summary>
+    /// What sound should play when pathogen gets killed
+    /// </summary>
+    public AudioClip pathogenSoundEffect;
 }

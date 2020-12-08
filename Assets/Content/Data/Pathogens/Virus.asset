@@ -42,6 +42,6 @@ MonoBehaviour:
     Epidemiology is used to break the chain of infection in populations during outbreaks
     of viral diseases."
   pathogenSpeed: 5
-  pathogenLife: 100
+  pathogenLife: 300
   pathogenReward: 20
-  pathogenHitAudio: {fileID: 8300000, guid: e6ff6580cb49434448572aa274da8af4, type: 3}
+  pathogenSoundEffect: {fileID: 8300000, guid: e6ff6580cb49434448572aa274da8af4, type: 3}

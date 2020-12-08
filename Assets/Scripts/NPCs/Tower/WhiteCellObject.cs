@@ -1,10 +1,11 @@
 ﻿/*
  * Author: Matteo
- * Last Modified by: Matteo
- * Date Last Modified: 2020-04-14
+ * Last Modified by: Leslie
+ * Date Last Modified: 2020-12-08
  * Program Description: Manages the white cell objects which are the towers in game
  * Revision History:
  *      - Initial Setup
+ *      - Added the attack range variable
  */
 
 using System.Collections;
@@ -32,12 +33,18 @@ public class WhiteCellObject : ScriptableObject
     /// <summary>
     /// How much damage does this cell deal per hit
     /// </summary>
-    [Range(1f, 100f)]
+    [Range(1f, 200f)]
     public float cellDamage = 1f;
 
     /// <summary>
     /// How much does it cost to place this cell
     /// </summary>
-    [Range(10, 50)]
+    [Range(1, 50)]
     public int cellCost = 10;
+
+    /// <summary>
+    /// How far the range of the cell to attack
+    /// </summary>
+    [Range(1, 20)]
+    public int attackRange = 2;
 }

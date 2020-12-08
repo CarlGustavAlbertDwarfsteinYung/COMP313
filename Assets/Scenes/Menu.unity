@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -12450,5 +12450,10 @@ PrefabInstance:
       propertyPath: soundEffects
       value: 
       objectReference: {fileID: 1253925966}
+    - target: {fileID: 1760636255495652911, guid: 14b04e11e54e29c4bb6c6b87c6bfe2f2,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b04e11e54e29c4bb6c6b87c6bfe2f2, type: 3}

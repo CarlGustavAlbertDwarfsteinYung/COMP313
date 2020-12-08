@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour
 
     public static int currentWave { get; private set; }
 
-    private static GameController instance;
+    public static GameController instance;
 
     private static int final_level = 12;
 
@@ -74,6 +74,11 @@ public class GameController : MonoBehaviour
     /// </summary>
     private SaveGameData _saveGame = new SaveGameData();
 
+    public AudioSource audioSource;
+
+    private int savedMaxLevel = 1;
+    private bool hasWon = false;
+
     static GameController()
     {
         ResetGame();
@@ -83,7 +88,17 @@ public class GameController : MonoBehaviour
     {
         DontDestroyOnLoad(this);
 
+        SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
+
         instance = this;
+    }
+
+    private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
+    {
+        if( arg1.name == "Game" )
+        {
+            audioSource = GameObject.FindGameObjectWithTag("soundEffects").GetComponent<AudioSource>();
+        }
     }
 
     private void OnEnable()
@@ -104,6 +119,8 @@ public class GameController : MonoBehaviour
             if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEnemiesCount == 0 && currentLife > 0)
             {
                 onGameWon();
+                hasWon = true;
+                savedMaxLevel = saveGameLevel();
                 //instance.StartCoroutine(GameWonCounter()); 
             }
             else if (PathogensController.activeController.WaveSpawningComplete && PathogensController.activeController.AliveEnemiesCount == 0)
@@ -273,33 +290,60 @@ public class GameController : MonoBehaviour
 #endif
     }
 
-    /// <summary>
-    /// On GameOver/GameWon Scene, play the same level once the Play Again button is clicked
-    /// </summary>
-    public void PlayAgain()
+    public void saveLevelStateOnGameEnd(int currentLevel)
+    {
+        string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
+        int parsedLevel = int.Parse(saved_level[1].Trim());
+
+        if (currentLevel < parsedLevel)
+        {
+            return;
+        }
+        
+        if( hasWon )
+        {
+            currentLevel = parsedLevel + 1;
+            _saveGame.maxUnlockedLevel = "Level_" + currentLevel;
+            SaveGameData(Application.persistentDataPath + "save.pack");
+        }
+    }
+
+    public int saveGameLevel()
     {
         int currentLevel = 0;
 
         if (GameController.currentLevel == "Tutorial")
         {
-            currentLevel = 1;
+            string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
+            int parsedLevel = int.Parse(saved_level[1].Trim());
+
+            if (parsedLevel > currentLevel)
+            {
+                currentLevel = parsedLevel;
+            }
+            else
+            {
+                currentLevel = 1;
+            }
         }
         else
         {
             currentLevel = Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
-            _saveGame.maxUnlockedLevel = "Level_" + (currentLevel + 1);
         }
 
-        if (currentLevel <= final_level)
+        return currentLevel;
+    }
+
+    /// <summary>
+    /// On GameOver/GameWon Scene, play the same level once the Play Again button is clicked
+    /// </summary>
+    public void PlayAgain()
+    {
+        if (savedMaxLevel <= final_level)
         {
-            string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
+            saveLevelStateOnGameEnd(savedMaxLevel);
 
-            if (currentLevel < int.Parse(saved_level[1].Trim()))
-            {
-                SaveGameData(Application.persistentDataPath + "save.pack");
-            }
-
-            instance.SetLevel("Level_" + currentLevel);
+            instance.SetLevel("Level_" + savedMaxLevel);
             instance.SwitchScene("Game");
         }
     }
@@ -309,25 +353,14 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void MainMenu()
     {
-        int currentLevel = 0;
-
-        if (GameController.currentLevel == "Tutorial")
-        {
-            currentLevel = 1;
-        }
-        else
-        {
-            currentLevel = Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
-            _saveGame.maxUnlockedLevel = "Level_" + (currentLevel+1);
-        }
-
-        string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
-
-        if (currentLevel < int.Parse(saved_level[1].Trim()))
-        {
-            SaveGameData(Application.persistentDataPath + "save.pack");
-        }
+        saveLevelStateOnGameEnd(savedMaxLevel);
 
         instance.SwitchScene("Menu");
+    }
+
+    public void PlaySoundEffects(AudioClip audioClip)
+    {
+        audioSource.clip = audioClip;
+        audioSource.Play();
     }
 }

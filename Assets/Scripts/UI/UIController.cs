@@ -146,4 +146,14 @@ public class UIController : MonoBehaviour
             gameSpeed = newSpeed;
         }
     }
+
+    public void PlayAgain()
+    {
+        GameController.instance.PlayAgain();
+    }
+
+    public void MainMenu()
+    {
+        GameController.instance.MainMenu();
+    }
 }

@@ -145,7 +145,7 @@ public class PathogensController : MonoBehaviour
     {
         var waveToSpawn = waves[wave];
         
-        AliveEnemiesCount = waveToSpawn.enemyPerWave;
+        AliveEnemiesCount += waveToSpawn.enemyPerWave;
 
         enemiesAllSpawned = false;
         

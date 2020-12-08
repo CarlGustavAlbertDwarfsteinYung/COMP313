@@ -139,7 +139,9 @@ public class EnemyNPC : MonoBehaviour
     private void KillEnemy()
     {
         _isAlive = false;
-        Debug.Log("Enemy killed");
+
+        GameController.instance.PlaySoundEffects(pathogenObject.pathogenSoundEffect);
+
         GetComponent<Collider2D>().enabled = false;
         onEnemyDestroyed?.Invoke();
         GameController.onEnemyDestroyed?.Invoke();
