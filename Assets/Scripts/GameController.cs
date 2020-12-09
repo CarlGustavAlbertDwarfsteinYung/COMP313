@@ -75,6 +75,8 @@ public class GameController : MonoBehaviour
 
     private int savedMaxLevel = 1;
     private bool hasWon = false;
+    private bool replayGame = false;
+    private string replayLevel = null;
 
     static GameController()
     {
@@ -92,13 +94,16 @@ public class GameController : MonoBehaviour
 
     private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
     {
-        if( arg1.name == "Game" )
+        if (arg1.name == "Game")
         {
-            audioSource = GameObject.FindGameObjectWithTag("soundEffects").GetComponent<AudioSource>();
-        }
-        else
-        {
-            audioSource = null;
+            if ( arg1.isLoaded && audioSource == null )
+            {
+                this.audioSource = GameObject.FindGameObjectWithTag("soundEffects").GetComponent<AudioSource>();
+            }
+            else
+            {
+                this.audioSource = instance.audioSource;
+            }
         }
     }
 
@@ -171,13 +176,21 @@ public class GameController : MonoBehaviour
 
             case "Level_2":
             case "Level_3":
-                maxLife = 10;
+            case "Level_4":
+                maxLife = 5;
                 towerPoints = 30;
             break;
 
-            case "Level_4":
-                towerPoints = 40;
-            break;
+            //case "Level_3":
+            //case "Level_4":
+            //    maxLife = 10;
+            //    towerPoints = 30;
+            //break;
+
+            //case "Level_4":
+            //    maxLife = 15;
+            //    towerPoints = 40;
+            //break;
 
             case "Level_8":
             case "Level_9":
@@ -223,6 +236,8 @@ public class GameController : MonoBehaviour
         yield return SceneManager.UnloadSceneAsync(currentScene);
 
         ResetGame();
+
+        Time.timeScale = 1f; // Reset Game Speed
     }
 
     /// <summary>
@@ -232,7 +247,6 @@ public class GameController : MonoBehaviour
     {
         currentLife = maxLife;
         currentWave = 0;
-        Time.timeScale = 1f; // Reset Game Speed
         onGameReset.Invoke();
     }
 
@@ -377,7 +391,10 @@ public class GameController : MonoBehaviour
 
     public void PlaySoundEffects(AudioClip audioClip)
     {
-        audioSource.clip = audioClip;
-        audioSource.Play();
+        if( audioSource != null )
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
     }
 }

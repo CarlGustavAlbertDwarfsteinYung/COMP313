@@ -108,6 +108,9 @@ public class PathogensController : MonoBehaviour
     public static PathogensController activeController { get; private set; }
 
     public static bool enemiesAllSpawned { get; private set; }
+
+    private bool clearedWaves = false;
+    private bool spawnOnceOnStart = true;
     
     /// <summary>
     /// Assign the active pathogen controller
@@ -122,14 +125,23 @@ public class PathogensController : MonoBehaviour
         {
             if (_countDownCoroutine != null)
                 activeController.StopCoroutine(_countDownCoroutine);
-            
-            activeController.StartCoroutine(CountdownToNextWave(3f));
+
+            clearedWaves = true;
+            activeController.StartCoroutine(CountdownToNextWave(4f));
         };
     }
 
     public void PlayNextWave()
     {
-        SpawnWave(_currentWave++);
+        if ( clearedWaves && !spawnOnceOnStart )
+        {
+            SpawnWave(_currentWave++);
+        }
+        else // used to trigger the initial spawn
+        {
+            SpawnWave(_currentWave++);
+            spawnOnceOnStart = false;
+        }
     }
 
     public void SpawnWave(int wave)
@@ -198,7 +210,7 @@ public class PathogensController : MonoBehaviour
         
         for (var timeToNextWave = waves[wave].timeToNextWave; timeToNextWave > 0f; timeToNextWave -= 1f)
         {
-            if (timeToNextWave < 4)
+            if (timeToNextWave < 5)
                 GameController.onCountdownTick((int) timeToNextWave);
             
             yield return new WaitForSeconds(1f);

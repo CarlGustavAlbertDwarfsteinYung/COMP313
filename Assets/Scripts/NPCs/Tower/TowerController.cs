@@ -129,8 +129,6 @@ public class TowerController : MonoBehaviour
     {
         if (GameController.SelectedWhiteCell != null && !HasSprite)
         {
-            /*_cellRenderer.sprite = Sprite.Create(GameController.SelectedWhiteCell.texture, GameController.SelectedWhiteCell.textureRect,
-                GameController.SelectedWhiteCell.pivot);*/
             _cellRenderer.sprite = GameController.SelectedWhiteCell.cellSprite;
         }
 
@@ -168,8 +166,6 @@ public class TowerController : MonoBehaviour
 
             if (CanFire )
                 _gunRenderer.color = halfTransparent;
-
-            Debug.Log($"{_enemies.Count} enemies in range");
         }
     }
 
@@ -181,8 +177,6 @@ public class TowerController : MonoBehaviour
 
             if (_enemies.Count == 0)
                 _gunRenderer.color = fullyTransparent;
-
-            Debug.Log($"{_enemies.Count} enemies in range");
         }
     }
 }
