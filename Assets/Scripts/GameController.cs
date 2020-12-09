@@ -96,6 +96,10 @@ public class GameController : MonoBehaviour
         {
             audioSource = GameObject.FindGameObjectWithTag("soundEffects").GetComponent<AudioSource>();
         }
+        else
+        {
+            audioSource = null;
+        }
     }
 
     private void OnEnable()
@@ -152,16 +156,8 @@ public class GameController : MonoBehaviour
     {
         currentLevel = levelName;
 
-        if (levelName == "Tutorial") // Tutorial only gets 5 lives for demonstration
+        if ( !(levelName == "Tutorial") && ( string.IsNullOrEmpty(_saveGame.maxUnlockedLevel) || ( String.Compare(_saveGame.maxUnlockedLevel, levelName, StringComparison.Ordinal) < 0 ) ) )
         {
-            //_saveGame.maxUnlockedLevel = "Level_1";
-            //currentLevel = "Level_1";
-            //maxLife = 5;
-        }
-        else if (string.IsNullOrEmpty(_saveGame.maxUnlockedLevel) || String.Compare(_saveGame.maxUnlockedLevel, levelName, StringComparison.Ordinal) < 0)
-        {
-            //maxLife = 20;
-            //_saveGame.maxUnlockedLevel = levelName == "Tutorial" ? "Level_1" : levelName;
             currentLevel = levelName == "Tutorial" ? "Level_1" : levelName;
         }
 
@@ -170,13 +166,32 @@ public class GameController : MonoBehaviour
             case "Tutorial":
             case "Level_1":
                 maxLife = 5;
+                towerPoints = 20;
             break;
 
             case "Level_2":
+            case "Level_3":
                 maxLife = 10;
+                towerPoints = 30;
+            break;
+
+            case "Level_4":
+                towerPoints = 40;
+            break;
+
+            case "Level_8":
+            case "Level_9":
+            case "Level_10":
+                towerPoints = 70;
+            break;
+
+            case "Level_11":
+            case "Level_12":
+                towerPoints = 90;
             break;
 
             default:
+                towerPoints = 50;
                 maxLife = 20;
             break;
         }
@@ -208,8 +223,6 @@ public class GameController : MonoBehaviour
         yield return SceneManager.UnloadSceneAsync(currentScene);
 
         ResetGame();
-
-        Time.timeScale = 1f; // Reset Game Speed
     }
 
     /// <summary>
@@ -219,7 +232,7 @@ public class GameController : MonoBehaviour
     {
         currentLife = maxLife;
         currentWave = 0;
-        towerPoints = 50;
+        Time.timeScale = 1f; // Reset Game Speed
         onGameReset.Invoke();
     }
 
@@ -301,10 +314,12 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void QuitGame()
     {
-#if UNITY_EDITOR
+#if (UNITY_EDITOR)
         UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
+#elif (UNITY_STANDALONE) 
+    Application.Quit();
+#elif (UNITY_WEBGL)
+    Application.OpenURL("about:blank");
 #endif
     }
 
