@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
 
     public static int currentWave { get; private set; }
 
-    public static GameController instance = null;
+    public static GameController instance;
 
     private static int final_level = 12;
 
@@ -75,21 +75,20 @@ public class GameController : MonoBehaviour
 
     private int savedMaxLevel = 1;
     private bool hasWon = false;
-    private bool replayGame = false;
-    private string replayLevel = null;
+    private int enemyPoints = 0;
 
     static GameController()
     {
         ResetGame();
     }
-    
+
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+        instance = this;
+
+        DontDestroyOnLoad(instance);
 
         SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
-
-        instance = this;
     }
 
     private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
@@ -121,18 +120,22 @@ public class GameController : MonoBehaviour
     {
         onEnemyDestroyed += () =>
         {
+            UIController.score += enemyPoints;
+
             // we win if all the enemies that are spawned are dead and the health is still greater than 0
             if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEnemiesCount == 0 && currentLife > 0)
             {
                 onGameWon();
                 hasWon = true;
+
+                savedMaxLevel = SaveGameLevel();
+
+                SaveLevelStateOnGameEnd(savedMaxLevel);
             }
             else if (PathogensController.activeController.WaveSpawningComplete && PathogensController.activeController.AliveEnemiesCount == 0)
             {
                 onWaveCleared();
             }
-
-            savedMaxLevel = SaveGameLevel();
         };
     }
 
@@ -153,6 +156,11 @@ public class GameController : MonoBehaviour
         _saveGame = JsonUtility.FromJson<SaveGameData>(saveGameText);
     }
 
+    internal void SetEnemyPoints(int pathogenReward)
+    {
+        enemyPoints = pathogenReward;
+    }
+
     /// <summary>
     /// Sets the level based on the level selector
     /// </summary>
@@ -164,6 +172,8 @@ public class GameController : MonoBehaviour
         if ( !(levelName == "Tutorial") && ( string.IsNullOrEmpty(_saveGame.maxUnlockedLevel) || ( String.Compare(_saveGame.maxUnlockedLevel, levelName, StringComparison.Ordinal) < 0 ) ) )
         {
             currentLevel = levelName == "Tutorial" ? "Level_1" : levelName;
+
+            _saveGame.maxUnlockedLevel = levelName == "Tutorial" ? "Level_1" : levelName;
         }
 
         switch(currentLevel)
@@ -177,20 +187,20 @@ public class GameController : MonoBehaviour
             case "Level_2":
             case "Level_3":
             case "Level_4":
-                maxLife = 5;
+            case "Level_5":
+                maxLife = 10;
                 towerPoints = 30;
             break;
 
-            //case "Level_3":
-            //case "Level_4":
-            //    maxLife = 10;
-            //    towerPoints = 30;
-            //break;
+            case "Level_6":
+                maxLife = 10;
+                towerPoints = 30;
+            break;
 
-            //case "Level_4":
-            //    maxLife = 15;
-            //    towerPoints = 40;
-            //break;
+            case "Level_7":
+                maxLife = 10;
+                towerPoints = 40;
+            break;
 
             case "Level_8":
             case "Level_9":
@@ -247,6 +257,7 @@ public class GameController : MonoBehaviour
     {
         currentLife = maxLife;
         currentWave = 0;
+        UIController.score = 0;
         onGameReset.Invoke();
     }
 
@@ -330,7 +341,7 @@ public class GameController : MonoBehaviour
     {
 #if (UNITY_EDITOR)
         UnityEditor.EditorApplication.isPlaying = false;
-#elif (UNITY_STANDALONE) 
+#elif (UNITY_STANDALONE)
     Application.Quit();
 #elif (UNITY_WEBGL)
     Application.OpenURL("about:blank");
@@ -353,7 +364,8 @@ public class GameController : MonoBehaviour
         
         if( hasWon )
         {
-            currentLevel = parsedLevel + 1;
+            currentLevel = savedMaxLevel < final_level ? parsedLevel + 1 : parsedLevel;
+
             _saveGame.maxUnlockedLevel = "Level_" + currentLevel;
             SaveGameData(Application.persistentDataPath + "save.pack");
         }
@@ -372,8 +384,6 @@ public class GameController : MonoBehaviour
     {
         if (savedMaxLevel <= final_level)
         {
-            SaveLevelStateOnGameEnd(savedMaxLevel);
-
             instance.SetLevel("Level_" + savedMaxLevel);
             instance.SwitchScene("Game");
         }
@@ -384,8 +394,6 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void MainMenu()
     {
-        SaveLevelStateOnGameEnd(savedMaxLevel);
-
         instance.SwitchScene("Menu");
     }
 

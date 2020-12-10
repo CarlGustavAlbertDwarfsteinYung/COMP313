@@ -136,8 +136,10 @@ public class PathogensController : MonoBehaviour
         if ( clearedWaves && !spawnOnceOnStart )
         {
             SpawnWave(_currentWave++);
+            clearedWaves = false; // reset the cleared waves
         }
-        else // used to trigger the initial spawn
+
+        if( spawnOnceOnStart ) // used to trigger the initial spawn
         {
             SpawnWave(_currentWave++);
             spawnOnceOnStart = false;
@@ -173,7 +175,6 @@ public class PathogensController : MonoBehaviour
 
             if (wave == waves.Count - 1 && index == waveToSpawn.enemyPerWave - 1)
             {
-                Debug.Log("We spawned all the enemies");
                 enemiesAllSpawned = true;
             }
         }
@@ -210,13 +211,14 @@ public class PathogensController : MonoBehaviour
         
         for (var timeToNextWave = waves[wave].timeToNextWave; timeToNextWave > 0f; timeToNextWave -= 1f)
         {
-            if (timeToNextWave < 5)
+            if ( timeToNextWave < 5 )
                 GameController.onCountdownTick((int) timeToNextWave);
             
             yield return new WaitForSeconds(1f);
         }
 
-        PlayNextWave();
+        if(clearedWaves)
+            PlayNextWave();
     }
     
     private IEnumerator CountdownToNextWave(float timeLeft)

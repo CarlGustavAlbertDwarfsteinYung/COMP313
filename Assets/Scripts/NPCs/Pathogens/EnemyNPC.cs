@@ -142,6 +142,8 @@ public class EnemyNPC : MonoBehaviour
 
         GameController.instance.PlaySoundEffects(pathogenObject.pathogenSoundEffect);
 
+        GameController.instance.SetEnemyPoints(pathogenObject.pathogenReward);
+
         GetComponent<Collider2D>().enabled = false;
         onEnemyDestroyed?.Invoke();
         GameController.onEnemyDestroyed?.Invoke();

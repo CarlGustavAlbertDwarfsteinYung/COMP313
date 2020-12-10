@@ -25,6 +25,7 @@ public class LevelSelectionButton : MonoBehaviour
         {
             var maxUnlockedLevel = Int32.Parse(GameController.maxUnlockedLevel.Substring(GameController.maxUnlockedLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
             var buttonLevel = Int32.Parse(gameObject.name.Substring(gameObject.name.LastIndexOf("_", StringComparison.Ordinal) + 1));
+            Debug.Log("maxUnlockedLevel: " + maxUnlockedLevel);
 
             if (buttonLevel <= maxUnlockedLevel)
                 button.interactable = true;

@@ -31,7 +31,7 @@ public class UIController : MonoBehaviour
     public Button nextWaveButton;
 
     private float gameSpeed;
-    private int score = 0;
+    public static int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -68,15 +68,18 @@ public class UIController : MonoBehaviour
         GameController.onWaveSpawned += UpdateEnemiesCount;
         
         GameController.onGameOver += ShowGameOverScreen;
+        GameController.onGameOver += UpdateYouLostScore;
+
         GameController.onGameWon += ShowGameWonScreen;
-        
-        GameController.onCountdownTick += UpdateTimeToNextWave;
+        GameController.onGameWon += UpdateYouWonScore;
 
         TowerController.onTowerPlaced += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateDnaText;
         GameController.onEnemyDestroyed += UpdateEnemiesCount;
         GameController.onEnemyDestroyed += UpdateScore;
-        
+
+        GameController.onCountdownTick += UpdateTimeToNextWave;
+
         GameController.onGameReset += ResetUI;
     }
     
@@ -88,12 +91,16 @@ public class UIController : MonoBehaviour
         GameController.onWaveSpawned -= UpdateEnemiesCount;
         
         GameController.onGameOver -= ShowGameOverScreen;
+        GameController.onGameOver -= UpdateYouLostScore;
+
         GameController.onGameWon -= ShowGameWonScreen;
+        GameController.onGameWon -= UpdateYouWonScore;
 
         TowerController.onTowerPlaced -= UpdateDnaText;
         GameController.onEnemyDestroyed -= UpdateDnaText;
         GameController.onEnemyDestroyed -= UpdateEnemiesCount;
-        
+        GameController.onEnemyDestroyed -= UpdateScore;
+
         GameController.onCountdownTick -= UpdateTimeToNextWave;
         
         GameController.onGameReset -= ResetUI;
@@ -105,13 +112,10 @@ public class UIController : MonoBehaviour
 
     private void UpdateWaveText() => waveText.text = $"{ PathogensController.activeController.MAXNumberOfWaves - (GameController.currentWave) }";
     private void UpdateEnemiesCount() => enemiesLeftText.text = $"{ PathogensController.activeController.AliveEnemiesCount }";
-    private void UpdateScore()
-    {
-        score += PathogensController.EnemyPoints;
-        scoreText.text = $"{ score }";
-        youWonScoreText.text = "Score: " + $"{ score }";
-        youLostScoreText.text = "Score: " + $"{ score }";
-    }
+
+    private void UpdateScore() => scoreText.text = $"{ score }";
+    private void UpdateYouLostScore() => youLostScoreText.text = "Score: " + $"{ score }";
+    private void UpdateYouWonScore() => youWonScoreText.text = "Score: " + $"{ score }";
 
     private void UpdateTimeToNextWave(int timeLeft) => timeToNextWaveText.text = timeLeft > -1 ? $"{ timeLeft }s" : "";
     private void UpdateLifeText() => lifeText.text = $"{ GameController.currentLife }";
