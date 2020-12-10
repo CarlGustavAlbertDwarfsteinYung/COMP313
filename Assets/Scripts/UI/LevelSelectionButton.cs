@@ -20,7 +20,10 @@ public class LevelSelectionButton : MonoBehaviour
     void Start()
     {
         var button = GetComponent<Button>();
-        
+
+        Debug.Log("LevelSelectionButton-Start-GameController.maxUnlockedLevel: " + GameController.maxUnlockedLevel);
+        Debug.Log("LevelSelectionButton-Start-gameObject.name: " + gameObject.name);
+
         if (gameObject.name != "Tutorial" && GameController.maxUnlockedLevel != "Tutorial")
         {
             var maxUnlockedLevel = Int32.Parse(GameController.maxUnlockedLevel.Substring(GameController.maxUnlockedLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));

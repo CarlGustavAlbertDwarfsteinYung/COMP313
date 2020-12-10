@@ -30,7 +30,7 @@ public class UIController : MonoBehaviour
     public Image wonScreen;
     public Button nextWaveButton;
 
-    private float gameSpeed;
+    private float _gameSpeed;
     public static int score = 0;
 
     // Start is called before the first frame update
@@ -127,13 +127,13 @@ public class UIController : MonoBehaviour
         if (Time.timeScale != 0)
         {
             // Pause the game
-            gameSpeed = Time.timeScale;
+            _gameSpeed = Time.timeScale;
             Time.timeScale = 0f;
         }
         else
         {
             // Resume the game
-            Time.timeScale = gameSpeed;
+            Time.timeScale = _gameSpeed;
         }
     }
 
@@ -147,7 +147,7 @@ public class UIController : MonoBehaviour
         else
         {
             // During Paused
-            gameSpeed = newSpeed;
+            _gameSpeed = newSpeed;
         }
     }
 

@@ -12,6 +12,7 @@
 using System;
 using System.Collections;
 using System.IO;
+using Sirenix.Utilities;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -73,9 +74,9 @@ public class GameController : MonoBehaviour
 
     public AudioSource audioSource;
 
-    private int savedMaxLevel = 1;
-    private bool hasWon = false;
-    private int enemyPoints = 0;
+    private int _savedMaxLevel = 1;
+    private bool _hasWon = false;
+    private int _enemyPoints = 0;
 
     static GameController()
     {
@@ -108,35 +109,37 @@ public class GameController : MonoBehaviour
 
     private void OnEnable()
     {
-        LoadGameData(Application.persistentDataPath + "save.pack");
+        _saveGame.maxUnlockedLevel = PlayerPrefs.GetString("MaxLevelUnlocked", "Level_1");
     }
 
     private void OnDisable()
     {
-        SaveGameData(Application.persistentDataPath + "save.pack");
+        PlayerPrefs.SetString("MaxLevelUnlocked", _saveGame.maxUnlockedLevel);
     }
 
     private void Start()
     {
         onEnemyDestroyed += () =>
         {
-            UIController.score += enemyPoints;
+            UIController.score += _enemyPoints;
 
             // we win if all the enemies that are spawned are dead and the health is still greater than 0
             if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEnemiesCount == 0 && currentLife > 0)
             {
                 onGameWon();
-                hasWon = true;
+                _hasWon = true;
 
-                savedMaxLevel = SaveGameLevel();
+                _savedMaxLevel = SaveGameLevel();
 
-                SaveLevelStateOnGameEnd(savedMaxLevel);
+                SaveLevelStateOnGameEnd(_savedMaxLevel);
             }
             else if (PathogensController.activeController.WaveSpawningComplete && PathogensController.activeController.AliveEnemiesCount == 0)
             {
                 onWaveCleared();
             }
         };
+
+        instance.SetVolume(-17.0f);
     }
 
     private void SaveGameData(string path)
@@ -158,7 +161,7 @@ public class GameController : MonoBehaviour
 
     internal void SetEnemyPoints(int pathogenReward)
     {
-        enemyPoints = pathogenReward;
+        _enemyPoints = pathogenReward;
     }
 
     /// <summary>
@@ -172,8 +175,6 @@ public class GameController : MonoBehaviour
         if ( !(levelName == "Tutorial") && ( string.IsNullOrEmpty(_saveGame.maxUnlockedLevel) || ( String.Compare(_saveGame.maxUnlockedLevel, levelName, StringComparison.Ordinal) < 0 ) ) )
         {
             currentLevel = levelName == "Tutorial" ? "Level_1" : levelName;
-
-            _saveGame.maxUnlockedLevel = levelName == "Tutorial" ? "Level_1" : levelName;
         }
 
         switch(currentLevel)
@@ -301,6 +302,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            Debug.Log("GameWonCounter: " + GameController.currentLevel);
             currentLevel = Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
             currentLevel++;
         }
@@ -354,6 +356,8 @@ public class GameController : MonoBehaviour
     /// <param name="currentLevel"></param>
     public void SaveLevelStateOnGameEnd(int currentLevel)
     {
+        Debug.Log("SaveLevelStateOnGameEnd: " + _saveGame.maxUnlockedLevel);
+
         string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
         int parsedLevel = int.Parse(saved_level[1].Trim());
 
@@ -362,18 +366,19 @@ public class GameController : MonoBehaviour
             return;
         }
         
-        if( hasWon )
+        if( _hasWon )
         {
-            currentLevel = savedMaxLevel < final_level ? parsedLevel + 1 : parsedLevel;
+            currentLevel = _savedMaxLevel < final_level ? parsedLevel + 1 : parsedLevel;
 
             _saveGame.maxUnlockedLevel = "Level_" + currentLevel;
-            SaveGameData(Application.persistentDataPath + "save.pack");
+            PlayerPrefs.SetString("MaxLevelUnlocked", _saveGame.maxUnlockedLevel);
         }
     }
 
 
     public int SaveGameLevel()
     {
+        Debug.Log("SaveGameLevel: " + GameController.currentLevel);
         return Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
     }
 
@@ -382,9 +387,9 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void PlayAgain()
     {
-        if (savedMaxLevel <= final_level)
+        if (_savedMaxLevel <= final_level)
         {
-            instance.SetLevel("Level_" + savedMaxLevel);
+            instance.SetLevel("Level_" + _savedMaxLevel);
             instance.SwitchScene("Game");
         }
     }
