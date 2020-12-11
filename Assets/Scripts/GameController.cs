@@ -118,7 +118,7 @@ public class GameController : MonoBehaviour
     {
         onEnemyDestroyed += () =>
         {
-            UIController.score += _enemyPoints;
+            UIController.score += instance._enemyPoints;
 
             // we win if all the enemies that are spawned are dead and the health is still greater than 0
             if (PathogensController.enemiesAllSpawned && PathogensController.activeController.AliveEnemiesCount == 0 && currentLife > 0)
@@ -159,7 +159,7 @@ public class GameController : MonoBehaviour
 
     internal void SetEnemyPoints(int pathogenReward)
     {
-        _enemyPoints = pathogenReward;
+        instance._enemyPoints = pathogenReward;
     }
 
     /// <summary>

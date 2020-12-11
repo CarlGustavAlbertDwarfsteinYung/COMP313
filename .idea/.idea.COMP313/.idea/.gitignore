@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.COMP313.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../../:\Leslie\Centennial College\GitHub\2020F\COMP313_F2020_002\Team6\COMP313\.idea\.idea.COMP313\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
