@@ -363,22 +363,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
-    enemyPerWave: 20
+    enemyPerWave: 30
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
-    timeToNextWave: 30
+    timeToNextWave: 50
   - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
-    enemyPerWave: 30
+    enemyPerWave: 35
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
     timeToNextWave: 60
   - enemyType: {fileID: 11400000, guid: 991435e8a4fb4a14ca9d884e7f584e8e, type: 2}
-    enemyPerWave: 30
+    enemyPerWave: 35
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
     timeToNextWave: 95
   - enemyType: {fileID: 11400000, guid: 2b3571bc8923d064a9c5b38f292c91ae, type: 2}
-    enemyPerWave: 25
+    enemyPerWave: 30
     spawnRate: 1
     waveWaypoints: {fileID: 2984084744429560177}
     timeToNextWave: 125

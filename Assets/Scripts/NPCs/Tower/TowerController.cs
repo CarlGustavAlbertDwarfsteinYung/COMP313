@@ -10,6 +10,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.Utilities;
 using UnityEngine;
 
 public class TowerController : MonoBehaviour
@@ -93,7 +94,7 @@ public class TowerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CanFire)
+        if (CanFire && !_enemies[0].ToString().IsNullOrWhitespace())
         {
             _gunRenderer.transform.up = -(_enemies[0].transform.position - _gunRenderer.transform.position);
         }
@@ -103,7 +104,7 @@ public class TowerController : MonoBehaviour
     {
         while (true)
         {
-            if (CanFire)
+            if (CanFire && !_enemies[0].ToString().IsNullOrWhitespace())
             {
                 var newAttackCell = Instantiate(attackCellPrefab, Vector3.zero, Quaternion.identity, _attackCellSpawnPoint);
 

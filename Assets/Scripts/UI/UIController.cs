@@ -12,6 +12,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.Utilities;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -62,47 +63,55 @@ public class UIController : MonoBehaviour
 
     private void OnEnable()
     {
-        GameController.onLifeLost += UpdateLifeText;
-        
-        GameController.onWaveSpawned += UpdateWaveText;
-        GameController.onWaveSpawned += UpdateEnemiesCount;
-        
-        GameController.onGameOver += ShowGameOverScreen;
-        GameController.onGameOver += UpdateYouLostScore;
+        if ( !GameController.instance.hasLost.ToString().IsNullOrWhitespace() &&  !GameController.instance.hasLost )
+        {
+            GameController.onLifeLost += UpdateLifeText;
+
+            GameController.onWaveSpawned += UpdateWaveText;
+            GameController.onWaveSpawned += UpdateEnemiesCount;
+
+            TowerController.onTowerPlaced += UpdateDnaText;
+
+            GameController.onEnemyDestroyed += UpdateDnaText;
+            GameController.onEnemyDestroyed += UpdateEnemiesCount;
+            GameController.onEnemyDestroyed += UpdateScore;
+
+            GameController.onCountdownTick += UpdateTimeToNextWave;
+
+            GameController.onGameWon += UpdateYouWonScore;
+            GameController.onGameOver += UpdateYouLostScore;
+        }
 
         GameController.onGameWon += ShowGameWonScreen;
-        GameController.onGameWon += UpdateYouWonScore;
-
-        TowerController.onTowerPlaced += UpdateDnaText;
-        GameController.onEnemyDestroyed += UpdateDnaText;
-        GameController.onEnemyDestroyed += UpdateEnemiesCount;
-        GameController.onEnemyDestroyed += UpdateScore;
-
-        GameController.onCountdownTick += UpdateTimeToNextWave;
+        GameController.onGameOver += ShowGameOverScreen;
 
         GameController.onGameReset += ResetUI;
     }
     
     private void OnDisable()
     {
-        GameController.onLifeLost -= UpdateLifeText;
-        
-        GameController.onWaveSpawned -= UpdateWaveText;
-        GameController.onWaveSpawned -= UpdateEnemiesCount;
-        
+        if ( !GameController.instance.hasLost.ToString().IsNullOrWhitespace() && !GameController.instance.hasLost )
+        {
+            GameController.onLifeLost -= UpdateLifeText;
+
+            GameController.onWaveSpawned -= UpdateWaveText;
+            GameController.onWaveSpawned -= UpdateEnemiesCount;
+
+            TowerController.onTowerPlaced -= UpdateDnaText;
+
+            GameController.onEnemyDestroyed -= UpdateDnaText;
+            GameController.onEnemyDestroyed -= UpdateEnemiesCount;
+            GameController.onEnemyDestroyed -= UpdateScore;
+
+            GameController.onCountdownTick -= UpdateTimeToNextWave;
+
+            GameController.onGameOver -= UpdateYouLostScore;
+            GameController.onGameWon -= UpdateYouWonScore;
+        }
+
         GameController.onGameOver -= ShowGameOverScreen;
-        GameController.onGameOver -= UpdateYouLostScore;
-
         GameController.onGameWon -= ShowGameWonScreen;
-        GameController.onGameWon -= UpdateYouWonScore;
 
-        TowerController.onTowerPlaced -= UpdateDnaText;
-        GameController.onEnemyDestroyed -= UpdateDnaText;
-        GameController.onEnemyDestroyed -= UpdateEnemiesCount;
-        GameController.onEnemyDestroyed -= UpdateScore;
-
-        GameController.onCountdownTick -= UpdateTimeToNextWave;
-        
         GameController.onGameReset -= ResetUI;
     }
 

@@ -211,7 +211,7 @@ public class PathogensController : MonoBehaviour
         
         for (var timeToNextWave = waves[wave].timeToNextWave; timeToNextWave > 0f; timeToNextWave -= 1f)
         {
-            if ( timeToNextWave < 5 )
+            if ( timeToNextWave < 5 & clearedWaves )
                 GameController.onCountdownTick((int) timeToNextWave);
             
             yield return new WaitForSeconds(1f);

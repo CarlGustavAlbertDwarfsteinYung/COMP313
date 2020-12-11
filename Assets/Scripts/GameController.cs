@@ -77,6 +77,7 @@ public class GameController : MonoBehaviour
     private int _savedMaxLevel = 1;
     private bool _hasWon = false;
     private int _enemyPoints = 0;
+    public bool hasLost = false;
 
     static GameController()
     {
@@ -98,11 +99,7 @@ public class GameController : MonoBehaviour
         {
             if ( arg1.isLoaded && audioSource == null )
             {
-                this.audioSource = GameObject.FindGameObjectWithTag("soundEffects").GetComponent<AudioSource>();
-            }
-            else
-            {
-                this.audioSource = instance.audioSource;
+                instance.audioSource = GameObject.FindGameObjectWithTag("soundEffects").GetComponent<AudioSource>();
             }
         }
     }
@@ -128,16 +125,17 @@ public class GameController : MonoBehaviour
             {
                 onGameWon();
                 _hasWon = true;
-
-                _savedMaxLevel = SaveGameLevel();
-
-                SaveLevelStateOnGameEnd(_savedMaxLevel);
+                instance.hasLost = false;
             }
             else if (PathogensController.activeController.WaveSpawningComplete && PathogensController.activeController.AliveEnemiesCount == 0)
             {
                 onWaveCleared();
             }
+
+            _savedMaxLevel = SaveGameLevel();
+            SaveLevelStateOnGameEnd(_savedMaxLevel);
         };
+
 
         instance.SetVolume(-17.0f);
     }
@@ -194,24 +192,18 @@ public class GameController : MonoBehaviour
             break;
 
             case "Level_6":
-                maxLife = 10;
-                towerPoints = 30;
-            break;
-
             case "Level_7":
+            case "Level_8":
+            case "Level_9":
+            case "Level_10":
                 maxLife = 10;
                 towerPoints = 40;
             break;
 
-            case "Level_8":
-            case "Level_9":
-            case "Level_10":
-                towerPoints = 70;
-            break;
-
             case "Level_11":
             case "Level_12":
-                towerPoints = 90;
+                maxLife = 10;
+                towerPoints = 50;
             break;
 
             default:
@@ -283,6 +275,8 @@ public class GameController : MonoBehaviour
         if (currentLife == 0)
         {
             onGameOver();
+            instance.hasLost = true; 
+            instance._hasWon = true;
         }
     }
 
@@ -302,7 +296,6 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            Debug.Log("GameWonCounter: " + GameController.currentLevel);
             currentLevel = Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
             currentLevel++;
         }
@@ -356,8 +349,6 @@ public class GameController : MonoBehaviour
     /// <param name="currentLevel"></param>
     public void SaveLevelStateOnGameEnd(int currentLevel)
     {
-        Debug.Log("SaveLevelStateOnGameEnd: " + _saveGame.maxUnlockedLevel);
-
         string[] saved_level = _saveGame.maxUnlockedLevel.Split('_');
         int parsedLevel = int.Parse(saved_level[1].Trim());
 
@@ -378,7 +369,6 @@ public class GameController : MonoBehaviour
 
     public int SaveGameLevel()
     {
-        Debug.Log("SaveGameLevel: " + GameController.currentLevel);
         return Int32.Parse(GameController.currentLevel.Substring(GameController.currentLevel.LastIndexOf("_", StringComparison.Ordinal) + 1));
     }
 
