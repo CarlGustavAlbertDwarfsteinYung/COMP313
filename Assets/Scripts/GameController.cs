@@ -132,8 +132,8 @@ public class GameController : MonoBehaviour
                 onWaveCleared();
             }
 
-            _savedMaxLevel = SaveGameLevel();
-            SaveLevelStateOnGameEnd(_savedMaxLevel);
+            instance._savedMaxLevel = SaveGameLevel();
+            SaveLevelStateOnGameEnd(instance._savedMaxLevel);
         };
 
 
@@ -275,6 +275,7 @@ public class GameController : MonoBehaviour
         if (currentLife == 0)
         {
             onGameOver();
+
             instance.hasLost = true; 
             instance._hasWon = true;
         }
@@ -359,7 +360,7 @@ public class GameController : MonoBehaviour
         
         if( _hasWon )
         {
-            currentLevel = _savedMaxLevel < final_level ? parsedLevel + 1 : parsedLevel;
+            currentLevel = instance._savedMaxLevel < final_level ? parsedLevel + 1 : parsedLevel;
 
             _saveGame.maxUnlockedLevel = "Level_" + currentLevel;
             PlayerPrefs.SetString("MaxLevelUnlocked", _saveGame.maxUnlockedLevel);
@@ -377,9 +378,9 @@ public class GameController : MonoBehaviour
     /// </summary>
     public void PlayAgain()
     {
-        if (_savedMaxLevel <= final_level)
+        if (instance._savedMaxLevel <= final_level)
         {
-            instance.SetLevel("Level_" + _savedMaxLevel);
+            instance.SetLevel("Level_" + instance._savedMaxLevel);
             instance.SwitchScene("Game");
         }
     }
